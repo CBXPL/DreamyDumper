@@ -1,2 +1,3 @@
 # DreamyDumper
 Always updated dreamydumper for cs2
+PARTIALLY BASED ON A DIFFERENT DUMPER BUT THIS HAS FIXED PATTERNS ETC.
