@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "dumper": "DreamyDumper2",
+    "date": "2026-02-19 20:22"
+  },
+  "client.dll": {
+    "dwEntityList": {
+      "location": "0x14A7BE9",
+      "signature": "48 89 0D ?? ?? ?? ?? E9 ?? ?? ?? ?? CC",
+      "offset": 38445272,
+      "hex": "0x24AA0D8"
+    },
+    "dwViewMatrix": {
+      "location": "0xB7A393",
+      "signature": "48 8D 0D ?? ?? ?? ?? 48 C1 E0 06",
+      "offset": 36744672,
+      "hex": "0x230ADE0"
+    },
+    "dwGlobalVars": {
+      "location": "0xAF471C",
+      "signature": "48 89 15 ?? ?? ?? ?? 48 89 42",
+      "offset": 33920464,
+      "hex": "0x20595D0"
+    }
+  }
+}
