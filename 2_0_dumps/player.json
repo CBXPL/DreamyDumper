@@ -1,52 +1,52 @@
 {
   "metadata": {
     "dumper": "DreamyDumper2",
-    "date": "2026-02-19 20:22"
+    "date": "2026-02-24 10:53"
   },
   "m_iHealth": {
-    "location": "0x42CF02",
+    "location": "0x42CF82",
     "pattern": "41 08 C6 01 05 C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 852,
     "hex_offset": "0x354"
   },
   "m_iTeamNum": {
-    "location": "0x42D516",
+    "location": "0x42D596",
     "pattern": "41 08 C6 01 39 C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 1011,
     "hex_offset": "0x3F3"
   },
   "m_hPawn": {
-    "location": "0x89A7D2",
+    "location": "0x89BF62",
     "pattern": "41 08 C6 01 0D C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 1732,
     "hex_offset": "0x6C4"
   },
   "m_hPlayerPawn": {
-    "location": "0x7FB177",
+    "location": "0x7FC907",
     "pattern": "41 08 C6 01 0D C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 2316,
     "hex_offset": "0x90C"
   },
   "m_lifeState": {
-    "location": "0x42EC73",
-    "pattern": "05 86 DB 53 01 C7 45 C7 ?? ?? ?? ?? 4C 8D 4D",
+    "location": "0x42ECF3",
+    "pattern": "05 AE FF 53 01 C7 45 C7 ?? ?? ?? ?? 4C 8D 4D",
     "offset": 860,
     "hex_offset": "0x35C"
   },
   "m_vecAbsVelocity": {
-    "location": "0x42D792",
+    "location": "0x42D812",
     "pattern": "41 08 C6 01 03 C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 1028,
     "hex_offset": "0x404"
   },
   "m_pGameSceneNode": {
-    "location": "0x7FFC95E63450",
+    "location": "0x7FF9DC0753D0",
     "pattern": "STATIC_DATA_TABLE",
     "offset": 824,
     "hex_offset": "0x338"
   },
   "m_fFlags": {
-    "location": "0x42D652",
+    "location": "0x42D6D2",
     "pattern": "41 08 C6 01 25 C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 1024,
     "hex_offset": "0x400"
