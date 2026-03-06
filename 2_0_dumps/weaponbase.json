@@ -1,40 +1,40 @@
 {
   "metadata": {
     "dumper": "DreamyDumper2",
-    "date": "2026-02-24 10:53"
+    "date": "2026-03-06 14:35"
   },
   "m_flSpread": {
-    "location": "0x7A2312",
+    "location": "0x7A2852",
     "pattern": "C4 B9 11 0F 4C 8D 8F ?? ?? ?? ?? 48 89 45 F8",
     "offset": 1648,
     "hex_offset": "0x670"
   },
   "m_nRecoilSeed": {
-    "location": "0x7A27DD",
+    "location": "0x7A2D1D",
     "pattern": "FB B4 11 BC 4C 8D 8F ?? ?? ?? ?? 48 89 45 F8",
     "offset": 1780,
     "hex_offset": "0x6F4"
   },
   "m_nSpreadSeed": {
-    "location": "0x7A280B",
+    "location": "0x7A2D4B",
     "pattern": "9B A1 31 36 48 89 45 F8 4C 8D 8F ?? ?? ?? ??",
     "offset": 1784,
     "hex_offset": "0x6F8"
   },
   "m_flRecoilMagnitude": {
-    "location": "0x7A2507",
+    "location": "0x7A2A47",
     "pattern": "A1 67 6A 85 4C 8D 8F ?? ?? ?? ?? 48 89 45 F8",
     "offset": 1728,
     "hex_offset": "0x6C0"
   },
   "m_flInaccuracyMove": {
-    "location": "0x7A246D",
+    "location": "0x7A29AD",
     "pattern": "39 25 C9 17 4C 8D 8F ?? ?? ?? ?? 48 89 45 F8",
     "offset": 1704,
     "hex_offset": "0x6A8"
   },
   "m_flRecoilAngle": {
-    "location": "0x7A24A3",
+    "location": "0x7A29E3",
     "pattern": "C4 AB 2B FA 4C 8D 8F ?? ?? ?? ?? 48 89 45 F8",
     "offset": 1712,
     "hex_offset": "0x6B0"

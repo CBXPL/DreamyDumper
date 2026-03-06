@@ -1,26 +1,26 @@
 {
   "metadata": {
     "dumper": "DreamyDumper2",
-    "date": "2026-02-24 10:53"
+    "date": "2026-03-06 14:35"
   },
   "client.dll": {
     "dwEntityList": {
-      "location": "0x14A9339",
+      "location": "0x14AA1A9",
       "signature": "48 89 0D ?? ?? ?? ?? E9 ?? ?? ?? ?? CC",
-      "offset": 38449608,
-      "hex": "0x24AB1C8"
+      "offset": 38453928,
+      "hex": "0x24AC2A8"
     },
     "dwViewMatrix": {
-      "location": "0xB7BB33",
+      "location": "0xB7C193",
       "signature": "48 8D 0D ?? ?? ?? ?? 48 C1 E0 06",
-      "offset": 36749024,
-      "hex": "0x230BEE0"
+      "offset": 36753312,
+      "hex": "0x230CFA0"
     },
     "dwGlobalVars": {
-      "location": "0xAF5EBC",
+      "location": "0xAF64FC",
       "signature": "48 89 15 ?? ?? ?? ?? 48 89 42",
-      "offset": 33924480,
-      "hex": "0x205A580"
+      "offset": 33928640,
+      "hex": "0x205B5C0"
     }
   }
 }
