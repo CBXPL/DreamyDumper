@@ -1,58 +1,58 @@
 {
   "metadata": {
     "dumper": "DreamyDumper2",
-    "date": "2026-04-19 20:14"
+    "date": "2026-04-21 15:11"
   },
   "m_flSpread": {
-    "location": "0x7A3BB2",
+    "location": "0x7A15E6",
     "pattern": "C4 B9 11 0F 4C 8D 8F ?? ?? ?? ?? 48 89",
-    "offset": 1648,
-    "hex_offset": "0x670"
+    "offset": 1880,
+    "hex_offset": "0x758"
   },
   "m_nRecoilSeed": {
-    "location": "0x7A407D",
+    "location": "0x7A1AB1",
     "pattern": "FB B4 11 BC 4C 8D 8F ?? ?? ?? ?? 48 89",
-    "offset": 1780,
-    "hex_offset": "0x6F4"
+    "offset": 2012,
+    "hex_offset": "0x7DC"
   },
   "m_nSpreadSeed": {
-    "location": "0x7A40AB",
+    "location": "0x7A1ADF",
     "pattern": "9B A1 31 36 48 89 45 F8 4C 8D 8F ?? ?? ?? ?? C7 45",
-    "offset": 1784,
-    "hex_offset": "0x6F8"
+    "offset": 2016,
+    "hex_offset": "0x7E0"
   },
   "m_flRecoilMagnitude": {
-    "location": "0x7A3DA7",
+    "location": "0x7A17DB",
     "pattern": "A1 67 6A 85 4C 8D 8F ?? ?? ?? ?? 48 89",
-    "offset": 1728,
-    "hex_offset": "0x6C0"
+    "offset": 1960,
+    "hex_offset": "0x7A8"
   },
   "m_flInaccuracyMove": {
-    "location": "0x7A3D0D",
+    "location": "0x7A1741",
     "pattern": "39 25 C9 17 4C 8D 8F ?? ?? ?? ?? 48 89",
-    "offset": 1704,
-    "hex_offset": "0x6A8"
+    "offset": 1936,
+    "hex_offset": "0x790"
   },
   "m_flRecoilAngle": {
-    "location": "0x7A3D43",
+    "location": "0x7A1777",
     "pattern": "C4 AB 2B FA 4C 8D 8F ?? ?? ?? ?? 48 89",
-    "offset": 1712,
-    "hex_offset": "0x6B0"
+    "offset": 1944,
+    "hex_offset": "0x798"
   },
   "m_pWeaponServices": {
-    "location": "0x42F4E6",
-    "pattern": "48 8D 05 D3 55 54 01 48 03 DA 48 89 45 BF 43 8B 04 2E 39 05 8A 0C E4 01 C7 45 C7 ?? ?? ?? ?? 66 44",
-    "offset": 5080,
-    "hex_offset": "0x13D8"
+    "location": "0x4029F6",
+    "pattern": "48 8D 05 E3 1B 56 01 48 03 DA 48 89 45 BF 43 8B 04 2E 39 05 AA B3 E5 01 C7 45 C7 ?? ?? ?? ?? 66 44",
+    "offset": 4576,
+    "hex_offset": "0x11E0"
   },
   "m_hActiveWeapon": {
-    "location": "0x9E0156",
+    "location": "0x9DFD26",
     "pattern": "48 8D 05 ? ? ? ? 48 89 41 08 C6 01 0D C7 41 10 ?? ?? ?? ??",
     "offset": 96,
     "hex_offset": "0x60"
   },
   "m_hMyWeapons": {
-    "location": "0x204BCC0",
+    "location": "0x2032D70",
     "pattern": "STATIC_DATA_TABLE",
     "offset": 72,
     "hex_offset": "0x48"

@@ -1,72 +1,72 @@
 {
   "metadata": {
     "dumper": "DreamyDumper2",
-    "date": "2026-04-19 20:14"
+    "date": "2026-04-21 15:11"
   },
   "m_iHealth": {
-    "location": "0x42D5C2",
+    "location": "0x400A12",
     "pattern": "41 08 C6 01 05 C7 41 10 ?? ?? ?? ?? 66 89 69",
+    "offset": 844,
+    "hex_offset": "0x34C"
+  },
+  "m_iTeamNum": {
+    "location": "0x401026",
+    "pattern": "41 08 C6 01 39 C7 41 10 ?? ?? ?? ?? 66 89 69",
+    "offset": 1003,
+    "hex_offset": "0x3EB"
+  },
+  "m_hPawn": {
+    "location": "0x89A372",
+    "pattern": "41 08 C6 01 0D C7 41 10 ?? ?? ?? ?? 66 89 69",
+    "offset": 1724,
+    "hex_offset": "0x6BC"
+  },
+  "m_hPlayerPawn": {
+    "location": "0x7FD137",
+    "pattern": "41 08 C6 01 0D C7 41 10 ?? ?? ?? ?? 66 89 69",
+    "offset": 2308,
+    "hex_offset": "0x904"
+  },
+  "m_lifeState": {
+    "location": "0x402847",
+    "pattern": "05 0A 3B 56 01 C7 45 C7 ?? ?? ?? ?? 4C 8D 4D",
     "offset": 852,
     "hex_offset": "0x354"
   },
-  "m_iTeamNum": {
-    "location": "0x42DBD6",
-    "pattern": "41 08 C6 01 39 C7 41 10 ?? ?? ?? ?? 66 89 69",
-    "offset": 1011,
-    "hex_offset": "0x3F3"
-  },
-  "m_hPawn": {
-    "location": "0x89D8B2",
-    "pattern": "41 08 C6 01 0D C7 41 10 ?? ?? ?? ?? 66 89 69",
-    "offset": 1732,
-    "hex_offset": "0x6C4"
-  },
-  "m_hPlayerPawn": {
-    "location": "0x7FE197",
-    "pattern": "41 08 C6 01 0D C7 41 10 ?? ?? ?? ?? 66 89 69",
-    "offset": 2316,
-    "hex_offset": "0x90C"
-  },
-  "m_lifeState": {
-    "location": "0x42F333",
-    "pattern": "05 E6 76 54 01 C7 45 C7 ?? ?? ?? ?? 4C 8D 4D",
-    "offset": 860,
-    "hex_offset": "0x35C"
-  },
   "m_vecAbsVelocity": {
-    "location": "0x42DE52",
+    "location": "0x4012A2",
     "pattern": "41 08 C6 01 03 C7 41 10 ?? ?? ?? ?? 66 89 69",
-    "offset": 1028,
-    "hex_offset": "0x404"
+    "offset": 1020,
+    "hex_offset": "0x3FC"
   },
   "m_iszPlayerName": {
-    "location": "0x7FFFC9FD4690",
+    "location": "0x7FFA28A6CEC0",
     "pattern": "STATIC_DATA_TABLE",
-    "offset": 1784,
-    "hex_offset": "0x6F8"
+    "offset": 1776,
+    "hex_offset": "0x6F0"
   },
   "m_MoveType": {
-    "location": "0x42E482",
+    "location": "0x4018D2",
     "pattern": "41 08 C6 01 08 C7 41 10 ?? ?? ?? ?? 66 89 69",
-    "offset": 1325,
-    "hex_offset": "0x52D"
+    "offset": 1317,
+    "hex_offset": "0x525"
   },
   "m_pItemServices": {
-    "location": "0x42F66A",
-    "pattern": "05 1E 0B E4 01 C7 45 C7 ?? ?? ?? ?? 66 44 89",
-    "offset": 5088,
-    "hex_offset": "0x13E0"
+    "location": "0x402B7A",
+    "pattern": "05 3E B2 E5 01 C7 45 C7 ?? ?? ?? ?? 66 44 89",
+    "offset": 4584,
+    "hex_offset": "0x11E8"
   },
   "m_pGameSceneNode": {
-    "location": "0x7FFFC9F9E0F0",
+    "location": "0x7FFA28A3AC80",
     "pattern": "STATIC_DATA_TABLE",
-    "offset": 824,
-    "hex_offset": "0x338"
+    "offset": 816,
+    "hex_offset": "0x330"
   },
   "m_fFlags": {
-    "location": "0x42DD12",
+    "location": "0x401162",
     "pattern": "41 08 C6 01 25 C7 41 10 ?? ?? ?? ?? 66 89 69",
-    "offset": 1024,
-    "hex_offset": "0x400"
+    "offset": 1016,
+    "hex_offset": "0x3F8"
   }
 }

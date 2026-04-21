@@ -1,38 +1,38 @@
 {
   "metadata": {
     "dumper": "DreamyDumper2",
-    "date": "2026-04-19 20:14"
+    "date": "2026-04-21 15:11"
   },
   "client.dll": {
     "dwEntityList": {
-      "location": "0x14AFD09",
+      "location": "0x14A65D9",
       "signature": "48 89 0D ?? ?? ?? ?? E9 ?? ?? ?? ?? CC",
-      "offset": 38482536,
-      "hex": "0x24B3268"
+      "offset": 38573840,
+      "hex": "0x24C9710"
     },
     "dwViewMatrix": {
-      "location": "0xB7D5F3",
+      "location": "0xB67863",
       "signature": "48 8D 0D ?? ?? ?? ?? 48 C1 E0 06",
-      "offset": 36781840,
-      "hex": "0x2313F10"
+      "offset": 36868304,
+      "hex": "0x23290D0"
     },
     "dwGlobalVars": {
-      "location": "0xAF795C",
+      "location": "0xADEADC",
       "signature": "48 89 15 ?? ?? ?? ?? 48 89 42",
-      "offset": 33957184,
-      "hex": "0x2062540"
+      "offset": 33834216,
+      "hex": "0x20444E8"
     },
     "dwLocalPlayerController": {
-      "location": "0x8AEEA0",
+      "location": "0x8A8AE0",
       "signature": "48 8B 05 ?? ?? ?? ?? 41 89 BE",
-      "offset": 36667432,
-      "hex": "0x22F8028"
+      "offset": 36712064,
+      "hex": "0x2302E80"
     },
     "dwViewRender": {
-      "location": "0xAEA679",
+      "location": "0xAD1489",
       "signature": "48 89 05 ?? ?? ?? ?? 48 8B C8 48 85 C0",
-      "offset": 36782888,
-      "hex": "0x2314328"
+      "offset": 36868840,
+      "hex": "0x23292E8"
     }
   }
 }
