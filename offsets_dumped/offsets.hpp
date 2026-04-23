@@ -1,5 +1,5 @@
 // Generated with DreamyDumper2 + DreamyDebugger
-// 2026-04-24
+// 2026-04-23
 
 #pragma once
 
@@ -14,10 +14,10 @@ namespace cs2_dumper {
             constexpr std::ptrdiff_t dwEntityList = 0x24CED50;
             constexpr std::ptrdiff_t dwGameEntitySystem = 0x24CED50;
             constexpr std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = 0x2090;
-            constexpr std::ptrdiff_t dwGameRules = 0x19EEB18;
+            constexpr std::ptrdiff_t dwGameRules = 0x19EE9E8;
             constexpr std::ptrdiff_t dwGlobalVars = 0x20496A0;
             constexpr std::ptrdiff_t dwGlowManager = 0x2325D30;
-            constexpr std::ptrdiff_t dwLocalPlayerController = 0x2308540;
+            constexpr std::ptrdiff_t dwLocalPlayerController = 0x2308520;
             constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x20547A0;
             constexpr std::ptrdiff_t dwPlantedC4 = 0x2336A48;
             constexpr std::ptrdiff_t dwPrediction = 0x20546B0;
@@ -26,7 +26,7 @@ namespace cs2_dumper {
             constexpr std::ptrdiff_t dwViewAngles = 0x233E408;
             constexpr std::ptrdiff_t dwViewMatrix = 0x232EAC0;
             constexpr std::ptrdiff_t dwViewRender = 0x232DCB8;
-            constexpr std::ptrdiff_t dwWeaponC4 = 0x22A6CE8;
+            constexpr std::ptrdiff_t dwWeaponC4 = 0x22A6CB8;
         }
         // Module: engine2.dll
         namespace engine2_dll {
