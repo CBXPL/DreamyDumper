@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-04-03 10:56:29.533035500 UTC
+// 2026-04-29 15:14:49.480317600 UTC
 
 #pragma once
 
@@ -31,13 +31,6 @@ namespace cs2_dumper {
                 WRITABLE = 0x0,
                 READ_ONLY = 0x1
             };
-            // Parent: None
-            // Field count: 0
-            //
-            // Metadata:
-            // MResourceTypeForInfoType
-            namespace InfoForResourceTypeCNmIKRig {
-            }
             // Parent: None
             // Field count: 0
             //
@@ -375,6 +368,13 @@ namespace cs2_dumper {
             // Metadata:
             // MResourceTypeForInfoType
             namespace InfoForResourceTypeIPulseGraphDef {
+            }
+            // Parent: None
+            // Field count: 0
+            //
+            // Metadata:
+            // MResourceTypeForInfoType
+            namespace InfoForResourceTypeCVDataItemDefs {
             }
             // Parent: None
             // Field count: 5
