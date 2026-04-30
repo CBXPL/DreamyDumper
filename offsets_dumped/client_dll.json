@@ -6702,11 +6702,6 @@
         "metadata": [],
         "parent": null
       },
-      "_P____": {
-        "fields": {},
-        "metadata": [],
-        "parent": null
-      },
       "audioparams_t": {
         "fields": {
           "localBits": 108,

@@ -1,9 +1,9 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-04-29 15:14:49.480317600 UTC
+// 2026-04-30 14:17:13.860013200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: client.dll
-    // Class count: 536
+    // Class count: 535
     // Enum count: 12
     public static class ClientDll {
         // Alignment: 4
@@ -5808,10 +5808,6 @@ namespace CS2Dumper.Schemas {
             public const nint m_PreGenerationKVs = 0x18; // KeyValues3
             public const nint m_FinalKVs = 0x58; // KeyValues3
             public const nint m_vecGeneratedTextures = 0x80; // CUtlVector<GeneratedTextureHandle_t>
-        }
-        // Parent: None
-        // Field count: 0
-        public static class _P____ {
         }
     }
 }

@@ -1,9 +1,9 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-04-29 15:14:49.480317600 UTC
+// 2026-04-30 14:17:13.860013200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: server.dll
-    // Class count: 959
+    // Class count: 944
     // Enum count: 179
     public static class ServerDll {
         // Alignment: 4
@@ -12210,66 +12210,6 @@ namespace CS2Dumper.Schemas {
         public static class Relationship_t {
             public const nint disposition = 0x0; // Disposition_t
             public const nint priority = 0x4; // int32
-        }
-        // Parent: None
-        // Field count: 0
-        public static class _ {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class _ {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class PF_ROUND_TYPE_NEAREST {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class PF_RANDOM_MODE_CONSTANT {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class PF_MAP_TYPE_DIRECT {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class PF_INPUT_MODE_CLAMPED {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class PF_NOISE_TYPE_PERLIN {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class _ {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class _ {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class PF_INPUT_MODE_CLAMPED {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class PF_NOISE_TYPE_PERLIN {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class _ {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class _ {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class PF_ROUND_TYPE_NEAREST {
-        }
-        // Parent: None
-        // Field count: 0
-        public static class PF_RANDOM_MODE_CONSTANT {
         }
     }
 }

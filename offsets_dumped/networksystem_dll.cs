@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-04-29 15:14:49.480317600 UTC
+// 2026-04-30 14:17:13.860013200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: networksystem.dll

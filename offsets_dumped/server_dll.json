@@ -11520,31 +11520,6 @@
         ],
         "parent": null
       },
-      "PF_INPUT_MODE_CLAMPED": {
-        "fields": {},
-        "metadata": [],
-        "parent": null
-      },
-      "PF_MAP_TYPE_DIRECT": {
-        "fields": {},
-        "metadata": [],
-        "parent": null
-      },
-      "PF_NOISE_TYPE_PERLIN": {
-        "fields": {},
-        "metadata": [],
-        "parent": null
-      },
-      "PF_RANDOM_MODE_CONSTANT": {
-        "fields": {},
-        "metadata": [],
-        "parent": null
-      },
-      "PF_ROUND_TYPE_NEAREST": {
-        "fields": {},
-        "metadata": [],
-        "parent": null
-      },
       "ParticleIndex_t": {
         "fields": {
           "m_Value": 0
@@ -12069,11 +12044,6 @@
         "fields": {
           "m_pJoint": 0
         },
-        "metadata": [],
-        "parent": null
-      },
-      "_": {
-        "fields": {},
         "metadata": [],
         "parent": null
       },

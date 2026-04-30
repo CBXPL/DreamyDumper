@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-04-29 15:14:49.480317600 UTC
+// 2026-04-30 14:17:13.860013200 UTC
 
 #pragma once
 
@@ -9,7 +9,7 @@
 namespace cs2_dumper {
     namespace schemas {
         // Module: server.dll
-        // Class count: 959
+        // Class count: 944
         // Enum count: 179
         namespace server_dll {
             // Alignment: 4
@@ -12216,66 +12216,6 @@ namespace cs2_dumper {
             namespace Relationship_t {
                 constexpr std::ptrdiff_t disposition = 0x0; // Disposition_t
                 constexpr std::ptrdiff_t priority = 0x4; // int32
-            }
-            // Parent: None
-            // Field count: 0
-            namespace _ {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace _ {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace PF_ROUND_TYPE_NEAREST {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace PF_RANDOM_MODE_CONSTANT {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace PF_MAP_TYPE_DIRECT {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace PF_INPUT_MODE_CLAMPED {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace PF_NOISE_TYPE_PERLIN {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace _ {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace _ {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace PF_INPUT_MODE_CLAMPED {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace PF_NOISE_TYPE_PERLIN {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace _ {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace _ {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace PF_ROUND_TYPE_NEAREST {
-            }
-            // Parent: None
-            // Field count: 0
-            namespace PF_RANDOM_MODE_CONSTANT {
             }
         }
     }
