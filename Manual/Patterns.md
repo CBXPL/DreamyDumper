@@ -9,6 +9,6 @@
 | **GetHitboxSet** | `48 89 5C 24 ? 48 89 74 24 ? 57 48 81 EC ? ? ? ? 8B DA 48 8B F9 E8 ? ? ? ? 48 8B F0` | `client.dll` |
 | **TraceShape** | `48 89 5C 24 ? 48 89 4C 24 ? 55 57 41` | `client.dll` |
 | **OverrideView** | `40 57 48 83 EC ? 48 8B FA E8 ? ? ? ? BA` | `client.dll` |
-| **Draw Team Intro** | `48 83 EC 28 45 0F B6 08 44 38 89 04 0F ? ?` | `client.dll` |
+| **Draw Team Intro** | `48 83 EC 28 45 0F B6 08 44 38 89 ? ? ? ?` | `client.dll` |
 
 ---
