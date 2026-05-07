@@ -1,6 +1,6 @@
 # Manual Signatures
 
-**Updated:** 07.05.2026 | **Time:** 15:26
+**Updated:** 07.05.2026 | **Time:** 15:34
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
@@ -10,5 +10,6 @@
 | **TraceShape** | `48 89 5C 24 ? 48 89 4C 24 ? 55 57 41` | `client.dll` |
 | **OverrideView** | `40 57 48 83 EC ? 48 8B FA E8 ? ? ? ? BA` | `client.dll` |
 | **Draw Team Intro** | `48 83 EC 28 45 0F B6 08 44 38 89 ? ? ? ?` | `client.dll` |
+| **Load KeyValues** | `?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBDI@Z` | `tier0.dll` |
 
 ---
