@@ -1,6 +1,6 @@
 # Manual Signatures
 
-**Updated:** 08.05.2026 | **Time:** 16:58
+**Updated:** 08.05.2026 | **Time:** 17:15
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
@@ -14,5 +14,6 @@
 | **CCsgoInput::CreateMove** | `85 D2 0F 85 85 10 00 00 48 8B C4 44 88 40 18` | `client.dll` |
 | **DrawViewModel** | `40 55 53 56 41 56 41 57 48 8B EC 48 83 EC ? 4D 8B F8 4C 8B F2 48 8B` | `client.dll` |
 | **Load KeyValues** | `?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBDI@Z` | `tier0.dll` |
+| **Skybox::DrawArray** | `45 85 C9 0F 8E ? ? ? ? 4C 8B DC 55 41 56` | `scenesystem.dll` |
 
 ---
