@@ -1,6 +1,6 @@
 # Manual Signatures
 
-**Updated:** 07.05.2026 | **Time:** 15:44
+**Updated:** 08.05.2026 | **Time:** 16:58
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
@@ -12,6 +12,7 @@
 | **Draw Team Intro** | `48 83 EC 28 45 0F B6 08 44 38 89 ? ? ? ?` | `client.dll` |
 | **SetViewAngles** | `85 D2 75 3D 48 63 81` | `client.dll` |
 | **CCsgoInput::CreateMove** | `85 D2 0F 85 85 10 00 00 48 8B C4 44 88 40 18` | `client.dll` |
+| **DrawViewModel** | `40 55 53 56 41 56 41 57 48 8B EC 48 83 EC ? 4D 8B F8 4C 8B F2 48 8B` | `client.dll` |
 | **Load KeyValues** | `?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBDI@Z` | `tier0.dll` |
 
 ---
