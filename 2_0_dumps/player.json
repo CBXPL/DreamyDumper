@@ -1,70 +1,70 @@
 {
   "metadata": {
     "dumper": "DreamyDumper2",
-    "date": "2026-04-21 15:11"
+    "date": "2026-05-09 18:19"
   },
   "m_iHealth": {
-    "location": "0x400A12",
+    "location": "0x400B32",
     "pattern": "41 08 C6 01 05 C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 844,
     "hex_offset": "0x34C"
   },
   "m_iTeamNum": {
-    "location": "0x401026",
+    "location": "0x401146",
     "pattern": "41 08 C6 01 39 C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 1003,
     "hex_offset": "0x3EB"
   },
   "m_hPawn": {
-    "location": "0x89A372",
+    "location": "0x89FD32",
     "pattern": "41 08 C6 01 0D C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 1724,
     "hex_offset": "0x6BC"
   },
   "m_hPlayerPawn": {
-    "location": "0x7FD137",
+    "location": "0x8000F7",
     "pattern": "41 08 C6 01 0D C7 41 10 ?? ?? ?? ?? 66 89 69",
-    "offset": 2308,
-    "hex_offset": "0x904"
+    "offset": 2316,
+    "hex_offset": "0x90C"
   },
   "m_lifeState": {
-    "location": "0x402847",
-    "pattern": "05 0A 3B 56 01 C7 45 C7 ?? ?? ?? ?? 4C 8D 4D",
+    "location": "0x402967",
+    "pattern": "05 1A AA 56 01 C7 45 C7 ?? ?? ?? ?? 4C 8D 4D",
     "offset": 852,
     "hex_offset": "0x354"
   },
   "m_vecAbsVelocity": {
-    "location": "0x4012A2",
+    "location": "0x4013C2",
     "pattern": "41 08 C6 01 03 C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 1020,
     "hex_offset": "0x3FC"
   },
   "m_iszPlayerName": {
-    "location": "0x7FFA28A6CEC0",
+    "location": "0x7FF8C8B83F40",
     "pattern": "STATIC_DATA_TABLE",
-    "offset": 1776,
-    "hex_offset": "0x6F0"
+    "offset": 1780,
+    "hex_offset": "0x6F4"
   },
   "m_MoveType": {
-    "location": "0x4018D2",
+    "location": "0x4019F2",
     "pattern": "41 08 C6 01 08 C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 1317,
     "hex_offset": "0x525"
   },
   "m_pItemServices": {
-    "location": "0x402B7A",
-    "pattern": "05 3E B2 E5 01 C7 45 C7 ?? ?? ?? ?? 66 44 89",
+    "location": "0x402C9A",
+    "pattern": "05 8E 24 E6 01 C7 45 C7 ?? ?? ?? ?? 66 44 89",
     "offset": 4584,
     "hex_offset": "0x11E8"
   },
   "m_pGameSceneNode": {
-    "location": "0x7FFA28A3AC80",
+    "location": "0x7FF8C8B51F50",
     "pattern": "STATIC_DATA_TABLE",
     "offset": 816,
     "hex_offset": "0x330"
   },
   "m_fFlags": {
-    "location": "0x401162",
+    "location": "0x401282",
     "pattern": "41 08 C6 01 25 C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 1016,
     "hex_offset": "0x3F8"

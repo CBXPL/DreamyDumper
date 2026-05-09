@@ -1,16 +1,16 @@
 {
   "metadata": {
     "dumper": "DreamyDumper2",
-    "date": "2026-04-21 15:11"
+    "date": "2026-05-09 18:19"
   },
   "m_pCameraServices": {
-    "location": "0x403016",
-    "pattern": "05 EA AD E5 01 C7 45 C7 ?? ?? ?? ?? 66 44 89",
+    "location": "0x403136",
+    "pattern": "05 3A 20 E6 01 C7 45 C7 ?? ?? ?? ?? 66 44 89",
     "offset": 4632,
     "hex_offset": "0x1218"
   },
   "m_iFOV": {
-    "location": "0x7FC880",
+    "location": "0x7FF840",
     "pattern": "41 08 C6 01 25 C7 41 10 ?? ?? ?? ?? 66 89 69",
     "offset": 656,
     "hex_offset": "0x290"
