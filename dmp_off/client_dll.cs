@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-05-08 14:56:27.344253800 UTC
+// 2026-05-16 09:48:50.015192600 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: client.dll
@@ -717,7 +717,7 @@ namespace CS2Dumper.Schemas {
         // Parent: CPlayer_ObserverServices
         // Field count: 1
         public static class CCSObserver_ObserverServices {
-            public const nint m_obsInterpState = 0x64; // ObserverInterpState_t
+            public const nint m_obsInterpState = 0x68; // ObserverInterpState_t
         }
         // Parent: CEntityComponent
         // Field count: 1
