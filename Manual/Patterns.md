@@ -1,6 +1,6 @@
 # Manual Signatures
 
-**Updated:** 08.05.2026 | **Time:** 17:26
+**Updated:** 21.05.2026 | **Time:** 20:25
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
@@ -16,5 +16,7 @@
 | **LevelInit** | `40 55 56 41 56 48 8D 6C 24 B9 48 81 EC ? ? ? ? 48 8B 0D 30 8B 81 01 4C 8B F2 45 33 C9 48 8D 15 B3 C1 E3 ?` | `client.dll` |
 | **Load KeyValues** | `?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBDI@Z` | `tier0.dll` |
 | **Skybox::DrawArray** | `45 85 C9 0F 8E ? ? ? ? 4C 8B DC 55 41 56` | `scenesystem.dll` |
+| **Particles::GetParticleSystem** | `48 8B 05 49 AF 23 00 C3 ? ? ? ? ? CC CC CC 48 83 EC 28 8B 0D` | `particles.dll` |
+| **Particles::DrawArray** | `40 55 53 56 57 48 8D 6C 24 F8 48 81 EC ? ? ? ?` | `particles.dll` |
 
 ---
