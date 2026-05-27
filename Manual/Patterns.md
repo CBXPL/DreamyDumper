@@ -1,6 +1,6 @@
 # Manual Signatures
 
-**Updated:** 24.05.2026 | **Time:** 19:35
+**Updated:** 27.05.2026 | **Time:** 19:14
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
@@ -18,5 +18,6 @@
 | **Skybox::DrawArray** | `45 85 C9 0F 8E ? ? ? ? 4C 8B DC 55 41 56` | `scenesystem.dll` |
 | **Particles::GetParticleSystem** | `48 8B 05 49 AF 23 00 C3 ? ? ? ? ? CC CC CC 48 83 EC 28 8B 0D` | `particles.dll` |
 | **Particles::DrawArray** | `40 55 53 56 57 48 8D 6C 24 F8 48 81 EC ? ? ? ?` | `particles.dll` |
+| **DrawAggregateSceneObject** | `48 8B C4 48 89 50 ? 48 89 48 ? 55 53 56 57 41 54 41 55 41 56 41 57 48 8D A8 ? ? ? ? 48 81 EC ? ? ? ? 0F 29 70` | `scenesystem.dll` |
 
 ---
