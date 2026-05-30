@@ -1,6 +1,6 @@
 # Manual Signatures
 
-**Updated:** 28.05.2026 | **Time:** 16:06
+**Updated:** 30.05.2026 | **Time:** 14:21
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
@@ -20,5 +20,7 @@
 | **Particles::GetParticleSystem** | `48 8B 05 49 AF 23 00 C3 ? ? ? ? ? CC CC CC 48 83 EC 28 8B 0D` | `particles.dll` |
 | **Particles::DrawArray** | `40 55 53 56 57 48 8D 6C 24 F8 48 81 EC ? ? ? ?` | `particles.dll` |
 | **DrawAggregateSceneObject** | `48 8B C4 48 89 50 ? 48 89 48 ? 55 53 56 57 41 54 41 55 41 56 41 57 48 8D A8 ? ? ? ? 48 81 EC ? ? ? ? 0F 29 70` | `scenesystem.dll` |
+| **SteamOverlay::ResizeBuffers** | `40 53 55 56 57 41 54 41 56 51 57 48 83 EC 30 48 8B E2 48 8B E9` | `GameOverlayRenderer64.dll` |
+| **SteamOverlay::SwapChain (Creation)** | `40 53 55 56 57 48 83 EC 28 48 8B F9 49 8B F1 48 8D 0D 7A 8C 08 00 49 8B D8 48 8B EA E8 FF ? ? ? 48 8D 0D E8 D6 0C 00 E8 93 99 FD FF 48 8D 0D 2C D7 0C 00 E8 D7 D3 FD FF 48 8D 0D 80 D7 0C 00 E8 0B 80 FE FF 48 8B 05 2C E0 0C ? 4C 8B CE 4C 8B C3 48 8B D5 48 8B CF FF D0 8B D8 85 C0 78 18 48 85 F6 74 13 48 83 3E 00 74 0D 48 8B D5 48 8B CE E8 FA F8 FF FF 8B C3 48 83 C4 28 5F 5E 5D 5B C3` | `GameOverlayRenderer64.dll` |
 
 ---
