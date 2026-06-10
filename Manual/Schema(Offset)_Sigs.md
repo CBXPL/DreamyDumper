@@ -1,7 +1,7 @@
 # Manual Schema Signatures (Function to offset pointers)
 ## How to use:
 - Get the signature
-- Extract the offset from wildcards (usualy 4 wildcards in a row is the offset)
+- Extract the offset from wildcards (usually 4 wildcards in a row is the offset)
 
 **Updated:** 10.06.2026 | **Time:** 16:00
 
