@@ -7,5 +7,5 @@
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
-| **HealthFunc (m_iHealth)** | `48 8D ? 47 D5 57 01 48 89 41 ? C6 01 05 C7 41 10 ? ? ? ?` | `client.dll` |
+| **HealthFunc (m_iHealth, CBaseEntity)** | `48 8D ? 47 D5 57 01 48 89 41 ? C6 01 05 C7 41 10 ? ? ? ?` | `client.dll` |
 ---
