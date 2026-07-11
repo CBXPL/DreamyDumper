@@ -1,14 +1,13 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-07-10 20:11:01.847028200 UTC
+// Dumped using DreamyDumper 1.5
+// Dumped at: 2026-07-11
 
 #pragma once
 
 #include <cstddef>
 #include <cstdint>
 
-namespace cs2_dumper {
+namespace dreamydumper {
     namespace offsets {
-        // Module: client.dll
         namespace client_dll {
             constexpr std::ptrdiff_t dwCSGOInput = 0x23B95F0;
             constexpr std::ptrdiff_t dwEntityList = 0x254EE60;
@@ -28,7 +27,6 @@ namespace cs2_dumper {
             constexpr std::ptrdiff_t dwViewRender = 0x23A9398;
             constexpr std::ptrdiff_t dwWeaponC4 = 0x231C9D0;
         }
-        // Module: engine2.dll
         namespace engine2_dll {
             constexpr std::ptrdiff_t dwBuildNumber = 0x60F594;
             constexpr std::ptrdiff_t dwNetworkGameClient = 0x90D4B0;
@@ -42,15 +40,12 @@ namespace cs2_dumper {
             constexpr std::ptrdiff_t dwWindowHeight = 0x9118D4;
             constexpr std::ptrdiff_t dwWindowWidth = 0x9118D0;
         }
-        // Module: inputsystem.dll
         namespace inputsystem_dll {
             constexpr std::ptrdiff_t dwInputSystem = 0x45BA0;
         }
-        // Module: matchmaking.dll
         namespace matchmaking_dll {
             constexpr std::ptrdiff_t dwGameTypes = 0x1ADF80;
         }
-        // Module: soundsystem.dll
         namespace soundsystem_dll {
             constexpr std::ptrdiff_t dwSoundSystem = 0x54B5D0;
             constexpr std::ptrdiff_t dwSoundSystem_engineViewData = 0x7C;

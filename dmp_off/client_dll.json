@@ -7410,24 +7410,12 @@
         },
         "type": "uint32"
       },
-      "_V_Z__": {
+      "_V____": {
         "alignment": 0,
         "members": {},
         "type": "unknown"
       },
-      "__Q__": {
-        "alignment": 113,
-        "members": {
-          "": 0
-        },
-        "type": "unknown"
-      },
-      "___Z__": {
-        "alignment": 0,
-        "members": {},
-        "type": "unknown"
-      },
-      "_n_Z__": {
+      "______": {
         "alignment": 0,
         "members": {},
         "type": "unknown"

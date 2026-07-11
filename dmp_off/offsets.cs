@@ -1,8 +1,7 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-07-10 20:11:01.847028200 UTC
+// Dumped using DreamyDumper 1.5
+// Dumped at: 2026-07-11
 
 namespace CS2Dumper.Offsets {
-    // Module: client.dll
     public static class ClientDll {
         public const nint dwCSGOInput = 0x23B95F0;
         public const nint dwEntityList = 0x254EE60;
@@ -22,7 +21,6 @@ namespace CS2Dumper.Offsets {
         public const nint dwViewRender = 0x23A9398;
         public const nint dwWeaponC4 = 0x231C9D0;
     }
-    // Module: engine2.dll
     public static class Engine2Dll {
         public const nint dwBuildNumber = 0x60F594;
         public const nint dwNetworkGameClient = 0x90D4B0;
@@ -36,15 +34,12 @@ namespace CS2Dumper.Offsets {
         public const nint dwWindowHeight = 0x9118D4;
         public const nint dwWindowWidth = 0x9118D0;
     }
-    // Module: inputsystem.dll
     public static class InputsystemDll {
         public const nint dwInputSystem = 0x45BA0;
     }
-    // Module: matchmaking.dll
     public static class MatchmakingDll {
         public const nint dwGameTypes = 0x1ADF80;
     }
-    // Module: soundsystem.dll
     public static class SoundsystemDll {
         public const nint dwSoundSystem = 0x54B5D0;
         public const nint dwSoundSystem_engineViewData = 0x7C;

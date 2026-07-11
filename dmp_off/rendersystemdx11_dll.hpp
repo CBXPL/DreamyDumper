@@ -1,19 +1,14 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-07-09 09:23:23.601802900 UTC
+// Dumped using DreamyDumper 1.5
+// Dumped at: 2026-07-11
 
 #pragma once
 
 #include <cstddef>
 #include <cstdint>
 
-namespace cs2_dumper {
+namespace dreamydumper {
     namespace schemas {
-        // Module: rendersystemdx11.dll
-        // Class count: 8
-        // Enum count: 9
         namespace rendersystemdx11_dll {
-            // Alignment: 4
-            // Member count: 14
             enum class RenderPrimitiveType_t : uint32_t {
                 RENDER_PRIM_POINTS = 0x0,
                 RENDER_PRIM_LINES = 0x1,
@@ -30,8 +25,6 @@ namespace cs2_dumper {
                 RENDER_PRIM_MESH_SHADER = 0xC,
                 RENDER_PRIM_TYPE_COUNT = 0xD
             };
-            // Alignment: 4
-            // Member count: 14
             enum class RenderBufferFlags_t : uint32_t {
                 RENDER_BUFFER_USAGE_NONE = 0x0,
                 RENDER_BUFFER_USAGE_VERTEX_BUFFER = 0x1,
@@ -48,15 +41,11 @@ namespace cs2_dumper {
                 RENDER_BUFFER_IMMOVABLE_ALLOCATION = 0x2000,
                 RENDER_BUFFER_DYNAMIC_ZERO_COPY = 0x4000
             };
-            // Alignment: 1
-            // Member count: 3
             enum class RsCullMode_t : uint8_t {
                 RS_CULL_NONE = 0x0,
                 RS_CULL_BACK = 0x1,
                 RS_CULL_FRONT = 0x2
             };
-            // Alignment: 1
-            // Member count: 14
             enum class RsComparison_t : uint8_t {
                 RS_CMP_NEVER = 0x0,
                 RS_CMP_LESS = 0x1,
@@ -73,14 +62,10 @@ namespace cs2_dumper {
                 RS_CMP_FARTHER = 0xC,
                 RS_CMP_FARTHER_EQUAL = 0xE
             };
-            // Alignment: 1
-            // Member count: 2
             enum class RsFillMode_t : uint8_t {
                 RS_FILL_SOLID = 0x0,
                 RS_FILL_WIREFRAME = 0x1
             };
-            // Alignment: 1
-            // Member count: 8
             enum class RenderMultisampleType_t : uint8_t {
                 RENDER_MULTISAMPLE_INVALID = 0xFF,
                 RENDER_MULTISAMPLE_NONE = 0x0,
@@ -91,16 +76,12 @@ namespace cs2_dumper {
                 RENDER_MULTISAMPLE_16X = 0x5,
                 RENDER_MULTISAMPLE_TYPE_COUNT = 0x6
             };
-            // Alignment: 1
-            // Member count: 4
             enum class InputLayoutVariation_t : uint8_t {
                 INPUT_LAYOUT_VARIATION_DEFAULT = 0x0,
                 INPUT_LAYOUT_VARIATION_STREAM1_INSTANCEID = 0x1,
                 INPUT_LAYOUT_VARIATION_STREAM1_INSTANCEID_MORPH_VERT_ID = 0x2,
                 INPUT_LAYOUT_VARIATION_MAX = 0x3
             };
-            // Alignment: 4
-            // Member count: 6
             enum class UpscalerType_t : uint32_t {
                 UPSCALER_NONE = 0x0,
                 UPSCALER_AMD_FSR2 = 0x1,
@@ -109,28 +90,20 @@ namespace cs2_dumper {
                 UPSCALER_INTEL_XESS = 0x4,
                 UPSCALER_COUNT = 0x5
             };
-            // Alignment: 1
-            // Member count: 3
             enum class RenderSlotType_t : uint8_t {
                 RENDER_SLOT_INVALID = 0xFF,
                 RENDER_SLOT_PER_VERTEX = 0x0,
                 RENDER_SLOT_PER_INSTANCE = 0x1
             };
-            // Parent: None
-            // Field count: 4
             namespace RsDepthStencilStateDesc_t {
                 constexpr std::ptrdiff_t m_bDepthTestEnable = 0x0; // bitfield:1
                 constexpr std::ptrdiff_t m_bDepthWriteEnable = 0x0; // bitfield:1
                 constexpr std::ptrdiff_t m_depthFunc = 0x0; // bitfield:4
                 constexpr std::ptrdiff_t m_stencilState = 0x2; // RsStencilStateDesc_t
             }
-            // Parent: None
-            // Field count: 1
             namespace SheetSequenceIntegerId_t {
                 constexpr std::ptrdiff_t m_Value = 0x0; // uint32
             }
-            // Parent: None
-            // Field count: 11
             namespace RsBlendStateDesc_t {
                 constexpr std::ptrdiff_t m_srcBlendBits = 0x0; // uint32
                 constexpr std::ptrdiff_t m_destBlendBits = 0x4; // uint32
@@ -144,16 +117,12 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_blendEnableBits = 0x1C; // uint8
                 constexpr std::ptrdiff_t m_srgbWriteEnableBits = 0x1D; // uint8
             }
-            // Parent: None
-            // Field count: 4
             namespace VsInputSignatureElement_t {
                 constexpr std::ptrdiff_t m_pName = 0x0; // char[64]
                 constexpr std::ptrdiff_t m_pSemantic = 0x40; // char[64]
                 constexpr std::ptrdiff_t m_pD3DSemanticName = 0x80; // char[64]
                 constexpr std::ptrdiff_t m_nD3DSemanticIndex = 0xC0; // int32
             }
-            // Parent: None
-            // Field count: 7
             namespace RsRasterizerStateDesc_t {
                 constexpr std::ptrdiff_t m_nFillMode = 0x0; // RsFillMode_t
                 constexpr std::ptrdiff_t m_nCullMode = 0x1; // RsCullMode_t
@@ -163,8 +132,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flDepthBiasClamp = 0x8; // float32
                 constexpr std::ptrdiff_t m_flSlopeScaledDepthBias = 0xC; // float32
             }
-            // Parent: None
-            // Field count: 11
             namespace RsStencilStateDesc_t {
                 constexpr std::ptrdiff_t m_frontStencilFunc = 0x0; // bitfield:4
                 constexpr std::ptrdiff_t m_backStencilFunc = 0x0; // bitfield:4
@@ -178,14 +145,10 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nStencilReadMask = 0x4; // uint8
                 constexpr std::ptrdiff_t m_nStencilWriteMask = 0x5; // uint8
             }
-            // Parent: None
-            // Field count: 2
             namespace VsInputSignature_t {
                 constexpr std::ptrdiff_t m_elems = 0x0; // CUtlVector<VsInputSignatureElement_t>
                 constexpr std::ptrdiff_t m_depth_elems = 0x18; // CUtlVector<VsInputSignatureElement_t>
             }
-            // Parent: None
-            // Field count: 6
             namespace RenderInputLayoutField_t {
                 constexpr std::ptrdiff_t m_pSemanticName = 0x0; // char[32]
                 constexpr std::ptrdiff_t m_nSemanticIndex = 0x20; // int8

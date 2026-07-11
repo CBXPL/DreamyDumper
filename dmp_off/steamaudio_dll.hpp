@@ -1,19 +1,14 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-07-09 09:23:23.601802900 UTC
+// Dumped using DreamyDumper 1.5
+// Dumped at: 2026-07-11
 
 #pragma once
 
 #include <cstddef>
 #include <cstdint>
 
-namespace cs2_dumper {
+namespace dreamydumper {
     namespace schemas {
-        // Module: steamaudio.dll
-        // Class count: 17
-        // Enum count: 0
         namespace steamaudio_dll {
-            // Parent: None
-            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -22,8 +17,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nCubeMapResolution = 0x4; // int32
                 constexpr std::ptrdiff_t m_flDepthThreshold = 0x8; // float32
             }
-            // Parent: None
-            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -34,8 +27,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flSizeThreshold = 0xC; // float32
                 constexpr std::ptrdiff_t m_flInsideThreshold = 0x10; // float32
             }
-            // Parent: None
-            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -45,16 +36,12 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flProbeVisThreshold = 0x8; // float32
                 constexpr std::ptrdiff_t m_flProbePathRange = 0xC; // float32
             }
-            // Parent: None
-            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CSteamAudioAmbisonicsField {
                 constexpr std::ptrdiff_t m_field = 0x0; // CUtlVector<float32>
             }
-            // Parent: None
-            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -63,8 +50,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_probes = 0x8; // CSteamAudioProbeData
                 constexpr std::ptrdiff_t m_movables = 0x10; // CSteamAudioMovableBakedData<CSteamAudioBakedPathingData>
             }
-            // Parent: None
-            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -75,16 +60,12 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nAmbisonicsOrder = 0xC; // int32
                 constexpr std::ptrdiff_t m_bExportScene = 0x10; // bool
             }
-            // Parent: None
-            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CSteamAudioProbeData {
                 constexpr std::ptrdiff_t m_pProbeBatch = 0x0; // IPLProbeBatch
             }
-            // Parent: None
-            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -92,8 +73,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_bEnableCompression = 0x0; // bool
                 constexpr std::ptrdiff_t m_flQuality = 0x4; // float32
             }
-            // Parent: None
-            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -102,8 +81,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_vecMaterialTokens = 0x8; // CUtlVector<uint32>
                 constexpr std::ptrdiff_t m_vecMaterialWeights = 0x20; // CUtlVector<float32>
             }
-            // Parent: None
-            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -114,8 +91,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_vecPathingDeviation = 0x30; // CUtlVector<float32>
                 constexpr std::ptrdiff_t m_vecReflectionEnergy = 0x48; // CUtlVector<float32>
             }
-            // Parent: None
-            // Field count: 12
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -133,8 +108,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_compressedClusteredData = 0x120; // CSteamAudioCompressedReverb
                 constexpr std::ptrdiff_t m_movables = 0x180; // CSteamAudioMovableBakedData<CSteamAudioBakedReverbData>
             }
-            // Parent: None
-            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -144,8 +117,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_vecIntervals = 0x18; // CUtlVector<float32>
                 constexpr std::ptrdiff_t m_vecProbeIndices = 0x30; // CUtlVector<int32>
             }
-            // Parent: None
-            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -155,8 +126,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nReflectionRays = 0x4; // int32
                 constexpr std::ptrdiff_t m_nReflectionBounces = 0x8; // int32
             }
-            // Parent: None
-            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -169,8 +138,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_vecInsideSmallSizeField = 0x68; // CUtlVector<CSteamAudioAmbisonicsField>
                 constexpr std::ptrdiff_t m_movables = 0x80; // CSteamAudioMovableBakedData<CSteamAudioBakedDimensionsData>
             }
-            // Parent: None
-            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -178,8 +145,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_pScene = 0x0; // IPLScene
                 constexpr std::ptrdiff_t m_pStaticMesh = 0x8; // IPLStaticMesh
             }
-            // Parent: None
-            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -192,8 +157,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_vecLineSegments = 0x28; // CUtlVector<CSteamAudioProbeLineSegment>
                 constexpr std::ptrdiff_t m_vecProbes = 0x40; // CUtlVector<Vector>
             }
-            // Parent: None
-            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults

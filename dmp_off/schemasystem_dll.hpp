@@ -1,19 +1,14 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-07-09 09:23:23.601802900 UTC
+// Dumped using DreamyDumper 1.5
+// Dumped at: 2026-07-11
 
 #pragma once
 
 #include <cstddef>
 #include <cstdint>
 
-namespace cs2_dumper {
+namespace dreamydumper {
     namespace schemas {
-        // Module: schemasystem.dll
-        // Class count: 7
-        // Enum count: 2
         namespace schemasystem_dll {
-            // Alignment: 1
-            // Member count: 84
             enum class fieldtype_t : uint8_t {
                 FIELD_VOID = 0x0,
                 FIELD_FLOAT32 = 0x1,
@@ -100,22 +95,16 @@ namespace cs2_dumper {
                 FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_VECTORWS = 0x52,
                 FIELD_TYPECOUNT = 0x53
             };
-            // Alignment: 4
-            // Member count: 3
             enum class ThreeState_t : uint32_t {
                 TRS_FALSE = 0x0,
                 TRS_TRUE = 0x1,
                 TRS_NONE = 0x2
             };
-            // Parent: None
-            // Field count: 0
             //
             // Metadata:
             // MResourceTypeForInfoType
             namespace InfoForResourceTypeCResourceManifestInternal {
             }
-            // Parent: None
-            // Field count: 23
             namespace CSchemaSystemInternalRegistration {
                 constexpr std::ptrdiff_t m_Vector2D = 0x0; // Vector2D
                 constexpr std::ptrdiff_t m_Vector = 0x8; // Vector
@@ -141,37 +130,27 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_ResourceTypes = 0x160; // CResourceArray<CResourcePointer<CResourceString>>
                 constexpr std::ptrdiff_t m_KV3 = 0x168; // KeyValues3
             }
-            // Parent: None
-            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CExampleSchemaVData_PolymorphicDerivedA {
                 constexpr std::ptrdiff_t m_nDerivedA = 0x10; // int32
             }
-            // Parent: None
-            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CExampleSchemaVData_PolymorphicBase {
                 constexpr std::ptrdiff_t m_nBase = 0x8; // int32
             }
-            // Parent: None
-            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CExampleSchemaVData_PolymorphicDerivedB {
                 constexpr std::ptrdiff_t m_nDerivedB = 0x10; // int32
             }
-            // Parent: None
-            // Field count: 1
             namespace ResourceId_t {
                 constexpr std::ptrdiff_t m_Value = 0x0; // uint64
             }
-            // Parent: None
-            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
