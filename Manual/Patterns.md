@@ -1,12 +1,12 @@
 # Manual Signatures
 
-**Updated:** 11.07.2026 | **Time:** 18:31
+**Updated:** 11.07.2026 | **Time:** 18:35
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
 | **GlobalVars** | `48 89 15 ? ? ? ? 48 89 42` | `client.dll` |
 | **FrameStageNotify** | `48 89 5C 24 ? 48 89 6C 24 ? 57 48 83 EC ? 48 8B F9 33 ED` | `client.dll` |
-| **GetHitboxSet** | `48 89 5C 24 ? 48 89 74 24 ? 57 48 81 EC ? ? ? ? 8B DA 48 8B F9 E8 ? ? ? ? 48 8B F0 (DIDNT CHECK)` | `client.dll` |
+| **GetHitboxSet** | `48 89 5C 24 ? 48 89 74 24 ? 57 48 81 EC ? ? ? ? 8B DA 48 8B F9 E8 ? ? ? ? 48 8B F0` | `client.dll` |
 | **TraceShape** | `48 89 54 24 ? 48 89 4C 24 ? 55 53 56 57 41 56 41 57 48 8D AC 24 ? ? ? ? B8` | `client.dll` |
 | **OverrideView** | `40 57 48 83 EC ? 48 8B FA E8 ? ? ? ? BA` | `client.dll` |
 | **Draw Team Intro** | `48 83 EC ? ? ? ? ? 44 38 89 ? ? ? ?` | `client.dll` |
@@ -14,7 +14,7 @@
 | **CCsgoInput::CreateMove** | `85 D2 0F 85 85 10 00 00 48 8B C4 44 88 40 18` | `client.dll` |
 | **DrawViewModel** | `40 55 53 56 41 56 41 57 48 8B EC 48 83 EC ? 4D 8B F8 4C 8B F2 48 8B` | `client.dll` |
 | **LevelInit** | `48 89 74 24 ? 57 48 83 EC ? 48 8B 0D ? ? ? ? 48 8B FA` | `client.dll` |
-| **EventSystem::GetEventName** | `8B 41 14 0F BA E0 1E 73 05 48 8D 41 18 C3 (DIDNT CHECK)` | `client.dll` |
+| **EventSystem::GetEventName** | `8B 41 14 0F BA E0 1E 73 05 48 8D 41 18 C3` | `client.dll` |
 | **CreateEntityByClassName** | `48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 41 56 48 83 EC ? 49 8B F8 44 8B F2` | `client.dll` |
 | **Load KeyValues** | `?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBDI@Z` | `tier0.dll` |
 | **Skybox::DrawArray** | `45 85 C9 0F 8E ? ? ? ? 4C 8B DC 55 41 56` | `scenesystem.dll` |
