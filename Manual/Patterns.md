@@ -1,6 +1,6 @@
 # Manual Signatures
 
-**Updated:** 11.07.2026 | **Time:** 18:35
+**Updated:** 11.07.2026 | **Time:** 19:22
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
@@ -23,5 +23,6 @@
 | **DrawAggregateSceneObject** | `48 8B C4 48 89 50 ? 48 89 48 ? 55 53 56 57 41 54 41 55 41 56 41 57 48 8D A8 ? ? ? ? 48 81 EC ? ? ? ? 0F 29 70` | `scenesystem.dll` |
 | **SteamOverlay::ResizeBuffers** | `40 53 55 56 57 41 54 41 56 41 57 48 83 EC ? 44 8B E2` | `GameOverlayRenderer64.dll` |
 | **SteamOverlay::SwapChain (Creation)** | `40 53 55 56 57 48 83 EC ? 48 8B F9 49 8B F1 48 8D ? ? ? ? ? 49 8B D8 48 8B EA E8 ? ? ? ? 48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8B ? ? ? ? ? 4C 8B CE 4C 8B C3 48 8B D5 48 8B CF FF D0 8B D8 85 C0 78 18 48 85 F6 74 13 48 83 3E ? 74 0D 48 8B D5 48 8B CE E8 FA F8 FF FF 8B C3` | `GameOverlayRenderer64.dll` |
+| **SteamOverlay::Present** | `48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 54 41 56 41 57 48 83 EC ? 41 8B E8 8B F2` | `GameOverlayRenderer64.dll` |
 
 ---
