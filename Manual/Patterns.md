@@ -1,6 +1,6 @@
 # Manual Signatures
 
-**Updated:** 15.07.2026 | **Time:** 12:15
+**Updated:** 15.07.2026 | **Time:** 12:39
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
@@ -12,7 +12,7 @@
 | **Draw Team Intro** | `48 83 EC ? ? ? ? ? 44 38 89 ? ? ? ?` | `client.dll` |
 | **SetViewAngles** | `85 D2 75 3D 48 63 81` | `client.dll` |
 | **CCSGOInput** | `48 8B 0D ? ? ? ? 4C 8B C6 8B 10 E8` | `client.dll` |
-| **CCSGOInput::CreateMove** | `85 D2 0F 85 85 10 00 00 48 8B C4 44 88 40 18` | `client.dll` |
+| **CCSGOInput::CreateMove** | `85 D2 0F 85 ? ? ? ? 48 8B C4 44 88 40 18` | `client.dll` |
 | **DrawViewModel** | `40 55 53 56 41 56 41 57 48 8B EC 48 83 EC ? 4D 8B F8 4C 8B F2 48 8B` | `client.dll` |
 | **LevelInit** | `48 89 74 24 ? 57 48 83 EC ? 48 8B 0D ? ? ? ? 48 8B FA` | `client.dll` |
 | **EventSystem::GetEventName** | `8B 41 14 0F BA E0 1E 73 05 48 8D 41 18 C3` | `client.dll` |
