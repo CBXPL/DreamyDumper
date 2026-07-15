@@ -1,6 +1,6 @@
 # Manual Signatures
 
-**Updated:** 15.07.2026 | **Time:** 11:32
+**Updated:** 15.07.2026 | **Time:** 12:15
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
@@ -17,6 +17,7 @@
 | **LevelInit** | `48 89 74 24 ? 57 48 83 EC ? 48 8B 0D ? ? ? ? 48 8B FA` | `client.dll` |
 | **EventSystem::GetEventName** | `8B 41 14 0F BA E0 1E 73 05 48 8D 41 18 C3` | `client.dll` |
 | **CreateEntityByClassName** | `48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 41 56 48 83 EC ? 49 8B F8 44 8B F2` | `client.dll` |
+| **CreateSubtick** | `48 89 5C 24 ? 57 48 83 EC ? 33 DB 48 8B F9 48 85 C9 75 ? B9 ? ? ? ? E8 ? ? ? ? 48 85 C0 74 ? 45 33 C0 33 D2 48 8B C8 E8 ? ? ? ? 48 8B D8 48 8B C3 48 8B 5C 24 ? 48 83 C4 ? 5F C3 4C 8D 05 ? ? ? ? BA ? ? ? ? E8 ? ? ? ? 45 33 C0 48 8B D7 48 8B C8 E8 ? ? ? ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 ? ? ? ? ? 48 89 5C 24 ? 57 48 83 EC ? 33 FF 48 8B D9 48 85 C9 75 ? B9 ? ? ? ? E8 ? ? ? ? 48 85 C0 74 ? 48 89 78 ? EB ? 48 8B C7 48 8B 5C 24 ? 48 83 C4 ? 5F C3 4C 8D 05 ? ? ? ? BA ? ? ? ? E8 ? ? ? ? 48 89 58 ? 48 8B 5C 24 ? 48 8D 0D ? ? ? ? ? ? ? 33 C9 48 89 48 ? 48 89 78 ? 48 83 C4 ? 5F C3 ? ? ? ? ? 48 89 5C 24 ? 56` | `client.dll` |
 | **Load KeyValues** | `?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBDI@Z` | `tier0.dll` |
 | **Skybox::DrawArray** | `45 85 C9 0F 8E ? ? ? ? 4C 8B DC 55 41 56` | `scenesystem.dll` |
 | **Particles::GetParticleSystem** | `48 8B 05 49 AF 23 00 C3 ? ? ? ? ? CC CC CC 48 83 EC 28 8B 0D (DIDNT CHECK)` | `particles.dll` |
