@@ -1,6 +1,6 @@
 # Manual Signatures
 
-**Updated:** 16.07.2026 | **Time:** 13:16
+**Updated:** 16.07.2026 | **Time:** 13:24
 
 | Name | Pattern | Module |
 | :--- | :--- | :--- |
@@ -21,6 +21,7 @@
 | **Load KeyValues** | `?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBDI@Z` | `tier0.dll` |
 | **Skybox::DrawArray** | `45 85 C9 0F 8E ? ? ? ? 4C 8B DC 55 41 56` | `scenesystem.dll` |
 | **CAnimatableSceneObject::DrawArray** | `48 8B C4 53 57 41 54 48 81 EC ? ? ? ? 49 63 F9 49 8B D8` | `scenesystem.dll` |
+| **GeneratePrimitives (Entities)** | `48 8B C4 48 89 58 ? 48 89 50 ? 55 56 57 41 54 41 55 41 56 41 57 48 8D A8 ? ? ? ? 48 81 EC ? ? ? ? 0F 29 70 ? 45 33 F6` | `scenesystem.dll` |
 | **DrawAggregateSceneObject** | `48 8B C4 48 89 50 ? 48 89 48 ? 55 53 56 57 41 54 41 55 41 56 41 57 48 8D A8 ? ? ? ? 48 81 EC ? ? ? ? 0F 29 70` | `scenesystem.dll` |
 | **Particles::GetParticleSystem** | `48 8B 05 49 AF 23 00 C3 ? ? ? ? ? CC CC CC 48 83 EC 28 8B 0D (DIDNT CHECK)` | `particles.dll` |
 | **Particles::DrawArray** | `40 55 53 56 57 48 8D 6C 24 F8 48 81 EC ? ? ? ? (DIDNT CHECK)`  | `particles.dll` |
