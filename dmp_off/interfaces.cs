@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-07-11
+// Dumped at: 2026-07-21
 
 namespace CS2Dumper.Interfaces {
     public static class AnimationsystemDll {
@@ -7,15 +7,15 @@ namespace CS2Dumper.Interfaces {
         public const nint AnimationSystem_001 = 0x82FDF0;
     }
     public static class ClientDll {
-        public const nint ClientBugBugServic001_Client = 0x2093790;
-        public const nint ClientToolsInfo_001 = 0x2093760;
-        public const nint EmptyWorldService001_Client = 0x206F480;
-        public const nint GameClientExports001 = 0x2090400;
-        public const nint LegacyGameUI001 = 0x20A3D00;
-        public const nint Source2Client002 = 0x239E6D0;
-        public const nint Source2ClientConfig001 = 0x230BA00;
-        public const nint Source2ClientPrediction001 = 0x23A4140;
-        public const nint Source2ClientUI001 = 0x20A2210;
+        public const nint ClientBugBugServic001_Client = 0x2094790;
+        public const nint ClientToolsInfo_001 = 0x2094760;
+        public const nint EmptyWorldService001_Client = 0x2070480;
+        public const nint GameClientExports001 = 0x2091400;
+        public const nint LegacyGameUI001 = 0x20A4CD0;
+        public const nint Source2Client002 = 0x239F6D0;
+        public const nint Source2ClientConfig001 = 0x230CA00;
+        public const nint Source2ClientPrediction001 = 0x23A5140;
+        public const nint Source2ClientUI001 = 0x20A31F0;
     }
     public static class Engine2Dll {
         public const nint BenchmarkService001 = 0x615320;
