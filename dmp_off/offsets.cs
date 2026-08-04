@@ -1,16 +1,16 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-07-29
+// Dumped at: 2026-08-04
 
 namespace CS2Dumper.Offsets {
     public static class ClientDll {
         public const nint dwCSGOInput = 0x23BA790;
-        public const nint dwEntityList = 0x254FE70;
-        public const nint dwGameEntitySystem = 0x254FE70;
+        public const nint dwEntityList = 0x254FE80;
+        public const nint dwGameEntitySystem = 0x254FE80;
         public const nint dwGameEntitySystem_highestEntityIndex = 0x2090;
         public const nint dwGameRules = 0x23A49D8;
         public const nint dwGlobalVars = 0x2090D60;
         public const nint dwGlowManager = 0x23A1708;
-        public const nint dwLocalPlayerController = 0x237FB70;
+        public const nint dwLocalPlayerController = 0x237FB80;
         public const nint dwLocalPlayerPawn = 0x23A5238;
         public const nint dwPlantedC4 = 0x236F658;
         public const nint dwPrediction = 0x23A5140;
@@ -19,7 +19,7 @@ namespace CS2Dumper.Offsets {
         public const nint dwViewAngles = 0x23BAE18;
         public const nint dwViewMatrix = 0x23AA340;
         public const nint dwViewRender = 0x23AA398;
-        public const nint dwWeaponC4 = 0x231DB10;
+        public const nint dwWeaponC4 = 0x231DB50;
     }
     public static class Engine2Dll {
         public const nint dwBuildNumber = 0x60F594;

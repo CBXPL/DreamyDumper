@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-07-29
+// Dumped at: 2026-08-04
 
 namespace CS2Dumper.Schemas {
     public static class WorldrendererDll {

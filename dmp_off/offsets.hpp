@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-07-29
+// Dumped at: 2026-08-04
 
 #pragma once
 
@@ -10,13 +10,13 @@ namespace dreamydumper {
     namespace offsets {
         namespace client_dll {
             constexpr std::ptrdiff_t dwCSGOInput = 0x23BA790;
-            constexpr std::ptrdiff_t dwEntityList = 0x254FE70;
-            constexpr std::ptrdiff_t dwGameEntitySystem = 0x254FE70;
+            constexpr std::ptrdiff_t dwEntityList = 0x254FE80;
+            constexpr std::ptrdiff_t dwGameEntitySystem = 0x254FE80;
             constexpr std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = 0x2090;
             constexpr std::ptrdiff_t dwGameRules = 0x23A49D8;
             constexpr std::ptrdiff_t dwGlobalVars = 0x2090D60;
             constexpr std::ptrdiff_t dwGlowManager = 0x23A1708;
-            constexpr std::ptrdiff_t dwLocalPlayerController = 0x237FB70;
+            constexpr std::ptrdiff_t dwLocalPlayerController = 0x237FB80;
             constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x23A5238;
             constexpr std::ptrdiff_t dwPlantedC4 = 0x236F658;
             constexpr std::ptrdiff_t dwPrediction = 0x23A5140;
@@ -25,7 +25,7 @@ namespace dreamydumper {
             constexpr std::ptrdiff_t dwViewAngles = 0x23BAE18;
             constexpr std::ptrdiff_t dwViewMatrix = 0x23AA340;
             constexpr std::ptrdiff_t dwViewRender = 0x23AA398;
-            constexpr std::ptrdiff_t dwWeaponC4 = 0x231DB10;
+            constexpr std::ptrdiff_t dwWeaponC4 = 0x231DB50;
         }
         namespace engine2_dll {
             constexpr std::ptrdiff_t dwBuildNumber = 0x60F594;

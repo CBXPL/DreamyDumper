@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-07-29
+// Dumped at: 2026-08-04
 
 namespace CS2Dumper.Schemas {
     public static class ServerDll {
@@ -4816,13 +4816,14 @@ namespace CS2Dumper.Schemas {
             public const nint m_bGrenadeParametersStashed = 0x1324; // bool
             public const nint m_angStashedShootAngles = 0x1328; // QAngle
             public const nint m_vecStashedGrenadeThrowPosition = 0x1334; // VectorWS
-            public const nint m_vecStashedVelocity = 0x1340; // Vector
-            public const nint m_bCommittingSuicideOnTeamChange = 0x1358; // bool
-            public const nint m_wasNotKilledNaturally = 0x1359; // bool
-            public const nint m_fImmuneToGunGameDamageTime = 0x135C; // GameTime_t
-            public const nint m_bGunGameImmunity = 0x1360; // bool
-            public const nint m_fMolotovDamageTime = 0x1364; // float32
-            public const nint m_angEyeAngles = 0x1368; // QAngle
+            public const nint m_vecStashedGrenadeThrowPawnCenter = 0x1340; // VectorWS
+            public const nint m_vecStashedVelocity = 0x134C; // Vector
+            public const nint m_bCommittingSuicideOnTeamChange = 0x1360; // bool
+            public const nint m_wasNotKilledNaturally = 0x1361; // bool
+            public const nint m_fImmuneToGunGameDamageTime = 0x1364; // GameTime_t
+            public const nint m_bGunGameImmunity = 0x1368; // bool
+            public const nint m_fMolotovDamageTime = 0x136C; // float32
+            public const nint m_angEyeAngles = 0x1370; // QAngle
         }
         public static class CEnvLightProbeVolume {
             public const nint m_Entity_hLightProbeTexture_AmbientCube = 0x14A0; // CStrongHandle<InfoForResourceTypeCTextureBase>

@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-07-29
+// Dumped at: 2026-08-04
 
 #pragma once
 
@@ -4822,13 +4822,14 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bGrenadeParametersStashed = 0x1324; // bool
                 constexpr std::ptrdiff_t m_angStashedShootAngles = 0x1328; // QAngle
                 constexpr std::ptrdiff_t m_vecStashedGrenadeThrowPosition = 0x1334; // VectorWS
-                constexpr std::ptrdiff_t m_vecStashedVelocity = 0x1340; // Vector
-                constexpr std::ptrdiff_t m_bCommittingSuicideOnTeamChange = 0x1358; // bool
-                constexpr std::ptrdiff_t m_wasNotKilledNaturally = 0x1359; // bool
-                constexpr std::ptrdiff_t m_fImmuneToGunGameDamageTime = 0x135C; // GameTime_t
-                constexpr std::ptrdiff_t m_bGunGameImmunity = 0x1360; // bool
-                constexpr std::ptrdiff_t m_fMolotovDamageTime = 0x1364; // float32
-                constexpr std::ptrdiff_t m_angEyeAngles = 0x1368; // QAngle
+                constexpr std::ptrdiff_t m_vecStashedGrenadeThrowPawnCenter = 0x1340; // VectorWS
+                constexpr std::ptrdiff_t m_vecStashedVelocity = 0x134C; // Vector
+                constexpr std::ptrdiff_t m_bCommittingSuicideOnTeamChange = 0x1360; // bool
+                constexpr std::ptrdiff_t m_wasNotKilledNaturally = 0x1361; // bool
+                constexpr std::ptrdiff_t m_fImmuneToGunGameDamageTime = 0x1364; // GameTime_t
+                constexpr std::ptrdiff_t m_bGunGameImmunity = 0x1368; // bool
+                constexpr std::ptrdiff_t m_fMolotovDamageTime = 0x136C; // float32
+                constexpr std::ptrdiff_t m_angEyeAngles = 0x1370; // QAngle
             }
             namespace CEnvLightProbeVolume {
                 constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_AmbientCube = 0x14A0; // CStrongHandle<InfoForResourceTypeCTextureBase>
