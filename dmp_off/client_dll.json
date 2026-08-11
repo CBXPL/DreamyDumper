@@ -7410,21 +7410,6 @@
           "SYNC_WAIT_FOR_COMPLETION": 0
         },
         "type": "uint32"
-      },
-      "_6__3_": {
-        "alignment": 0,
-        "members": {},
-        "type": "unknown"
-      },
-      "_N__3_": {
-        "alignment": 0,
-        "members": {},
-        "type": "unknown"
-      },
-      "____3_": {
-        "alignment": 0,
-        "members": {},
-        "type": "unknown"
       }
     }
   }
