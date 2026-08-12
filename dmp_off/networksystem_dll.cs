@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-11
+// Dumped at: 2026-08-12
 
 namespace CS2Dumper.Schemas {
     public static class NetworksystemDll {
