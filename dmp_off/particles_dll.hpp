@@ -1,32 +1,45 @@
-// Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-13
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-08-20 05:57:42.790931500 UTC
 
 #pragma once
 
 #include <cstddef>
 #include <cstdint>
 
-namespace dreamydumper {
+namespace cs2_dumper {
     namespace schemas {
+        // Module: particles.dll
+        // Class count: 502
+        // Enum count: 77
         namespace particles_dll {
+            // Alignment: 4
+            // Member count: 2
             enum class PulseBestOutflowRules_t : uint32_t {
                 SORT_BY_NUMBER_OF_VALID_CRITERIA = 0x0,
                 SORT_BY_OUTFLOW_INDEX = 0x1
             };
+            // Alignment: 4
+            // Member count: 4
             enum class PulseCursorCancelPriority_t : uint32_t {
                 None = 0x0,
                 CancelOnSucceeded = 0x1,
                 SoftCancel = 0x2,
                 HardCancel = 0x3
             };
+            // Alignment: 4
+            // Member count: 2
             enum class PulseMethodCallMode_t : uint32_t {
                 SYNC_WAIT_FOR_COMPLETION = 0x0,
                 ASYNC_FIRE_AND_FORGET = 0x1
             };
+            // Alignment: 4
+            // Member count: 2
             enum class PulseCursorWakePriority_t : uint32_t {
                 WakeElegantly = 0x0,
                 WakeImmediate = 0x1
             };
+            // Alignment: 4
+            // Member count: 7
             enum class Detail2Combo_t : uint32_t {
                 DETAIL_2_COMBO_UNINITIALIZED = 0xFFFFFFFF,
                 DETAIL_2_COMBO_OFF = 0x0,
@@ -36,17 +49,23 @@ namespace dreamydumper {
                 DETAIL_2_COMBO_MUL = 0x4,
                 DETAIL_2_COMBO_CROSSFADE = 0x5
             };
+            // Alignment: 4
+            // Member count: 4
             enum class MissingParentInheritBehavior_t : uint32_t {
                 MISSING_PARENT_DO_NOTHING = 0xFFFFFFFF,
                 MISSING_PARENT_KILL = 0x0,
                 MISSING_PARENT_FIND_NEW = 0x1,
                 MISSING_PARENT_SAME_INDEX = 0x2
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleTraceMissBehavior_t : uint32_t {
                 PARTICLE_TRACE_MISS_BEHAVIOR_NONE = 0x0,
                 PARTICLE_TRACE_MISS_BEHAVIOR_KILL = 0x1,
                 PARTICLE_TRACE_MISS_BEHAVIOR_TRACE_END = 0x2
             };
+            // Alignment: 4
+            // Member count: 7
             enum class PFuncVisualizationType_t : uint32_t {
                 PFUNC_VISUALIZATION_SPHERE_WIREFRAME = 0x0,
                 PFUNC_VISUALIZATION_SPHERE_SOLID = 0x1,
@@ -56,37 +75,51 @@ namespace dreamydumper {
                 PFUNC_VISUALIZATION_LINE = 0x5,
                 PFUNC_VISUALIZATION_CYLINDER = 0x6
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ParticleVRHandChoiceList_t : uint32_t {
                 PARTICLE_VRHAND_LEFT = 0x0,
                 PARTICLE_VRHAND_RIGHT = 0x1,
                 PARTICLE_VRHAND_CP = 0x2,
                 PARTICLE_VRHAND_CP_OBJECT = 0x3
             };
+            // Alignment: 4
+            // Member count: 2
             enum class ParticleReplicationMode_t : uint32_t {
                 PARTICLE_REPLICATIONMODE_NONE = 0x0,
                 PARTICLE_REPLICATIONMODE_REPLICATE_FOR_EACH_PARENT_PARTICLE = 0x1
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ParticleEntityPos_t : uint32_t {
                 PARTICLE_ABS_ORIGIN = 0x0,
                 PARTICLE_WORLDSPACE_CENTER = 0x1,
                 PARTICLE_EYES = 0x2,
                 PARTICLE_FLASHLIGHT = 0x3
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleFanType_t : uint32_t {
                 PARTICLE_FAN_TYPE_FAN = 0x0,
                 PARTICLE_FAN_TYPE_ROTOR_WASH = 0x1,
                 PARTICLE_FAN_TYPE_RADIAL = 0x2
             };
+            // Alignment: 4
+            // Member count: 3
             enum class PetGroundType_t : uint32_t {
                 PET_GROUND_NONE = 0x0,
                 PET_GROUND_GRID = 0x1,
                 PET_GROUND_PLANE = 0x2
             };
+            // Alignment: 4
+            // Member count: 3
             enum class InheritableBoolType_t : uint32_t {
                 INHERITABLE_BOOL_INHERIT = 0x0,
                 INHERITABLE_BOOL_FALSE = 0x1,
                 INHERITABLE_BOOL_TRUE = 0x2
             };
+            // Alignment: 4
+            // Member count: 6
             enum class ParticlePostProcessPriorityGroup_t : uint32_t {
                 PARTICLE_POST_PROCESS_PRIORITY_LEVEL_VOLUME = 0x0,
                 PARTICLE_POST_PROCESS_PRIORITY_LEVEL_OVERRIDE = 0x1,
@@ -95,6 +128,8 @@ namespace dreamydumper {
                 PARTICLE_POST_PROCESS_PRIORITY_GAMEPLAY_STATE_HIGH = 0x4,
                 PARTICLE_POST_PROCESS_PRIORITY_GLOBAL_UI = 0x5
             };
+            // Alignment: 4
+            // Member count: 7
             enum class ParticleCollisionGroup_t : uint32_t {
                 PARTICLE_COLLISION_GROUP_DEFAULT = 0x4,
                 PARTICLE_COLLISION_GROUP_DEBRIS = 0x5,
@@ -104,12 +139,16 @@ namespace dreamydumper {
                 PARTICLE_COLLISION_GROUP_NPC = 0xC,
                 PARTICLE_COLLISION_GROUP_PROPS = 0x18
             };
+            // Alignment: 4
+            // Member count: 4
             enum class DetailCombo_t : uint32_t {
                 DETAIL_COMBO_OFF = 0x0,
                 DETAIL_COMBO_ADD = 0x1,
                 DETAIL_COMBO_ADD_SELF_ILLUM = 0x2,
                 DETAIL_COMBO_MOD2X = 0x3
             };
+            // Alignment: 4
+            // Member count: 12
             enum class ScalarExpressionType_t : uint32_t {
                 SCALAR_EXPRESSION_UNINITIALIZED = 0xFFFFFFFF,
                 SCALAR_EXPRESSION_ADD = 0x0,
@@ -124,6 +163,8 @@ namespace dreamydumper {
                 SCALAR_EXPRESSION_GT = 0x9,
                 SCALAR_EXPRESSION_LT = 0xA
             };
+            // Alignment: 4
+            // Member count: 14
             enum class SpriteCardPerParticleScale_t : uint32_t {
                 SPRITECARD_TEXTURE_PP_SCALE_NONE = 0x0,
                 SPRITECARD_TEXTURE_PP_SCALE_PARTICLE_AGE = 0x1,
@@ -140,19 +181,27 @@ namespace dreamydumper {
                 SPRITECARD_TEXTURE_PP_SCALE_RANDOM_TIME = 0xC,
                 SPRITECARD_TEXTURE_PP_SCALE_NEG_RANDOM_TIME = 0xD
             };
+            // Alignment: 4
+            // Member count: 2
             enum class BlurFilterType_t : uint32_t {
                 BLURFILTER_GAUSSIAN = 0x0,
                 BLURFILTER_BOX = 0x1
             };
+            // Alignment: 4
+            // Member count: 2
             enum class StandardLightingAttenuationStyle_t : uint32_t {
                 LIGHT_STYLE_OLD = 0x0,
                 LIGHT_STYLE_NEW = 0x1
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleParentSetMode_t : uint32_t {
                 PARTICLE_SET_PARENT_NO = 0x0,
                 PARTICLE_SET_PARENT_IMMEDIATE = 0x1,
                 PARTICLE_SET_PARENT_ROOT = 0x2
             };
+            // Alignment: 4
+            // Member count: 6
             enum class ParticleLightingQuality_t : uint32_t {
                 PARTICLE_LIGHTING_PER_PARTICLE = 0x0,
                 PARTICLE_LIGHTING_PER_VERTEX = 0x1,
@@ -161,10 +210,14 @@ namespace dreamydumper {
                 PARTICLE_LIGHTING_OVERRIDE_COLOR = 0x3,
                 PARTICLE_LIGHTING_ADD_EXTRA_LIGHT = 0x4
             };
+            // Alignment: 4
+            // Member count: 2
             enum class ParticleVolumetricSmokeCreationType_t : uint32_t {
                 PARTICLE_VOLUMETRIC_SMOKE_TYPE_CONTINUOUS = 0x0,
                 PARTICLE_VOLUMETRIC_SMOKE_TYPE_IMPULSE = 0x1
             };
+            // Alignment: 4
+            // Member count: 8
             enum class SetStatisticExpressionType_t : uint32_t {
                 SET_EXPRESSION_UNINITIALIZED = 0xFFFFFFFF,
                 SET_EXPRESSION_SUM = 0x0,
@@ -175,6 +228,8 @@ namespace dreamydumper {
                 SET_EXPRESSION_MIN = 0x5,
                 SET_EXPRESSION_MAX = 0x6
             };
+            // Alignment: 4
+            // Member count: 12
             enum class EventTypeSelection_t : uint32_t {
                 PARTICLE_EVENT_TYPE_MASK_NONE = 0x0,
                 PARTICLE_EVENT_TYPE_MASK_SPAWNED = 0x1,
@@ -189,14 +244,20 @@ namespace dreamydumper {
                 PARTICLE_EVENT_TYPE_MASK_USER_3 = 0x100,
                 PARTICLE_EVENT_TYPE_MASK_USER_4 = 0x200
             };
+            // Alignment: 4
+            // Member count: 2
             enum class ParticleMassMode_t : uint32_t {
                 PARTICLE_MASSMODE_RADIUS_CUBED = 0x0,
                 PARTICLE_MASSMODE_RADIUS_SQUARED = 0x2
             };
+            // Alignment: 4
+            // Member count: 2
             enum class ParticleHitboxBiasType_t : uint32_t {
                 PARTICLE_HITBOX_BIAS_ENTITY = 0x0,
                 PARTICLE_HITBOX_BIAS_HITBOX = 0x1
             };
+            // Alignment: 4
+            // Member count: 6
             enum class ParticleControlPointAxis_t : uint32_t {
                 PARTICLE_CP_AXIS_X = 0x0,
                 PARTICLE_CP_AXIS_Y = 0x1,
@@ -205,6 +266,8 @@ namespace dreamydumper {
                 PARTICLE_CP_AXIS_NEGATIVE_Y = 0x4,
                 PARTICLE_CP_AXIS_NEGATIVE_Z = 0x5
             };
+            // Alignment: 4
+            // Member count: 12
             enum class ParticlePinDistance_t : uint32_t {
                 PARTICLE_PIN_DISTANCE_NONE = 0xFFFFFFFF,
                 PARTICLE_PIN_DISTANCE_NEIGHBOR = 0x0,
@@ -219,6 +282,8 @@ namespace dreamydumper {
                 PARTICLE_PIN_COLLECTION_AGE = 0xA,
                 PARTICLE_PIN_FLOAT_VALUE = 0xB
             };
+            // Alignment: 4
+            // Member count: 7
             enum class VectorFloatExpressionType_t : uint32_t {
                 VECTOR_FLOAT_EXPRESSION_UNINITIALIZED = 0xFFFFFFFF,
                 VECTOR_FLOAT_EXPRESSION_DOTPRODUCT = 0x0,
@@ -228,11 +293,15 @@ namespace dreamydumper {
                 VECTOR_FLOAT_EXPRESSION_INPUT1_LENGTHSQR = 0x4,
                 VECTOR_FLOAT_EXPRESSION_INPUT1_NOISE = 0x5
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleFogType_t : uint32_t {
                 PARTICLE_FOG_GAME_DEFAULT = 0x0,
                 PARTICLE_FOG_ENABLED = 0x1,
                 PARTICLE_FOG_DISABLED = 0x2
             };
+            // Alignment: 4
+            // Member count: 10
             enum class VectorExpressionType_t : uint32_t {
                 VECTOR_EXPRESSION_UNINITIALIZED = 0xFFFFFFFF,
                 VECTOR_EXPRESSION_ADD = 0x0,
@@ -245,19 +314,27 @@ namespace dreamydumper {
                 VECTOR_EXPRESSION_CROSSPRODUCT = 0x7,
                 VECTOR_EXPRESSION_LERP = 0x8
             };
+            // Alignment: 4
+            // Member count: 2
             enum class ParticleMultiSegmentInputSelection_t : uint32_t {
                 PARTICLE_MULTISEGMENT_SELECTION_FLOAT = 0x0,
                 PARTICLE_MULTISEGMENT_SELECTION_STRING = 0x1
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleRotationLockType_t : uint32_t {
                 PARTICLE_ROTATION_LOCK_NONE = 0x0,
                 PARTICLE_ROTATION_LOCK_ROTATIONS = 0x1,
                 PARTICLE_ROTATION_LOCK_NORMAL = 0x2
             };
+            // Alignment: 4
+            // Member count: 2
             enum class HitboxLerpType_t : uint32_t {
                 HITBOX_LERP_LIFETIME = 0x0,
                 HITBOX_LERP_CONSTANT = 0x1
             };
+            // Alignment: 4
+            // Member count: 11
             enum class ParticleAttrBoxFlags_t : uint32_t {
                 PARTICLE_ATTR_BOX_FLAGS_NONE = 0x0,
                 PARTICLE_ATTR_BOX_FLAGS_WATER = 0x1,
@@ -271,6 +348,8 @@ namespace dreamydumper {
                 PARTICLE_ATTR_BOX_FLAGS_MOTION_DISABLED = 0x100,
                 PARTICLE_ATTR_BOX_FLAGS_ZERO_GRAVITY = 0x200
             };
+            // Alignment: 4
+            // Member count: 5
             enum class ParticleTopology_t : uint32_t {
                 PARTICLE_TOPOLOGY_POINTS = 0x0,
                 PARTICLE_TOPOLOGY_LINES = 0x1,
@@ -278,34 +357,46 @@ namespace dreamydumper {
                 PARTICLE_TOPOLOGY_QUADS = 0x3,
                 PARTICLE_TOPOLOGY_CUBES = 0x4
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleLightBehaviorChoiceList_t : uint32_t {
                 PARTICLE_LIGHT_BEHAVIOR_FOLLOW_DIRECTION = 0x0,
                 PARTICLE_LIGHT_BEHAVIOR_ROPE = 0x1,
                 PARTICLE_LIGHT_BEHAVIOR_TRAILS = 0x2
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ModelHitboxType_t : uint32_t {
                 MODEL_HITBOX_TYPE_STANDARD = 0x0,
                 MODEL_HITBOX_TYPE_RAW_BONES = 0x1,
                 MODEL_HITBOX_TYPE_RENDERBOUNDS = 0x2,
                 MODEL_HITBOX_TYPE_SNAPSHOT = 0x3
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleMultiSegmentCountSelection_t : uint32_t {
                 PARTICLE_MULTISEGMENT_SEG_COUNT_7 = 0x7,
                 PARTICLE_MULTISEGMENT_SEG_COUNT_14 = 0xE,
                 PARTICLE_MULTISEGMENT_SEG_COUNT_16 = 0x10
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ParticleOrientationType_t : uint32_t {
                 PARTICLE_ORIENTATION_NONE = 0x0,
                 PARTICLE_ORIENTATION_VELOCITY = 0x1,
                 PARTICLE_ORIENTATION_NORMAL = 0x2,
                 PARTICLE_ORIENTATION_ROTATION = 0x4
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ParticleTraceSet_t : uint32_t {
                 PARTICLE_TRACE_SET_ALL = 0x0,
                 PARTICLE_TRACE_SET_STATIC = 0x1,
                 PARTICLE_TRACE_SET_STATIC_AND_KEYFRAMED = 0x2,
                 PARTICLE_TRACE_SET_DYNAMIC = 0x3
             };
+            // Alignment: 4
+            // Member count: 7
             enum class ParticleTextureLayerBlendType_t : uint32_t {
                 SPRITECARD_TEXTURE_BLEND_MULTIPLY = 0x0,
                 SPRITECARD_TEXTURE_BLEND_MOD2X = 0x1,
@@ -315,20 +406,28 @@ namespace dreamydumper {
                 SPRITECARD_TEXTURE_BLEND_AVERAGE = 0x5,
                 SPRITECARD_TEXTURE_BLEND_LUMINANCE = 0x6
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleSelection_t : uint32_t {
                 PARTICLE_SELECTION_FIRST = 0x0,
                 PARTICLE_SELECTION_LAST = 0x1,
                 PARTICLE_SELECTION_NUMBER = 0x2
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleToolsState_t : uint32_t {
                 PARTICLE_TOOLS_STATE_ALWAYS_ON = 0xFFFFFFFF,
                 PARTICLE_TOOLS_STATE_TOOLS_ONLY = 0x0,
                 PARTICLE_TOOLS_STATE_GAME_ONLY = 0x1
             };
+            // Alignment: 4
+            // Member count: 2
             enum class SnapshotIndexType_t : uint32_t {
                 SNAPSHOT_INDEX_INCREMENT = 0x0,
                 SNAPSHOT_INDEX_DIRECT = 0x1
             };
+            // Alignment: 4
+            // Member count: 7
             enum class ParticleOutputBlendMode_t : uint32_t {
                 PARTICLE_OUTPUT_BLEND_MODE_ALPHA = 0x0,
                 PARTICLE_OUTPUT_BLEND_MODE_ADD = 0x1,
@@ -338,51 +437,71 @@ namespace dreamydumper {
                 PARTICLE_OUTPUT_BLEND_MODE_MOD2X = 0x5,
                 PARTICLE_OUTPUT_BLEND_MODE_LIGHTEN = 0x6
             };
+            // Alignment: 4
+            // Member count: 2
             enum class ParticleLightnintBranchBehavior_t : uint32_t {
                 PARTICLE_LIGHTNING_BRANCH_CURRENT_DIR = 0x0,
                 PARTICLE_LIGHTNING_BRANCH_ENDPOINT_DIR = 0x1
             };
+            // Alignment: 4
+            // Member count: 2
             enum class MaterialProxyType_t : uint32_t {
                 MATERIAL_PROXY_STATUS_EFFECT = 0x0,
                 MATERIAL_PROXY_TINT = 0x1
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleDepthFeatheringMode_t : uint32_t {
                 PARTICLE_DEPTH_FEATHERING_OFF = 0x0,
                 PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL = 0x1,
                 PARTICLE_DEPTH_FEATHERING_ON_REQUIRED = 0x2
             };
+            // Alignment: 4
+            // Member count: 2
             enum class ParticleLightUnitChoiceList_t : uint32_t {
                 PARTICLE_LIGHT_UNIT_CANDELAS = 0x0,
                 PARTICLE_LIGHT_UNIT_LUMENS = 0x1
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ParticleMultiSegmentSpecialCharacter_t : uint32_t {
                 PARTICLE_MULTISEGMENT_SPECIAL_NONE = 0xFFFFFFFF,
                 PARTICLE_MULTISEGMENT_SPECIAL_DECIMAL = 0x0,
                 PARTICLE_MULTISEGMENT_SPECIAL_COLON = 0x1,
                 PARTICLE_MULTISEGMENT_SPECIAL_DEGREES = 0x2
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleFalloffFunction_t : uint32_t {
                 PARTICLE_FALLOFF_CONSTANT = 0x0,
                 PARTICLE_FALLOFF_LINEAR = 0x1,
                 PARTICLE_FALLOFF_EXPONENTIAL = 0x2
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleSequenceCropOverride_t : uint32_t {
                 PARTICLE_SEQUENCE_CROP_OVERRIDE_DEFAULT = 0xFFFFFFFF,
                 PARTICLE_SEQUENCE_CROP_OVERRIDE_FORCE_OFF = 0x0,
                 PARTICLE_SEQUENCE_CROP_OVERRIDE_FORCE_ON = 0x1
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ParticleDetailLevel_t : uint32_t {
                 PARTICLEDETAIL_LOW = 0x0,
                 PARTICLEDETAIL_MEDIUM = 0x1,
                 PARTICLEDETAIL_HIGH = 0x2,
                 PARTICLEDETAIL_ULTRA = 0x3
             };
+            // Alignment: 4
+            // Member count: 4
             enum class BBoxVolumeType_t : uint32_t {
                 BBOX_VOLUME = 0x0,
                 BBOX_DIMENSIONS = 0x1,
                 BBOX_MINS_MAXS = 0x2,
                 BBOX_RADIUS = 0x3
             };
+            // Alignment: 4
+            // Member count: 12
             enum class SpriteCardTextureType_t : uint32_t {
                 SPRITECARD_TEXTURE_DIFFUSE = 0x0,
                 SPRITECARD_TEXTURE_ZOOM = 0x1,
@@ -397,12 +516,16 @@ namespace dreamydumper {
                 SPRITECARD_TEXTURE_DEPTH = 0xA,
                 SPRITECARD_TEXTURE_ILLUMINATION_GRADIENT = 0xB
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ParticleAlphaReferenceType_t : uint32_t {
                 PARTICLE_ALPHA_REFERENCE_ALPHA_ALPHA = 0x0,
                 PARTICLE_ALPHA_REFERENCE_OPAQUE_ALPHA = 0x1,
                 PARTICLE_ALPHA_REFERENCE_ALPHA_OPAQUE = 0x2,
                 PARTICLE_ALPHA_REFERENCE_OPAQUE_OPAQUE = 0x3
             };
+            // Alignment: 4
+            // Member count: 15
             enum class SpriteCardTextureChannel_t : uint32_t {
                 SPRITECARD_TEXTURE_CHANNEL_MIX_RGB = 0x0,
                 SPRITECARD_TEXTURE_CHANNEL_MIX_RGBA = 0x1,
@@ -420,22 +543,30 @@ namespace dreamydumper {
                 SPRITECARD_TEXTURE_CHANNEL_MIX_GALPHA = 0xD,
                 SPRITECARD_TEXTURE_CHANNEL_MIX_BALPHA = 0xE
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ParticleVolumetricSmokeType_t : uint32_t {
                 PARTICLE_VOLUMETRIC_SMOKE_TYPE_EMISSION = 0x0,
                 PARTICLE_VOLUMETRIC_SMOKE_TYPE_SINK = 0x1,
                 PARTICLE_VOLUMETRIC_SMOKE_TYPE_REPEL = 0x2,
                 PARTICLE_VOLUMETRIC_SMOKE_TYPE_TRACE = 0x3
             };
+            // Alignment: 4
+            // Member count: 4
             enum class RenderModelSubModelFieldType_t : uint32_t {
                 SUBMODEL_AS_BODYGROUP_SUBMODEL = 0x0,
                 SUBMODEL_AS_MESHGROUP_INDEX = 0x1,
                 SUBMODEL_AS_MESHGROUP_MASK = 0x2,
                 SUBMODEL_IGNORED_USE_MODEL_DEFAULT_MESHGROUP_MASK = 0x3
             };
+            // Alignment: 4
+            // Member count: 2
             enum class ParticleHitboxDataSelection_t : uint32_t {
                 PARTICLE_HITBOX_AVERAGE_SPEED = 0x0,
                 PARTICLE_HITBOX_COUNT = 0x1
             };
+            // Alignment: 4
+            // Member count: 6
             enum class ParticleOrientationChoiceList_t : uint32_t {
                 PARTICLE_ORIENTATION_SCREEN_ALIGNED = 0x0,
                 PARTICLE_ORIENTATION_SCREEN_Z_ALIGNED = 0x1,
@@ -444,6 +575,8 @@ namespace dreamydumper {
                 PARTICLE_ORIENTATION_SCREENALIGN_TO_PARTICLE_NORMAL = 0x4,
                 PARTICLE_ORIENTATION_FULL_3AXIS_ROTATION = 0x5
             };
+            // Alignment: 4
+            // Member count: 5
             enum class ParticleCollisionMode_t : uint32_t {
                 COLLISION_MODE_PER_PARTICLE_TRACE = 0x3,
                 COLLISION_MODE_USE_NEAREST_TRACE = 0x2,
@@ -451,20 +584,28 @@ namespace dreamydumper {
                 COLLISION_MODE_INITIAL_TRACE_DOWN = 0x0,
                 COLLISION_MODE_DISABLED = 0xFFFFFFFF
             };
+            // Alignment: 4
+            // Member count: 2
             enum class ParticleSortingChoiceList_t : uint32_t {
                 PARTICLE_SORTING_NEAREST = 0x0,
                 PARTICLE_SORTING_CREATION_TIME = 0x1
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleEndcapMode_t : uint32_t {
                 PARTICLE_ENDCAP_ALWAYS_ON = 0xFFFFFFFF,
                 PARTICLE_ENDCAP_ENDCAP_OFF = 0x0,
                 PARTICLE_ENDCAP_ENDCAP_ON = 0x1
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ClosestPointTestType_t : uint32_t {
                 PARTICLE_CLOSEST_TYPE_BOX = 0x0,
                 PARTICLE_CLOSEST_TYPE_CAPSULE = 0x1,
                 PARTICLE_CLOSEST_TYPE_HYBRID = 0x2
             };
+            // Alignment: 4
+            // Member count: 6
             enum class ParticleImpulseType_t : uint32_t {
                 IMPULSE_TYPE_NONE = 0x0,
                 IMPULSE_TYPE_GENERIC = 0x1,
@@ -473,36 +614,50 @@ namespace dreamydumper {
                 IMPULSE_TYPE_EXPLOSION_UNDERWATER = 0x8,
                 IMPULSE_TYPE_PARTICLE_SYSTEM = 0x10
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleLiquidContents_t : uint32_t {
                 PARTICLE_LIQUID_NONE = 0x0,
                 PARTICLE_LIQUID_OIL = 0x1,
                 PARTICLE_LIQUID_WATER = 0x2
             };
+            // Alignment: 4
+            // Member count: 2
             enum class SpriteCardShaderType_t : uint32_t {
                 SPRITECARD_SHADER_BASE = 0x0,
                 SPRITECARD_SHADER_CUSTOM = 0x1
             };
+            // Alignment: 4
+            // Member count: 2
             enum class ParticleOmni2LightTypeChoiceList_t : uint32_t {
                 PARTICLE_OMNI2_LIGHT_TYPE_POINT = 0x0,
                 PARTICLE_OMNI2_LIGHT_TYPE_SPHERE = 0x1
             };
+            // Alignment: 4
+            // Member count: 3
             enum class ParticleLightFogLightingMode_t : uint32_t {
                 PARTICLE_LIGHT_FOG_LIGHTING_MODE_NONE = 0x0,
                 PARTICLE_LIGHT_FOG_LIGHTING_MODE_DYNAMIC = 0x2,
                 PARTICLE_LIGHT_FOG_LIGHTING_MODE_DYNAMIC_NOSHADOWS = 0x4
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ParticleLightTypeChoiceList_t : uint32_t {
                 PARTICLE_LIGHT_TYPE_POINT = 0x0,
                 PARTICLE_LIGHT_TYPE_SPOT = 0x1,
                 PARTICLE_LIGHT_TYPE_FX = 0x2,
                 PARTICLE_LIGHT_TYPE_CAPSULE = 0x3
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ParticleOrientationSetMode_t : uint32_t {
                 PARTICLE_ORIENTATION_SET_NONE = 0xFFFFFFFF,
                 PARTICLE_ORIENTATION_SET_FROM_VELOCITY = 0x0,
                 PARTICLE_ORIENTATION_SET_FROM_NORMAL = 0x1,
                 PARTICLE_ORIENTATION_SET_FROM_ROTATIONS = 0x2
             };
+            // Alignment: 8
+            // Member count: 10
             enum class ParticleCollisionMask_t : uint64_t {
                 PARTICLE_MASK_ALL = 0xFFFFFFFFFFFFFFFF,
                 PARTICLE_MASK_SOLID = 0xC3001,
@@ -515,10 +670,14 @@ namespace dreamydumper {
                 PARTICLE_MASK_DEFAULTPLAYERSOLID = 0xC3011,
                 PARTICLE_MASK_NPCSOLID = 0xC3021
             };
+            // Alignment: 4
+            // Member count: 2
             enum class TextureRepetitionMode_t : uint32_t {
                 TEXTURE_REPETITION_PARTICLE = 0x0,
                 TEXTURE_REPETITION_PATH = 0x1
             };
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -529,14 +688,20 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bTagSelfWhenComplete = 0x128; // bool
                 constexpr std::ptrdiff_t m_nDesiredKillPriority = 0x12C; // PulseCursorCancelPriority_t
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_Base {
                 constexpr std::ptrdiff_t m_nEditorNodeID = 0x8; // PulseDocNodeID_t
             }
+            // Parent: None
+            // Field count: 0
             namespace CPulse_ResumePoint {
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -548,8 +713,12 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCheckType = 0x48; // PulseBestOutflowRules_t
                 constexpr std::ptrdiff_t m_OutflowList = 0x50; // PulseSelectorOutflowList_t
             }
+            // Parent: None
+            // Field count: 0
             namespace CParticleBindingRealPulse {
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -560,12 +729,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_Condition = 0xD8; // CPulseObservableExpression<bool>
                 constexpr std::ptrdiff_t m_OnTrue = 0x150; // CPulse_ResumePoint
             }
+            // Parent: None
+            // Field count: 4
             namespace CPulse_OutflowConnection {
                 constexpr std::ptrdiff_t m_SourceOutflowName = 0x0; // PulseSymbol_t
                 constexpr std::ptrdiff_t m_nDestChunk = 0x10; // PulseRuntimeChunkIndex_t
                 constexpr std::ptrdiff_t m_nInstruction = 0x14; // int32
                 constexpr std::ptrdiff_t m_OutflowRegisterMap = 0x18; // PulseRegisterMap_t
             }
+            // Parent: None
+            // Field count: 14
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -585,6 +758,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_BlackboardReferences = 0x110; // CUtlVector<CPulse_BlackboardReference>
                 constexpr std::ptrdiff_t m_OutputConnections = 0x128; // CUtlVector<CPulse_OutputConnection*>
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -593,6 +768,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bWaitForChildOutflows = 0xF0; // bool
                 constexpr std::ptrdiff_t m_OnFinished = 0xF8; // CPulse_ResumePoint
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -600,6 +777,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flTimeFromPrevious = 0x0; // float32
                 constexpr std::ptrdiff_t m_EventOutflow = 0x8; // CPulse_OutflowConnection
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -610,17 +789,23 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flWaitIntervalHigh = 0xC; // float32
                 constexpr std::ptrdiff_t m_bCompleteOnNextWake = 0x10; // bool
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_BaseRequirement {
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             // MPulseEditorHeaderIcon
             namespace CPulseCell_BaseState {
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -630,11 +815,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_RequirementNodeIDs = 0x50; // CUtlVector<PulseDocNodeID_t>
                 constexpr std::ptrdiff_t m_nCursorStateBlockIndex = 0x68; // CUtlVector<int32>
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_IsRequirementValid {
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -642,11 +831,15 @@ namespace dreamydumper {
             namespace CPulseCell_Value_Gradient {
                 constexpr std::ptrdiff_t m_Gradient = 0x48; // CColorGradient
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MPropertyDescription
             namespace CPulseCursorFuncs {
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -654,16 +847,24 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_OutflowID = 0x0; // CGlobalSymbol
                 constexpr std::ptrdiff_t m_Connection = 0x8; // CPulse_OutflowConnection
             }
+            // Parent: None
+            // Field count: 0
             namespace CBasePulseGraphInstance {
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_Inflow_GraphHook {
                 constexpr std::ptrdiff_t m_HookName = 0x80; // PulseSymbol_t
             }
+            // Parent: None
+            // Field count: 0
             namespace SignatureOutflow_Resume {
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -671,6 +872,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_EntryChunk = 0x48; // PulseRuntimeChunkIndex_t
                 constexpr std::ptrdiff_t m_RegisterMap = 0x50; // PulseRegisterMap_t
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -679,6 +882,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCursorsAllowedToWait = 0xD8; // int32
                 constexpr std::ptrdiff_t m_WaitComplete = 0xE0; // CPulse_ResumePoint
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -689,6 +894,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSrcChunk = 0x44; // PulseRuntimeChunkIndex_t
                 constexpr std::ptrdiff_t m_nSrcInstruction = 0x48; // int32
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -700,17 +907,23 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_Completed = 0xD8; // CPulse_ResumePoint
                 constexpr std::ptrdiff_t m_OnInterval = 0x120; // SignatureOutflow_Continue
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MPropertyDescription
             namespace CPulseTestScriptLib {
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_BaseLerp {
                 constexpr std::ptrdiff_t m_WakeResume = 0xD8; // CPulse_ResumePoint
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -718,17 +931,23 @@ namespace dreamydumper {
             namespace CPulseCell_Value_Curve {
                 constexpr std::ptrdiff_t m_Curve = 0x48; // CPiecewiseCurve
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_Inflow_EventHandler {
                 constexpr std::ptrdiff_t m_EventName = 0x80; // PulseSymbol_t
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_BaseFlow {
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -736,6 +955,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_Shuffle = 0x0; // CUtlVectorFixedGrowable<uint8,8>
                 constexpr std::ptrdiff_t m_nNextShuffle = 0x20; // int32
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -743,13 +964,19 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_StartTime = 0x0; // GameTime_t
                 constexpr std::ptrdiff_t m_EndTime = 0x4; // GameTime_t
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MPropertyDescription
             namespace CPulseArraylib {
             }
+            // Parent: None
+            // Field count: 0
             namespace SignatureOutflow_Continue {
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -758,6 +985,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bWaitForChildOutflows = 0xF0; // bool
                 constexpr std::ptrdiff_t m_OnFinished = 0xF8; // CPulse_ResumePoint
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -766,25 +995,35 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_SourceOutput = 0x90; // PulseSymbol_t
                 constexpr std::ptrdiff_t m_ExpectedParamType = 0xA0; // CPulseValueFullType
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_Outflow_CycleOrdered__InstanceState_t {
                 constexpr std::ptrdiff_t m_nNextIndex = 0x0; // int32
             }
+            // Parent: None
+            // Field count: 0
             namespace CParticleCollectionBindingInstance {
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_LimitCount__InstanceState_t {
                 constexpr std::ptrdiff_t m_nCurrentCount = 0x0; // int32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_Step_DebugLog {
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -793,15 +1032,21 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_BaseFlow_OnAfterCancel = 0x48; // CPulse_ResumePoint
                 constexpr std::ptrdiff_t m_BaseFlow_WhileActive = 0x90; // CPulse_ResumePoint
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace PulseNodeDynamicOutflows_t {
                 constexpr std::ptrdiff_t m_Outflows = 0x0; // CUtlVector<PulseNodeDynamicOutflows_t::DynamicOutflow_t>
             }
+            // Parent: None
+            // Field count: 1
             namespace CPulseCell_IsRequirementValid__Criteria_t {
                 constexpr std::ptrdiff_t m_bIsValid = 0x0; // bool
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -809,18 +1054,24 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nBlackboardReference = 0x80; // PulseRuntimeBlackboardReferenceIndex_t
                 constexpr std::ptrdiff_t m_bSelfReference = 0x82; // bool
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_Outflow_CycleOrdered {
                 constexpr std::ptrdiff_t m_Outputs = 0x48; // CUtlVector<CPulse_OutflowConnection>
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace PulseSelectorOutflowList_t {
                 constexpr std::ptrdiff_t m_Outflows = 0x0; // CUtlVector<OutflowWithRequirements_t>
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -831,12 +1082,16 @@ namespace dreamydumper {
             namespace CPulseCell_Inflow_Wait {
                 constexpr std::ptrdiff_t m_WakeResume = 0xD8; // CPulse_ResumePoint
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_Outflow_CycleShuffled {
                 constexpr std::ptrdiff_t m_Outputs = 0x48; // CUtlVector<CPulse_OutflowConnection>
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -847,11 +1102,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_ReturnType = 0xA0; // CPulseValueFullType
                 constexpr std::ptrdiff_t m_Args = 0xB8; // CUtlLeanVector<CPulseRuntimeMethodArg>
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_BaseValue {
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -863,37 +1122,51 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_WhenTrue = 0x150; // CPulse_OutflowConnection
                 constexpr std::ptrdiff_t m_WhenFalse = 0x198; // CPulse_OutflowConnection
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_Inflow_Yield {
                 constexpr std::ptrdiff_t m_UnyieldResume = 0xD8; // CPulse_ResumePoint
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MPropertyDescription
             namespace CPulseMathlib {
             }
+            // Parent: None
+            // Field count: 1
             namespace CPulseCell_Unknown {
                 constexpr std::ptrdiff_t m_UnknownKeys = 0x48; // KeyValues3
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MPropertyDescription
             namespace CPulseStringlib {
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_Outflow_CycleRandom {
                 constexpr std::ptrdiff_t m_Outputs = 0x48; // CUtlVector<CPulse_OutflowConnection>
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_Step_PublicOutput {
                 constexpr std::ptrdiff_t m_OutputIndex = 0x48; // PulseRuntimeOutputIndex_t
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -903,6 +1176,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nNodeID = 0x18; // PulseDocNodeID_t
                 constexpr std::ptrdiff_t m_NodeName = 0x20; // CGlobalSymbol
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -911,11 +1186,15 @@ namespace dreamydumper {
             // MPulseEditorHeaderIcon
             namespace CPulseCell_Value_RandomInt {
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MPropertyDescription
             namespace CPulseEnumlib {
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -927,6 +1206,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSrcChunk = 0x4C; // PulseRuntimeChunkIndex_t
                 constexpr std::ptrdiff_t m_nSrcInstruction = 0x50; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -936,6 +1217,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_PassOutflow = 0x50; // PulseSelectorOutflowList_t
                 constexpr std::ptrdiff_t m_FailOutflow = 0x68; // CPulse_OutflowConnection
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -944,6 +1227,8 @@ namespace dreamydumper {
             namespace CPulseCell_LimitCount {
                 constexpr std::ptrdiff_t m_nLimitCount = 0x48; // int32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -954,9 +1239,13 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nAsyncCallMode = 0x100; // PulseMethodCallMode_t
                 constexpr std::ptrdiff_t m_OnFinished = 0x108; // CPulse_ResumePoint
             }
+            // Parent: None
+            // Field count: 1
             namespace CPulseCell_LimitCount__Criteria_t {
                 constexpr std::ptrdiff_t m_bLimitCountPasses = 0x0; // bool
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -966,6 +1255,8 @@ namespace dreamydumper {
             namespace CPulseCell_CursorQueue {
                 constexpr std::ptrdiff_t m_nCursorsAllowedToRunParallel = 0x128; // int32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -974,13 +1265,21 @@ namespace dreamydumper {
             // MPulseEditorHeaderIcon
             namespace CPulseCell_Value_RandomFloat {
             }
+            // Parent: None
+            // Field count: 0
             namespace CPulseExecCursor {
             }
+            // Parent: None
+            // Field count: 0
             namespace IParticleCollection {
             }
+            // Parent: None
+            // Field count: 1
             namespace ParticleAttributeIndex_t {
                 constexpr std::ptrdiff_t m_Value = 0x0; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -990,6 +1289,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0x894; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_bNormalizedOutput = 0x898; // bool
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -997,6 +1298,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bRopeDecay = 0x1D8; // bool
                 constexpr std::ptrdiff_t m_bForcePreserveParticleOrder = 0x1D9; // bool
             }
+            // Parent: None
+            // Field count: 16
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1018,6 +1321,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_hTexture = 0x910; // CStrongHandle<InfoForResourceTypeCTextureBase>
                 constexpr std::ptrdiff_t m_nHSVShiftControlPoint = 0x918; // int32
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1031,24 +1336,32 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMax = 0x1F8; // float32
                 constexpr std::ptrdiff_t m_bUseDeltaV = 0x1FC; // bool
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_RemapTransformToVelocity {
                 constexpr std::ptrdiff_t m_TransformInput = 0x1D8; // CParticleTransformInput
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CollisionGroupContext_t {
                 constexpr std::ptrdiff_t m_nCollisionGroupNumber = 0x0; // int32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CParticleFunctionPreEmission {
                 constexpr std::ptrdiff_t m_bRunOnce = 0x1D8; // bool
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1056,6 +1369,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flFadeOutTime = 0x1D8; // float32
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1DC; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1066,6 +1381,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRestingLength = 0x628; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_vecAnchorVector = 0x798; // CPerParticleVecInput
             }
+            // Parent: None
+            // Field count: 33
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1104,6 +1421,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bDrawAsOpaque = 0x341C; // bool
                 constexpr std::ptrdiff_t m_bGenerateNormals = 0x341D; // bool
             }
+            // Parent: None
+            // Field count: 19
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1128,6 +1447,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flSFXSDetailScrollZ = 0x224; // float32
                 constexpr std::ptrdiff_t m_flSFXSUseModelUVs = 0x228; // float32
             }
+            // Parent: None
+            // Field count: 12
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1145,6 +1466,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_pszSoundName = 0x250; // char[256]
                 constexpr std::ptrdiff_t m_bSuppressStopSoundEvent = 0x350; // bool
             }
+            // Parent: None
+            // Field count: 19
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1169,6 +1492,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRadiusScaleFOVBase = 0x40; // float32
                 constexpr std::ptrdiff_t m_bRightEye = 0x44; // bool
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1182,6 +1507,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOrientationMode = 0x1EC; // ParticleOrientationSetMode_t
                 constexpr std::ptrdiff_t m_nSetParent = 0x1F0; // ParticleParentSetMode_t
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1191,6 +1518,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flScale = 0x1E0; // float32
                 constexpr std::ptrdiff_t m_bNormalize = 0x1E4; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1199,6 +1528,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flInterpolation = 0x1E0; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_bPrevious = 0x350; // bool
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1206,6 +1537,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bodyGroupName = 0x0; // CUtlString
                 constexpr std::ptrdiff_t m_nValue = 0x8; // int32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1216,6 +1549,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOscMult = 0x1E4; // float32
                 constexpr std::ptrdiff_t m_flOscAdd = 0x1E8; // float32
             }
+            // Parent: None
+            // Field count: 18
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1239,6 +1574,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flMetalnessBlendToFull = 0x220; // float32
                 constexpr std::ptrdiff_t m_flSelfIllumBlendToFull = 0x224; // float32
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1252,6 +1589,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nRTEnvCP = 0x27C; // int32
                 constexpr std::ptrdiff_t m_nComponent = 0x280; // int32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1262,6 +1601,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_CenterOffset = 0x4BC; // Vector
                 constexpr std::ptrdiff_t m_bGlobalCenter = 0x4C8; // bool
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1271,6 +1612,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1F8; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_randomnessParameters = 0x1FC; // CRandomNumberGeneratorParameters
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1286,6 +1629,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_TransformInput = 0x1A70; // CParticleTransformInput
                 constexpr std::ptrdiff_t m_bIgnoreDt = 0x1AD8; // bool
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1296,6 +1641,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bDisableChild = 0xD; // bool
                 constexpr std::ptrdiff_t m_nDetailLevel = 0x10; // ParticleDetailLevel_t
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1309,11 +1656,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMax = 0x1F0; // float32
                 constexpr std::ptrdiff_t m_flRemapTime = 0x1F4; // float32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RandomNamedModelSequence {
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1323,6 +1674,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLocalSpace = 0x898; // bool
                 constexpr std::ptrdiff_t m_flPlaneOffset = 0x89C; // float32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1335,6 +1688,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bIgnoreDT = 0x1238; // bool
                 constexpr std::ptrdiff_t m_randomnessParameters = 0x123C; // CRandomNumberGeneratorParameters
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1347,6 +1702,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecPosOffset = 0x260; // CPerParticleVecInput
                 constexpr std::ptrdiff_t m_fDrag = 0x918; // float32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1356,6 +1713,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLocalSpace = 0x1F8; // bool
                 constexpr std::ptrdiff_t m_nControlPointNumber = 0x1FC; // int32
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1372,6 +1731,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flArcSpeed = 0x204; // float32
                 constexpr std::ptrdiff_t m_flAlpha = 0x208; // float32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1382,6 +1743,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bSetMagnitude = 0x8A0; // bool
                 constexpr std::ptrdiff_t m_nOutVectorField = 0x8A4; // int32
             }
+            // Parent: None
+            // Field count: 65
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1452,11 +1815,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bBlendFramesSeq0 = 0x2B7C; // bool
                 constexpr std::ptrdiff_t m_bMaxLuminanceBlendingSequence0 = 0x2B7D; // bool
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CSpinUpdateBase {
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1466,6 +1833,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flSpinStrength = 0x894; // float32
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x898; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1479,6 +1848,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMin = 0x4D0; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_flOutputMax = 0x640; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1488,6 +1859,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_outputMaxName = 0x220; // CUtlString
                 constexpr std::ptrdiff_t m_bModelFromRenderer = 0x228; // bool
             }
+            // Parent: None
+            // Field count: 20
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1513,6 +1886,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flForwardShift = 0x45B8; // float32
                 constexpr std::ptrdiff_t m_bFlipUVBasedOnPitchYaw = 0x45BC; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1521,6 +1896,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_pszTimeOfDayParameter = 0x1E4; // char[128]
                 constexpr std::ptrdiff_t m_vecDefaultValue = 0x264; // Vector
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1533,6 +1910,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flScale = 0x1F8; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_bKillNewest = 0x368; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1541,6 +1920,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_SequenceName = 0x2E0; // char[256]
                 constexpr std::ptrdiff_t m_hModel = 0x3E0; // CStrongHandle<InfoForResourceTypeCModel>
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1551,6 +1932,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bExplosions = 0x35A; // bool
                 constexpr std::ptrdiff_t m_bParticles = 0x35B; // bool
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1567,6 +1950,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecComparisonVelocity = 0x7B8; // CParticleCollectionVecInput
                 constexpr std::ptrdiff_t m_HitboxSetName = 0xE70; // char[128]
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1576,6 +1961,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nAlphaMax = 0x1E8; // int32
                 constexpr std::ptrdiff_t m_flAlphaRandExponent = 0x1F4; // float32
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1583,6 +1970,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1D8; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_flScale = 0x1DC; // float32
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1590,6 +1979,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flFadeInTime = 0x1D8; // float32
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1DC; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1600,6 +1991,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flClusterCooldown = 0x4C8; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_bLimitChildCount = 0x638; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1608,6 +2001,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flScale = 0x1DC; // float32
                 constexpr std::ptrdiff_t m_bNormalize = 0x1E0; // bool
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1622,6 +2017,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flHybridRatio = 0x928; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_bUpdatePosition = 0xA98; // bool
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1638,6 +2035,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bEvenDistribution = 0xDC8; // bool
                 constexpr std::ptrdiff_t m_bXYVelocityOnly = 0xDC9; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1646,6 +2045,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flMaxLength = 0x1E4; // float32
                 constexpr std::ptrdiff_t m_flLengthRandExponent = 0x1E8; // float32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1658,6 +2059,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMax = 0x1EC; // float32
                 constexpr std::ptrdiff_t m_bOldCode = 0x1F0; // bool
             }
+            // Parent: None
+            // Field count: 13
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1676,12 +2079,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLOS = 0x8FC; // bool
                 constexpr std::ptrdiff_t m_nSetMethod = 0x900; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_DecayOffscreen {
                 constexpr std::ptrdiff_t m_flOffscreenTime = 0x1D8; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MParticleMaxVersion
@@ -1695,12 +2102,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bSaveOffset = 0x1EA; // bool
                 constexpr std::ptrdiff_t m_PathParams = 0x1F0; // CPathParameters
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_EndCapTimedDecay {
                 constexpr std::ptrdiff_t m_flDecayTime = 0x1D8; // float32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1711,6 +2122,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flMaxInputValue = 0x1E4; // float32
                 constexpr std::ptrdiff_t m_bInfiniteLine = 0x1E8; // bool
             }
+            // Parent: None
+            // Field count: 12
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1728,6 +2141,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bForceEmitOnFirstUpdate = 0x654; // bool
                 constexpr std::ptrdiff_t m_bForceEmitOnLastUpdate = 0x655; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1739,12 +2154,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOscAdd = 0x1F8; // float32
                 constexpr std::ptrdiff_t m_bOffset = 0x1FC; // bool
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_SequenceLifeTime {
                 constexpr std::ptrdiff_t m_flFramerate = 0x1E0; // float32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1757,6 +2176,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nEndControlPointNumber = 0x910; // int32
                 constexpr std::ptrdiff_t m_bTrailBias = 0x914; // bool
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1767,6 +2188,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flFallingEdge = 0x4C0; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_nFallingEventType = 0x630; // EventTypeSelection_t
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1774,6 +2197,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_InputValue = 0x1D8; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_nOutputField = 0x348; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1784,6 +2209,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nMaxConstraintPasses = 0xE58; // int32
                 constexpr std::ptrdiff_t m_bUseNewCode = 0xE5C; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1795,6 +2222,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bModelFromRenderer = 0x202; // bool
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x204; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1802,11 +2231,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nAttributeToCopy = 0x1E0; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nEventType = 0x1E4; // EventTypeSelection_t
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_Callback {
             }
+            // Parent: None
+            // Field count: 17
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1829,6 +2262,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bDisableOperator = 0x1B2; // bool
                 constexpr std::ptrdiff_t m_Notes = 0x1B8; // CUtlString
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1837,6 +2272,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bClampLowerRange = 0x1DC; // bool
                 constexpr std::ptrdiff_t m_bClampUpperRange = 0x1DD; // bool
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1847,6 +2284,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecOutputMax = 0x1F4; // Vector
                 constexpr std::ptrdiff_t m_randomnessParameters = 0x200; // CRandomNumberGeneratorParameters
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1860,6 +2299,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nAttributeToRead = 0x1F0; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nCPField = 0x1F4; // int32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1870,6 +2311,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFirstSourcePoint = 0x1EC; // int32
                 constexpr std::ptrdiff_t m_bSetOrientation = 0x1F0; // bool
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1880,6 +2323,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLocalSpace = 0xF4C; // bool
                 constexpr std::ptrdiff_t m_bAccountForRadius = 0xF4D; // bool
             }
+            // Parent: None
+            // Field count: 14
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1899,6 +2344,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseWithContEmit = 0x20D; // bool
                 constexpr std::ptrdiff_t m_bUseOrigRadius = 0x20E; // bool
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1911,6 +2358,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_fForceAmountMin = 0x548; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_bApplyMinForce = 0x6B8; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1919,11 +2368,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_fLifetimeMax = 0x1E4; // float32
                 constexpr std::ptrdiff_t m_fLifetimeRandExponent = 0x1E8; // float32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RemapParticleCountToNamedModelSequenceScalar {
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1937,6 +2390,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecLocalCoordinateSystemSpeedScale = 0x1238; // Vector
                 constexpr std::ptrdiff_t m_bIgnoreDelta = 0x1245; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1945,6 +2400,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRadiusMax = 0x1E4; // float32
                 constexpr std::ptrdiff_t m_flRadiusRandExponent = 0x1E8; // float32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1954,6 +2411,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCP = 0x1E0; // int32
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1E4; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 16
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1975,6 +2434,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nPerParticleZoom = 0xA28; // SpriteCardPerParticleScale_t
                 constexpr std::ptrdiff_t m_nPerParticleDistortion = 0xA2C; // SpriteCardPerParticleScale_t
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1983,6 +2444,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vOffsetFromControlPoint = 0x4; // Vector
                 constexpr std::ptrdiff_t m_bOffsetInLocalSpace = 0x10; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -1994,6 +2457,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flLerp = 0xF58; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_bNormalizedOutput = 0x10C8; // bool
             }
+            // Parent: None
+            // Field count: 20
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2019,17 +2484,23 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRadiusEnd = 0x1348; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_flDedicatedPool = 0x14B8; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_RemapNamedModelMeshGroupOnceTimed {
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RemapQAnglesToRotation {
                 constexpr std::ptrdiff_t m_TransformInput = 0x1E0; // CParticleTransformInput
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2045,6 +2516,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bInvertWarp = 0xF68; // bool
                 constexpr std::ptrdiff_t m_bUseCount = 0xF69; // bool
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2057,6 +2530,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOutVectorField = 0x63C; // int32
                 constexpr std::ptrdiff_t m_flInterpolation = 0x640; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2067,11 +2542,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_szParticleConfig = 0x248; // CUtlString
                 constexpr std::ptrdiff_t m_AggregationPos = 0x250; // CPerParticleVecInput
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CParticleFunctionForce {
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2081,6 +2560,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1E8; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nComponent = 0x1EC; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MParticleMaxVersion
@@ -2092,6 +2573,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nIncrement = 0x1E0; // int32
                 constexpr std::ptrdiff_t m_bRandomDistribution = 0x1E4; // bool
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2104,6 +2587,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0x10CC; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_bNormalizedOutput = 0x10D0; // bool
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2117,6 +2602,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecOutputMax = 0x260; // Vector
                 constexpr std::ptrdiff_t m_flRadius = 0x26C; // float32
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2125,6 +2612,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecPoint1 = 0x1E0; // CPerParticleVecInput
                 constexpr std::ptrdiff_t m_vecPoint2 = 0x898; // CPerParticleVecInput
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2134,6 +2623,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecScale = 0x350; // CParticleCollectionVecInput
                 constexpr std::ptrdiff_t m_nDistSqrAttr = 0xA08; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2148,6 +2639,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_fDrawFilter = 0x410; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_nAngularVelocityField = 0x580; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2157,6 +2650,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOutVectorField = 0x354; // int32
                 constexpr std::ptrdiff_t m_flQuantizeValue = 0x358; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2164,6 +2659,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bFireOnEmissionEnd = 0x1E0; // bool
                 constexpr std::ptrdiff_t m_bIncludeChildren = 0x1E1; // bool
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2171,6 +2668,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_InputValue = 0x1E0; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_nOutputField = 0x350; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2184,6 +2683,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vMidPointOffset = 0x20; // Vector
                 constexpr std::ptrdiff_t m_vEndOffset = 0x2C; // Vector
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2195,6 +2696,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMin = 0x1E8; // float32
                 constexpr std::ptrdiff_t m_flOutputMax = 0x1EC; // float32
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2203,6 +2706,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecOffsetMax = 0x1EC; // Vector
                 constexpr std::ptrdiff_t m_bUseNormal = 0x1F9; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2211,6 +2716,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flComparsion2 = 0x348; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flCullTime = 0x4B8; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2221,11 +2728,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCPOutField = 0x1F4; // int32
                 constexpr std::ptrdiff_t m_nCPSSPosOut = 0x1F8; // int32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_SpinUpdate {
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2236,6 +2747,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLocalCoords = 0x1FC; // bool
                 constexpr std::ptrdiff_t m_bNormalize = 0x1FD; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2244,6 +2757,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vMinOutputValue = 0x1F4; // Vector
                 constexpr std::ptrdiff_t m_vMaxOutputValue = 0x200; // Vector
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2257,6 +2772,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nZAxisScalingAttribute = 0x254; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nSizeCullBloat = 0x258; // int32
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2272,11 +2789,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecOffsetLoc = 0x1FC; // Vector
                 constexpr std::ptrdiff_t m_flWorldTimeScale = 0x208; // float32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_Spin {
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2287,6 +2808,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bCheckExposedToSky = 0x678; // bool
                 constexpr std::ptrdiff_t m_nAmountAttribute = 0x67C; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2300,6 +2823,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSnapshotControlPoint = 0x63C; // int32
                 constexpr std::ptrdiff_t m_strSnapshotSubset = 0x640; // CUtlString
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2307,6 +2832,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flMinDistance = 0x1D8; // float32
                 constexpr std::ptrdiff_t m_flMaxDistance = 0x1DC; // float32
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2320,6 +2847,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nTraceSet = 0x280; // ParticleTraceSet_t
                 constexpr std::ptrdiff_t m_bIncludeWater = 0x290; // bool
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2333,6 +2862,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flSubPixelAAScale = 0x30E0; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_bClampV = 0x3250; // bool
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2342,6 +2873,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flVelocityScale = 0x900; // float32
                 constexpr std::ptrdiff_t m_bDirectionOnly = 0x904; // bool
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2355,6 +2888,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecRotationB = 0x1F8; // QAngle
                 constexpr std::ptrdiff_t m_flInterpolation = 0x208; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 12
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2372,6 +2907,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSnapShotStartPoint = 0x640; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_flInterpolation = 0x7B0; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2392,6 +2929,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bPrependEmpty = 0x1820; // bool
                 constexpr std::ptrdiff_t m_flDigitsAfterDecimal = 0x1828; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2412,6 +2951,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOscAdd = 0x390; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flRateScale = 0x500; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2432,6 +2973,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0xA98; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nFieldOutputPrev = 0xA9C; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2441,6 +2984,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOutputField = 0x230; // int32
                 constexpr std::ptrdiff_t m_flAmplitude = 0x238; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 12
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2458,6 +3003,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bTraceToClosestSurface = 0x3F9; // bool
                 constexpr std::ptrdiff_t m_bIncludeWater = 0x3FA; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2469,6 +3016,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bEaseInAndOut = 0x1E8; // bool
                 constexpr std::ptrdiff_t m_flBias = 0x1EC; // float32
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2477,6 +3026,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMin = 0x1DC; // float32
                 constexpr std::ptrdiff_t m_flOutputMax = 0x1E0; // float32
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2490,6 +3041,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecNoiseAmount2 = 0x210; // Vector
                 constexpr std::ptrdiff_t m_vecNoiseAmount3 = 0x21C; // Vector
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2504,6 +3057,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x230; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_flRemapTime = 0x234; // float32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2515,12 +3070,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nRadiusCP = 0x1F8; // int32
                 constexpr std::ptrdiff_t m_nRadiusCPField = 0x1FC; // int32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_EndCapTimedFreeze {
                 constexpr std::ptrdiff_t m_flFreezeTime = 0x1D8; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2534,6 +3093,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nScaleCP = 0x688; // int32
                 constexpr std::ptrdiff_t m_hMaterial = 0x690; // CStrongHandle<InfoForResourceTypeIMaterial2>
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2547,6 +3108,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecCPMaxPos = 0x36C; // Vector
                 constexpr std::ptrdiff_t m_flInterpolation = 0x378; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2567,6 +3130,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flKillDensityScale = 0x1F08; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flFalloff = 0x2078; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2580,6 +3145,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMax = 0x258; // float32
                 constexpr std::ptrdiff_t m_flRadius = 0x25C; // float32
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2588,6 +3155,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flScale = 0x1DC; // float32
                 constexpr std::ptrdiff_t m_nControlPointNumber = 0x1E0; // int32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2598,11 +3167,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flBehindOutputRemap = 0x898; // CParticleRemapFloatInput
                 constexpr std::ptrdiff_t m_nBehindSetMethod = 0xA08; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CParticleFunctionOperator {
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2613,6 +3186,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecPlaneNormal = 0x4C0; // CParticleCollectionVecInput
                 constexpr std::ptrdiff_t m_nControlPointNumber = 0xB78; // int32
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2620,11 +3195,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCPInput = 0x1D8; // int32
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1DC; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RandomYaw {
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2633,6 +3212,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bTransformRadii = 0x1D9; // bool
                 constexpr std::ptrdiff_t m_nControlPointNumber = 0x1DC; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2642,6 +3223,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecCP1Pos = 0x1E8; // CParticleCollectionVecInput
                 constexpr std::ptrdiff_t m_transformInput = 0x8A0; // CParticleTransformInput
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2654,6 +3237,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0x640; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_bUseNeighbor = 0x644; // bool
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2670,6 +3255,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flInterpRate = 0x1FC; // float32
                 constexpr std::ptrdiff_t m_nSetMethod = 0x200; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2678,6 +3265,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bCannotBeRefracted = 0x220; // bool
                 constexpr std::ptrdiff_t m_bSkipRenderingOnMobile = 0x221; // bool
             }
+            // Parent: None
+            // Field count: 66
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2749,11 +3338,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bShouldSort = 0x378; // bool
                 constexpr std::ptrdiff_t m_controlPointConfigurations = 0x3C0; // CUtlVector<ParticleControlPointConfiguration_t>
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_RemapNamedModelMeshGroupEndCap {
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2769,6 +3362,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bActiveRange = 0x2D4; // bool
                 constexpr std::ptrdiff_t m_bRadialCheck = 0x2D5; // bool
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2776,6 +3371,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRotateRateDegrees = 0x228; // float32
                 constexpr std::ptrdiff_t m_flForwardDegrees = 0x22C; // float32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2787,6 +3384,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flMaximumLightingRadius = 0x1E8; // float32
                 constexpr std::ptrdiff_t m_flPositionDampingConstant = 0x1EC; // float32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2798,6 +3397,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_randomnessParameters = 0xF58; // CRandomNumberGeneratorParameters
                 constexpr std::ptrdiff_t m_bUseNewCode = 0xF60; // bool
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2805,6 +3406,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nChildGroupID = 0x1E0; // int32
                 constexpr std::ptrdiff_t m_flNumberOfChildren = 0x1E8; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 33
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2843,6 +3446,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bClampLowerRange = 0x6DE; // bool
                 constexpr std::ptrdiff_t m_bClampUpperRange = 0x6DF; // bool
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2857,6 +3462,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLockToSurface = 0xA15; // bool
                 constexpr std::ptrdiff_t m_flGridSpacing = 0xA18; // float32
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2873,6 +3480,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bAdditive = 0x875; // bool
                 constexpr std::ptrdiff_t m_bCapsule = 0x876; // bool
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2893,6 +3502,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nPreserveOffsetCP = 0xC24; // int32
                 constexpr std::ptrdiff_t m_nIgnoreCP = 0xC28; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2902,6 +3513,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flExponent = 0x1E8; // float32
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1EC; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2910,6 +3523,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_hPostTexture = 0x398; // CStrongHandle<InfoForResourceTypeCPostProcessingResource>
                 constexpr std::ptrdiff_t m_nPriority = 0x3A0; // ParticlePostProcessPriorityGroup_t
             }
+            // Parent: None
+            // Field count: 27
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2942,6 +3557,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nEntityStickDataField = 0x9D0; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nEntityStickNormalField = 0x9D4; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2955,6 +3572,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_MaterialVars = 0x688; // CUtlVector<MaterialVariable_t>
                 constexpr std::ptrdiff_t m_hMaterial = 0x6B8; // CStrongHandle<InfoForResourceTypeIMaterial2>
             }
+            // Parent: None
+            // Field count: 13
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2973,6 +3592,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOscMult = 0x200; // float32
                 constexpr std::ptrdiff_t m_flOscAdd = 0x204; // float32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2984,6 +3605,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bProportional = 0x220; // bool
                 constexpr std::ptrdiff_t m_bEaseInAndOut = 0x221; // bool
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2997,6 +3620,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bIsRadialWind = 0x1010; // bool
                 constexpr std::ptrdiff_t m_nEventType = 0x1014; // EventTypeSelection_t
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3007,6 +3632,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLinear = 0x1E9; // bool
                 constexpr std::ptrdiff_t m_WeightedList = 0x1F0; // CUtlVector<SequenceWeightedList_t>
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3017,6 +3644,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nField = 0x210; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_bEaseOut = 0x214; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3025,6 +3654,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flDistance = 0x1E8; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_bCullInside = 0x358; // bool
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3032,6 +3663,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flParentRadiusScale = 0x1D8; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flRadiusScale = 0x348; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3042,6 +3675,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseVerticalVelocity = 0x1EC; // bool
                 constexpr std::ptrdiff_t m_vecScale = 0x1F0; // CPerParticleVecInput
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3054,6 +3689,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0x10C4; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_bNormalizedOutput = 0x10C8; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3065,6 +3702,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vOffsetMax = 0x200; // Vector
                 constexpr std::ptrdiff_t m_randomnessParameters = 0x20C; // CRandomNumberGeneratorParameters
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3075,6 +3714,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMin = 0x1F0; // float32
                 constexpr std::ptrdiff_t m_flOutputMax = 0x1F4; // float32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3084,6 +3725,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRotOffset = 0x244; // float32
                 constexpr std::ptrdiff_t m_flSpinStrength = 0x248; // float32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3096,6 +3739,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_pTextureSpecularWarp = 0x250; // CStrongHandle<InfoForResourceTypeCTextureBase>
                 constexpr std::ptrdiff_t m_pTextureEnvMap = 0x258; // CStrongHandle<InfoForResourceTypeCTextureBase>
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3103,6 +3748,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_MinForce = 0x1E8; // Vector
                 constexpr std::ptrdiff_t m_MaxForce = 0x1F4; // Vector
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3115,6 +3762,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bBackwards = 0x1EC; // bool
                 constexpr std::ptrdiff_t m_nSetMethod = 0x1F0; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 18
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3138,6 +3787,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecPreviewGravity = 0x58; // Vector
                 constexpr std::ptrdiff_t m_vecPreviewWind = 0x64; // Vector
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3146,6 +3797,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nScaleCP = 0x1EC; // int32
                 constexpr std::ptrdiff_t m_vecAccel = 0x1F0; // CParticleCollectionVecInput
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3156,6 +3809,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseBones = 0x1DE; // bool
                 constexpr std::ptrdiff_t m_HitboxSetName = 0x1DF; // char[128]
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3165,6 +3820,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0x34C; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_Lerp = 0x350; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 13
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3183,6 +3840,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bAccelerate = 0x2F5; // bool
                 constexpr std::ptrdiff_t m_flRemapBias = 0x2F8; // float32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3192,6 +3851,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputRemap = 0x350; // CParticleRemapFloatInput
                 constexpr std::ptrdiff_t m_nSetMethod = 0x4C0; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3200,6 +3861,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flMinOutputValue = 0x1F4; // float32
                 constexpr std::ptrdiff_t m_flMaxOutputValue = 0x1F8; // float32
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3208,6 +3871,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldInput = 0x1DC; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nParticleNumber = 0x1E0; // int32
             }
+            // Parent: None
+            // Field count: 13
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3226,6 +3891,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bSubSample = 0x650; // bool
                 constexpr std::ptrdiff_t m_bPrev = 0x651; // bool
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3246,6 +3913,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nTraceSet = 0x290; // ParticleTraceSet_t
                 constexpr std::ptrdiff_t m_nSetParent = 0x294; // ParticleParentSetMode_t
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3255,6 +3924,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecCP1Pos = 0x1E8; // Vector
                 constexpr std::ptrdiff_t m_bOrientToHand = 0x1F4; // bool
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3268,6 +3939,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldScale = 0x234; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nManualTField = 0x238; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3278,6 +3951,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bCullInside = 0x358; // bool
                 constexpr std::ptrdiff_t m_nAttribute = 0x35C; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3288,6 +3963,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vEndOffset = 0x234; // Vector
                 constexpr std::ptrdiff_t m_bSaveOffset = 0x240; // bool
             }
+            // Parent: None
+            // Field count: 16
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3309,6 +3986,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bNoDecalsOnOwner = 0x1C33; // bool
                 constexpr std::ptrdiff_t m_bVisualizeTraces = 0x1C34; // bool
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3321,6 +4000,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bSkin = 0x2E4; // bool
                 constexpr std::ptrdiff_t m_bAttachment = 0x2E5; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3332,11 +4013,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x20C; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_bEaseInOut = 0x210; // bool
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RemapNamedModelSequenceToScalar {
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3349,12 +4034,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flStartFadeSize = 0x244; // float32
                 constexpr std::ptrdiff_t m_flEndFadeSize = 0x248; // float32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_DecayClampCount {
                 constexpr std::ptrdiff_t m_nCount = 0x1D8; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3362,6 +4051,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bDistributeEvenly = 0x0; // bool
                 constexpr std::ptrdiff_t m_nSeed = 0x4; // int32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3374,12 +4065,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nTintBlendMode = 0x20C; // ParticleColorBlendMode_t
                 constexpr std::ptrdiff_t m_flLightAmplification = 0x210; // float32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_RenderPoints {
                 constexpr std::ptrdiff_t m_hMaterial = 0x228; // CStrongHandle<InfoForResourceTypeIMaterial2>
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3391,6 +4086,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOutputField = 0x638; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nSetMethod = 0x63C; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3406,6 +4103,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bCenter = 0xA85; // bool
                 constexpr std::ptrdiff_t m_bHollow = 0xA86; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3414,6 +4113,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecRateMin = 0x1E4; // Vector
                 constexpr std::ptrdiff_t m_vecRateMax = 0x1F0; // Vector
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3425,6 +4126,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseAABB = 0x1E8; // bool
                 constexpr std::ptrdiff_t m_nCPBroadcast = 0x1EC; // int32
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3433,6 +4136,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flMax = 0x1E4; // float32
                 constexpr std::ptrdiff_t m_flExponent = 0x1E8; // float32
             }
+            // Parent: None
+            // Field count: 14
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3452,6 +4157,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flHitboxVelocityScale = 0x1158; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_flMaxBoneVelocity = 0x12C8; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3467,6 +4174,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bSetGravity = 0x80A; // bool
                 constexpr std::ptrdiff_t m_bSetUV = 0x80B; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3478,11 +4187,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nChildGroupID = 0x1E8; // int32
                 constexpr std::ptrdiff_t m_bOnlyChildren = 0x1EC; // bool
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_RenderClothForce {
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3495,6 +4208,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMax = 0x1EC; // float32
                 constexpr std::ptrdiff_t m_flRadiusScale = 0x1F0; // float32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MParticleMinVersion
@@ -3507,6 +4222,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bSaveOffset = 0x4C2; // bool
                 constexpr std::ptrdiff_t m_PathParams = 0x4D0; // CPathParameters
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3514,6 +4231,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_strVariable = 0x0; // CUtlString
                 constexpr std::ptrdiff_t m_vecInput = 0x8; // CParticleCollectionVecInput
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3525,6 +4244,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecOffsetAxis = 0x254; // Vector
                 constexpr std::ptrdiff_t m_bNormalize = 0x260; // bool
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MParticleMinVersion
@@ -3535,12 +4256,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bCPPairs = 0x1E0; // bool
                 constexpr std::ptrdiff_t m_PathParams = 0x1F0; // CPathParameters
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_NormalLock {
                 constexpr std::ptrdiff_t m_nControlPointNumber = 0x1D8; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3550,6 +4275,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseQuat = 0x254; // bool
                 constexpr std::ptrdiff_t m_bWriteNormal = 0x255; // bool
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3559,12 +4286,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flCullEnd = 0x1E0; // float32
                 constexpr std::ptrdiff_t m_flCullExp = 0x1E4; // float32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RandomYawFlip {
                 constexpr std::ptrdiff_t m_flPercent = 0x1E0; // float32
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3572,6 +4303,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSequence = 0x0; // int32
                 constexpr std::ptrdiff_t m_flRelativeWeight = 0x4; // float32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3582,6 +4315,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_DistanceCheck = 0x1E8; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flInterpolation = 0x358; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3589,6 +4324,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_OutlineColor = 0x228; // Color
                 constexpr std::ptrdiff_t m_DefaultText = 0x230; // CUtlString
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3599,11 +4336,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flScale = 0x358; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_vecScale = 0x4C8; // CParticleCollectionVecInput
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RandomRotation {
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3612,12 +4353,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecOutput = 0x1DC; // Vector
                 constexpr std::ptrdiff_t m_flLerpTime = 0x1E8; // float32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_VelocityDecay {
                 constexpr std::ptrdiff_t m_flMinVelocity = 0x1D8; // float32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3629,6 +4374,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bAvoidSingularity = 0x359; // bool
                 constexpr std::ptrdiff_t m_bPointAway = 0x35A; // bool
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3639,6 +4386,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bClosedLoop = 0x1F9; // bool
                 constexpr std::ptrdiff_t m_nNumPointsAlongPath = 0x1FC; // int32
             }
+            // Parent: None
+            // Field count: 18
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3662,6 +4411,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nPreserveOffsetCP = 0xAB4; // int32
                 constexpr std::ptrdiff_t m_nIgnoreCP = 0xAB8; // int32
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3669,6 +4420,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nInputControlPoint = 0x1D8; // int32
                 constexpr std::ptrdiff_t m_nOutputControlPoint = 0x1DC; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3678,6 +4431,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0xF48; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_bNormalize = 0xF4C; // bool
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3687,11 +4442,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseQuat = 0x24C; // bool
                 constexpr std::ptrdiff_t m_bWriteNormal = 0x24D; // bool
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RandomRotationSpeed {
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MParticleMinVersion
@@ -3706,6 +4465,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nMissingParentBehavior = 0x4C4; // MissingParentInheritBehavior_t
                 constexpr std::ptrdiff_t m_flInterpolation = 0x4C8; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3713,6 +4474,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSequenceMin = 0x1E0; // int32
                 constexpr std::ptrdiff_t m_nSequenceMax = 0x1E4; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3722,6 +4485,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0x34C; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_Lerp = 0x350; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3730,6 +4495,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLocalCoords = 0x4; // bool
                 constexpr std::ptrdiff_t m_vOffset = 0x8; // Vector
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3739,6 +4506,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nHeadLocationMax = 0x1E8; // int32
                 constexpr std::ptrdiff_t m_flResetRate = 0x1F0; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3747,6 +4516,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1DC; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nVoxelGridResolution = 0x1E0; // int32
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3760,6 +4531,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flNoiseScaleLoc = 0x1F4; // float32
                 constexpr std::ptrdiff_t m_vecOffsetLoc = 0x1F8; // Vector
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3768,6 +4541,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1DC; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nComponent = 0x1E0; // int32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3779,6 +4554,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRotationRandExponent = 0x1F0; // float32
                 constexpr std::ptrdiff_t m_bRandomlyFlipDirection = 0x1F4; // bool
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3793,6 +4570,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0x1510; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_bDeltaTime = 0x1514; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3801,6 +4580,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRange = 0x1DC; // float32
                 constexpr std::ptrdiff_t m_flScale = 0x1E0; // float32
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3817,6 +4598,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x224; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_vFinalOutputScale = 0x228; // Vector
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3837,11 +4620,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecRotation = 0x348; // CPerParticleVecInput
                 constexpr std::ptrdiff_t m_flRotLerp = 0xA00; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_RemapNamedModelBodyPartOnceTimed {
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3851,6 +4638,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0xA00; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_flScreenEdgeAlignmentDistance = 0xA08; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3859,6 +4648,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCP = 0x1E4; // int32
                 constexpr std::ptrdiff_t m_bRadiusScale = 0x1E8; // bool
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3875,6 +4666,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x16F0; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nFieldVelocity = 0x16F4; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3885,6 +4678,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_Lerp = 0x898; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_bNormalizedOutput = 0xA08; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3896,6 +4691,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bSubFrame = 0x1F0; // bool
                 constexpr std::ptrdiff_t m_bSetRopeSegmentID = 0x1F1; // bool
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3905,11 +4702,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputRemap = 0x358; // CParticleRemapFloatInput
                 constexpr std::ptrdiff_t m_nSetMethod = 0x4C8; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RandomNamedModelBodyPart {
             }
+            // Parent: None
+            // Field count: 21
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3936,6 +4737,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_hLightCookie = 0x1770; // CStrongHandle<InfoForResourceTypeCTextureBase>
                 constexpr std::ptrdiff_t m_bSphericalCookie = 0x1778; // bool
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3946,6 +4749,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRadiusScale = 0x1E8; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_flParentRadiusScale = 0x358; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3954,11 +4759,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_Pos = 0x8; // CPerParticleVecInput
                 constexpr std::ptrdiff_t m_nOrientationMode = 0x6C0; // ParticleOrientationSetMode_t
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RemapParticleCountToNamedModelBodyPartScalar {
             }
+            // Parent: None
+            // Field count: 19
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3983,6 +4792,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bCopyAlpha = 0x385; // bool
                 constexpr std::ptrdiff_t m_bSetRadius = 0x386; // bool
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3992,6 +4803,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nLatencyCPField = 0x1E0; // int32
                 constexpr std::ptrdiff_t m_nDesiredVelocityCPField = 0x1E4; // int32
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3999,6 +4812,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRadiusScale = 0x1D8; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flMinimumSpeed = 0x348; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4010,6 +4825,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bAdditive = 0x1E8; // bool
                 constexpr std::ptrdiff_t m_flNoiseAnimationTimeScale = 0x1EC; // float32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4021,6 +4838,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flStartAlpha = 0x1E8; // float32
                 constexpr std::ptrdiff_t m_flEndAlpha = 0x1EC; // float32
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4029,6 +4848,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flSaturationAdjust = 0x348; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flLightnessAdjust = 0x4B8; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4038,6 +4859,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flNominalRadius = 0x178; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flScale = 0x2E8; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4051,12 +4874,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMax = 0x1F0; // float32
                 constexpr std::ptrdiff_t m_nSetMethod = 0x1F4; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_AlphaDecay {
                 constexpr std::ptrdiff_t m_flMinAlpha = 0x1D8; // float32
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4064,6 +4891,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRadiusScale = 0x1D8; // float32
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1DC; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4074,6 +4903,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bNormalizedOutput = 0x8A0; // bool
                 constexpr std::ptrdiff_t m_bWritePreviousPosition = 0x8A1; // bool
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4089,6 +4920,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_HitboxSetName = 0x8B6; // char[128]
                 constexpr std::ptrdiff_t m_flShellSize = 0x938; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4100,6 +4933,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flInterpolation = 0x1E8; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flTValue = 0x358; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4109,6 +4944,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flStartTime = 0x350; // float32
                 constexpr std::ptrdiff_t m_flEndTime = 0x354; // float32
             }
+            // Parent: None
+            // Field count: 13
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4127,6 +4964,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nChildCP = 0x28C; // int32
                 constexpr std::ptrdiff_t m_nChildGroupID = 0x290; // int32
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4135,6 +4974,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMin = 0x1E0; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flOutputMax = 0x350; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4143,6 +4984,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecCP1Pos = 0x1E4; // Vector
                 constexpr std::ptrdiff_t m_bOrientToHMD = 0x1F0; // bool
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4157,6 +5000,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bActiveRange = 0x1F4; // bool
                 constexpr std::ptrdiff_t m_bSetPreviousParticle = 0x1F5; // bool
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4169,6 +5014,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOutputCP = 0x1238; // int32
                 constexpr std::ptrdiff_t m_nOutVectorField = 0x123C; // int32
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4184,6 +5031,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bActiveRange = 0x2C4; // bool
                 constexpr std::ptrdiff_t m_bRadialCheck = 0x2C5; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4192,11 +5041,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flDistance = 0x1E8; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_bCullInside = 0x358; // bool
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_RemapNamedModelSequenceEndCap {
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4213,6 +5066,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nRandomSeed = 0x4E0; // int32
                 constexpr std::ptrdiff_t m_bLocalSpaceAngles = 0x4E4; // bool
             }
+            // Parent: None
+            // Field count: 24
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4242,6 +5097,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_MaterialFloatVars = 0x1500; // CUtlLeanVector<FloatInputMaterialVariable_t>
                 constexpr std::ptrdiff_t m_MaterialVecVars = 0x1520; // CUtlLeanVector<VecInputMaterialVariable_t>
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4249,6 +5106,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nControlPointNumber = 0x1E0; // int32
                 constexpr std::ptrdiff_t m_flVelocityScale = 0x1E4; // float32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4261,6 +5120,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRetestRate = 0x1F8; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_bAdaptiveThreshold = 0x368; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4272,6 +5133,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bProportional = 0xFB9; // bool
                 constexpr std::ptrdiff_t m_randomnessParameters = 0xFBC; // CRandomNumberGeneratorParameters
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4279,12 +5142,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_transformInput = 0x1E0; // CParticleTransformInput
                 constexpr std::ptrdiff_t m_nControlPointAxis = 0x248; // ParticleControlPointAxis_t
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_ShapeMatchingConstraint {
                 constexpr std::ptrdiff_t m_flShapeRestorationTime = 0x1D8; // float32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4297,6 +5164,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bSetOrientation = 0x359; // bool
                 constexpr std::ptrdiff_t m_nOrientation = 0x35C; // ParticleOrientationType_t
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4312,6 +5181,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nLocalSpaceControlPoint = 0x1514; // int32
                 constexpr std::ptrdiff_t m_b3D = 0x1518; // bool
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4324,6 +5195,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bNormalize = 0x1F4; // bool
                 constexpr std::ptrdiff_t m_nFieldStrength = 0x1F8; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4338,6 +5211,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_OperatorName = 0x200; // CUtlString
                 constexpr std::ptrdiff_t m_FieldName = 0x208; // CUtlString
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4347,6 +5222,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nBehindFieldOutput = 0x89C; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_flBehindOutputRemap = 0x8A0; // CParticleRemapFloatInput
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4359,6 +5236,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nRTEnvCP = 0x274; // int32
                 constexpr std::ptrdiff_t m_nComponent = 0x278; // int32
             }
+            // Parent: None
+            // Field count: 14
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4378,6 +5257,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flInterpolation = 0xFE0; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_bRetainInitialVelocity = 0x1150; // bool
             }
+            // Parent: None
+            // Field count: 13
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4396,6 +5277,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bOffset = 0x224; // bool
                 constexpr std::ptrdiff_t m_bAccelerate = 0x225; // bool
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4406,6 +5289,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_InputFalloffExp = 0x4C8; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_nImpulseType = 0x638; // ParticleImpulseType_t
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4414,6 +5299,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flForceScale = 0x1EC; // float32
                 constexpr std::ptrdiff_t m_flTargetDensity = 0x1F0; // float32
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4429,6 +5316,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseLocalCoords = 0x811; // bool
                 constexpr std::ptrdiff_t m_bOffsetExistingPos = 0x812; // bool
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4439,6 +5328,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLoopedPath = 0x1E4; // bool
                 constexpr std::ptrdiff_t m_pointList = 0x1E8; // CUtlVector<PointDefinitionWithTimeValues_t>
             }
+            // Parent: None
+            // Field count: 12
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4456,6 +5347,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecCP4Pos = 0x218; // Vector
                 constexpr std::ptrdiff_t m_nHeadLocation = 0x224; // int32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4467,6 +5360,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOutputField = 0x10C0; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nSetMethod = 0x10C4; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4476,6 +5371,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_TransformInput = 0xA00; // CParticleTransformInput
                 constexpr std::ptrdiff_t m_bLocalSpace = 0xA68; // bool
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4488,6 +5385,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRepulsionMaxStrength = 0x1FC; // float32
                 constexpr std::ptrdiff_t m_bUseAABB = 0x200; // bool
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4497,6 +5396,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0x354; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_InputStrength = 0x358; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 16
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4518,6 +5419,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseMesh = 0x1222; // bool
                 constexpr std::ptrdiff_t m_flShellSize = 0x1228; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4527,6 +5430,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nIncrement = 0x1E0; // int32
                 constexpr std::ptrdiff_t m_nGroupID = 0x1E4; // int32
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4535,11 +5440,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vForce = 0x358; // CPerParticleVecInput
                 constexpr std::ptrdiff_t m_nCP = 0xA10; // int32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RandomNamedModelMeshGroup {
             }
+            // Parent: None
+            // Field count: 18
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4563,6 +5472,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecColorScale = 0x838; // CParticleCollectionVecInput
                 constexpr std::ptrdiff_t m_nColorBlendType = 0xEF0; // ParticleColorBlendType_t
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4570,6 +5481,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flMaxVelocity = 0x1D8; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flMinVelocity = 0x348; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4578,6 +5491,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_fSpeedMax = 0x1E4; // float32
                 constexpr std::ptrdiff_t m_bIgnoreDt = 0x1E8; // bool
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4592,6 +5507,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bFinalEmitOnStop = 0x4D9; // bool
                 constexpr std::ptrdiff_t m_flScale = 0x4E0; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4600,6 +5517,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nControlPointNumberEnd = 0x1E4; // int32
                 constexpr std::ptrdiff_t m_bLocalCoords = 0x1E8; // bool
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4609,6 +5528,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOffsetRot = 0x24C; // float32
                 constexpr std::ptrdiff_t m_nComponent = 0x250; // int32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4621,6 +5542,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flEndAlpha = 0x1EC; // float32
                 constexpr std::ptrdiff_t m_bForcePreserveParticleOrder = 0x1F0; // bool
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4631,6 +5554,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1F0; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_bEaseInOut = 0x1F4; // bool
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4646,11 +5571,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bProportionalOp = 0x224; // bool
                 constexpr std::ptrdiff_t m_bEaseOut = 0x225; // bool
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_RemapNamedModelSequenceOnceTimed {
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4658,6 +5587,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCPInput = 0x1E0; // int32
                 constexpr std::ptrdiff_t m_nCPOutput = 0x1E4; // int32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4670,11 +5601,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseParticleCount = 0x1E9; // bool
                 constexpr std::ptrdiff_t m_PathParams = 0x1F0; // CPathParameters
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_RemapNamedModelBodyPartEndCap {
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4683,6 +5618,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bDestroyImmediately = 0x350; // bool
                 constexpr std::ptrdiff_t m_bPlayEndCap = 0x351; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4691,6 +5628,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSpinRateMinDegrees = 0x1DC; // int32
                 constexpr std::ptrdiff_t m_fSpinRateStopTime = 0x1E4; // float32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MParticleMaxVersion
@@ -4702,6 +5641,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bCPPairs = 0x1E4; // bool
                 constexpr std::ptrdiff_t m_PathParams = 0x1F0; // CPathParameters
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4714,6 +5655,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0x220; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_bModelFromRenderer = 0x224; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4722,6 +5665,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecOutputMin = 0x1E0; // CPerParticleVecInput
                 constexpr std::ptrdiff_t m_vecOutputMax = 0x898; // CPerParticleVecInput
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4733,17 +5678,23 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_pTextureSelfIllum = 0x248; // CStrongHandle<InfoForResourceTypeCTextureBase>
                 constexpr std::ptrdiff_t m_pTextureDetail = 0x250; // CStrongHandle<InfoForResourceTypeCTextureBase>
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace IParticleSystemDefinition {
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_WindForce {
                 constexpr std::ptrdiff_t m_vForce = 0x1E8; // Vector
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4755,6 +5706,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecInput = 0x2B0; // CParticleCollectionVecInput
                 constexpr std::ptrdiff_t m_floatInput = 0x968; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 34
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4794,6 +5747,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flLengthScale = 0x17A0; // float32
                 constexpr std::ptrdiff_t m_flLengthFadeInTime = 0x17A4; // float32
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4814,6 +5769,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bAdditive = 0x89D; // bool
                 constexpr std::ptrdiff_t m_vecComponentScale = 0x8A0; // CPerParticleVecInput
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4823,6 +5780,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOffsetRot = 0x1E0; // float32
                 constexpr std::ptrdiff_t m_nComponent = 0x1E4; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4832,6 +5791,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseAvgParticlePos = 0x1F0; // bool
                 constexpr std::ptrdiff_t m_nSetParent = 0x1F4; // ParticleParentSetMode_t
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4843,6 +5804,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nField = 0x360; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_flOutputRemap = 0x368; // CParticleRemapFloatInput
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4859,6 +5822,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bActiveRange = 0x1FC; // bool
                 constexpr std::ptrdiff_t m_bUseParticleNormal = 0x1FD; // bool
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4874,6 +5839,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bDerivative = 0x200; // bool
                 constexpr std::ptrdiff_t m_flInterpRate = 0x204; // float32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4883,6 +5850,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCP = 0xA08; // int32
                 constexpr std::ptrdiff_t m_nLocalCP = 0xA0C; // int32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4895,6 +5864,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flWorleySeed = 0x1CD0; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_flWorleyJitter = 0x1E40; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4903,12 +5874,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1E4; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_flRotOffset = 0x1E8; // float32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_SetSimulationRate {
                 constexpr std::ptrdiff_t m_flSimulationScale = 0x1E0; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4918,6 +5893,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flFadeInTimeExp = 0x1E0; // float32
                 constexpr std::ptrdiff_t m_bProportional = 0x1E4; // bool
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4932,6 +5909,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nAmplitudeField = 0x244; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nFilterCP = 0x248; // int32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4942,6 +5921,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMin = 0x1EC; // float32
                 constexpr std::ptrdiff_t m_flOutputMax = 0x1F0; // float32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4951,6 +5932,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOutputCP = 0x1E8; // int32
                 constexpr std::ptrdiff_t m_DefaultHSVColor = 0x1EC; // Color
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4958,6 +5941,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecInput = 0x1D8; // CPerParticleVecInput
                 constexpr std::ptrdiff_t m_vecRotation = 0x890; // CPerParticleVecInput
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4969,12 +5954,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bScalePosition = 0x1ED; // bool
                 constexpr std::ptrdiff_t m_bScaleVelocity = 0x1EE; // bool
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RadiusFromCPObject {
                 constexpr std::ptrdiff_t m_nControlPoint = 0x1E0; // int32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4985,6 +5974,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_HitboxSetName = 0x1EC; // char[128]
                 constexpr std::ptrdiff_t m_bUseBones = 0x26C; // bool
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -4995,6 +5986,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flEndTime = 0x1EC; // float32
                 constexpr std::ptrdiff_t m_nSetMethod = 0x1F0; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5003,6 +5996,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nDestCP = 0x1E4; // int32
                 constexpr std::ptrdiff_t m_nCPField = 0x1E8; // int32
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5017,6 +6012,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flTextureBlend = 0x38; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_TextureControls = 0x1A8; // TextureControls_t
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5026,6 +6023,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flEndLerpTime = 0x1F8; // float32
                 constexpr std::ptrdiff_t m_EndingForce = 0x1FC; // Vector
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5040,6 +6039,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOutputCP = 0x270; // int32
                 constexpr std::ptrdiff_t m_bIncludeWater = 0x280; // bool
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5052,6 +6053,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flJumpThreshold = 0x1E8; // float32
                 constexpr std::ptrdiff_t m_flPrevPosScale = 0x1EC; // float32
             }
+            // Parent: None
+            // Field count: 13
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5070,17 +6073,23 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1C48; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nFieldVelocity = 0x1C4C; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_RadiusDecay {
                 constexpr std::ptrdiff_t m_flMinRadius = 0x1D8; // float32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RemapNamedModelBodyPartToScalar {
             }
+            // Parent: None
+            // Field count: 12
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5098,6 +6107,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLocalCoords = 0x218; // bool
                 constexpr std::ptrdiff_t m_flRemapBias = 0x21C; // float32
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5111,6 +6122,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flOutputMax = 0x1F8; // float32
                 constexpr std::ptrdiff_t m_nSetMethod = 0x1FC; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5131,12 +6144,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecOffsetLoc = 0x210; // Vector
                 constexpr std::ptrdiff_t m_flWorldTimeScale = 0x21C; // float32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CParticleFunctionInitializer {
                 constexpr std::ptrdiff_t m_nAssociatedEmitterIndex = 0x1D8; // int32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5147,6 +6164,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bPlayEndcapOnStop = 0x630; // bool
                 constexpr std::ptrdiff_t m_bDestroyImmediately = 0x631; // bool
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5154,6 +6173,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_model = 0x0; // CStrongHandle<InfoForResourceTypeCModel>
                 constexpr std::ptrdiff_t m_flRelativeProbabilityOfSpawn = 0x8; // float32
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5167,6 +6188,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flMaximumDistanceToCP = 0x368; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_bUseOldCode = 0x4D8; // bool
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5176,6 +6199,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nMaxCP = 0x1E8; // int32
                 constexpr std::ptrdiff_t m_nDynamicCPCount = 0x1F0; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5187,6 +6212,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nControlPoint = 0x1E8; // int32
                 constexpr std::ptrdiff_t m_flBlendValue = 0x1EC; // float32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5198,6 +6225,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flInitialSpeedMax = 0x698; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_bUseParticleCount = 0x808; // bool
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5205,6 +6234,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nControlPointNumber = 0x1E8; // int32
                 constexpr std::ptrdiff_t m_flScale = 0x1F0; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5217,12 +6248,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldInput = 0x22C; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x230; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_ScaleVelocity {
                 constexpr std::ptrdiff_t m_vecScale = 0x1E0; // CParticleCollectionVecInput
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5237,6 +6272,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nLerpType = 0x334; // HitboxLerpType_t
                 constexpr std::ptrdiff_t m_flInterpolation = 0x338; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5245,6 +6282,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nParticleNumber = 0x1E0; // CParticleCollectionFloatInput
                 constexpr std::ptrdiff_t m_flInterpolation = 0x350; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5255,6 +6294,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bClosedLoop = 0x201; // bool
                 constexpr std::ptrdiff_t m_nNumPointsAlongPath = 0x204; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5264,6 +6305,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldInput = 0x34C; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x350; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5279,6 +6322,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nTintBlendMode = 0x21C; // ParticleColorBlendMode_t
                 constexpr std::ptrdiff_t m_flLightAmplification = 0x220; // float32
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5290,6 +6335,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bSetOrientation = 0x359; // bool
                 constexpr std::ptrdiff_t m_bSetZDown = 0x35A; // bool
             }
+            // Parent: None
+            // Field count: 12
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5307,6 +6354,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bWrap = 0x202; // bool
                 constexpr std::ptrdiff_t m_flRemapBias = 0x204; // float32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5317,6 +6366,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bRandomDistribution = 0x1EC; // bool
                 constexpr std::ptrdiff_t m_nRandomSeed = 0x1F0; // int32
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5326,6 +6377,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flEndTime = 0x1E0; // float32
                 constexpr std::ptrdiff_t m_nField = 0x210; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5340,6 +6393,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nBaseCP = 0x1FC; // int32
                 constexpr std::ptrdiff_t m_bUniformSpeed = 0x200; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5351,6 +6406,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1E8; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_bOffsetLocal = 0x1EC; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5359,6 +6416,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nStrengthFieldOverride = 0x22C; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_flRadiusScale = 0x230; // float32
             }
+            // Parent: None
+            // Field count: 20
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5384,6 +6443,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flRenderFilter = 0x1E20; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_bDebugOrientation = 0x1F90; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5392,6 +6453,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nTraceSet = 0x898; // ParticleTraceSet_t
                 constexpr std::ptrdiff_t m_bCullOnSky = 0x89C; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5403,6 +6466,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bPlayEndcapOnStop = 0x359; // bool
                 constexpr std::ptrdiff_t m_bDestroyImmediately = 0x35A; // bool
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5423,6 +6488,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecDistanceScale = 0x9B4; // Vector
                 constexpr std::ptrdiff_t m_flRemapBias = 0x9C0; // float32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5435,11 +6502,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vMaxRandomDisplacement = 0x9A0; // CParticleCollectionVecInput
                 constexpr std::ptrdiff_t m_flModellingScale = 0x1058; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_EndCapDecay {
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5452,6 +6523,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nControlPointNumber = 0x214; // int32
                 constexpr std::ptrdiff_t m_flExponent = 0x218; // float32
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5465,6 +6538,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseParentDensity = 0x200; // bool
                 constexpr std::ptrdiff_t m_nVoxelGridResolution = 0x204; // int32
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5473,6 +6548,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_drivers = 0x8; // CUtlVector<ParticleControlPointDriver_t>
                 constexpr std::ptrdiff_t m_previewState = 0x20; // ParticlePreviewState_t
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5482,6 +6559,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFieldOutput = 0x1E8; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_bLocalSpace = 0x1EC; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5490,11 +6569,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nVariableField = 0x8; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_flScale = 0xC; // float32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CParticleFunctionConstraint {
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5507,6 +6590,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nSetMethod = 0x1EC; // ParticleSetMethod_t
                 constexpr std::ptrdiff_t m_bIgnoreDelta = 0x1F0; // bool
             }
+            // Parent: None
+            // Field count: 58
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5570,6 +6655,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_strLightStyle = 0x2C68; // CUtlString
                 constexpr std::ptrdiff_t m_flLightStyleTime = 0x2C70; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5578,17 +6665,23 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flMagnitude = 0x398; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_nSimIdFilter = 0x508; // int32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CParticleFunctionEmitter {
                 constexpr std::ptrdiff_t m_nEmitterIndex = 0x1D8; // int32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RemapNamedModelMeshGroupToScalar {
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5596,6 +6689,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCPInput = 0x1E0; // int32
                 constexpr std::ptrdiff_t m_nCPOutput = 0x1E4; // int32
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5606,6 +6701,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flAdjustmentScale = 0x628; // float32
                 constexpr std::ptrdiff_t m_flInitialRestingLength = 0x630; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5617,12 +6714,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nScaleControlPointNumber = 0x36C; // int32
                 constexpr std::ptrdiff_t m_nControlPointNumber = 0x370; // int32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_ForceControlPointStub {
                 constexpr std::ptrdiff_t m_ControlPoint = 0x1E0; // int32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5635,6 +6736,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bOffset = 0x1F9; // bool
                 constexpr std::ptrdiff_t m_flNoiseAnimationTimeScale = 0x1FC; // float32
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5647,6 +6750,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bActiveRange = 0x7A0; // bool
                 constexpr std::ptrdiff_t m_nSetMethod = 0x7A4; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5654,6 +6759,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_InputValue = 0x1E0; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_nOutputField = 0x350; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5670,6 +6777,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bBBoxOnly = 0x204; // bool
                 constexpr std::ptrdiff_t m_bCubeRoot = 0x205; // bool
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5678,6 +6787,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecOffset = 0x1DC; // Vector
                 constexpr std::ptrdiff_t m_bOffsetLocal = 0x1E8; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5689,6 +6800,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_angOffset = 0x2C; // QAngle
                 constexpr std::ptrdiff_t m_entityName = 0x38; // CUtlString
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5697,6 +6810,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vecTwistAxis = 0x1EC; // Vector
                 constexpr std::ptrdiff_t m_bFlipBasedOnYaw = 0x1F8; // bool
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5708,6 +6823,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCPField = 0x1F0; // int32
                 constexpr std::ptrdiff_t m_vecComparisonVelocity = 0x1F8; // CParticleCollectionVecInput
             }
+            // Parent: None
+            // Field count: 15
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5728,23 +6845,31 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nNoCollisionAttribute = 0x534; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nZeroGravityAttribute = 0x538; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_SpinYaw {
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace PointDefinitionWithTimeValues_t {
                 constexpr std::ptrdiff_t m_flTimeDuration = 0x14; // float32
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace RenderProjectedMaterial_t {
                 constexpr std::ptrdiff_t m_hMaterial = 0x0; // CStrongHandle<InfoForResourceTypeIMaterial2>
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5756,6 +6881,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOutputField = 0x10C8; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nSetMethod = 0x10CC; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5772,6 +6899,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flLocalBuoyancyScale = 0x1790; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_vecBuoyancyForce = 0x1900; // CPerParticleVecInput
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5782,6 +6911,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUseBones = 0x1E6; // bool
                 constexpr std::ptrdiff_t m_HitboxSetName = 0x1E7; // char[128]
             }
+            // Parent: None
+            // Field count: 30
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5817,6 +6948,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flShadowDensity = 0x4074; // float32
                 constexpr std::ptrdiff_t m_replicationParameters = 0x4078; // CReplicationParameters
             }
+            // Parent: None
+            // Field count: 12
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5834,6 +6967,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bActiveRange = 0x2CC; // bool
                 constexpr std::ptrdiff_t m_bRadialCheck = 0x2CD; // bool
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5847,6 +6982,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOrientationField = 0x4CC; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_bNumBasedOnParticleCount = 0x4D0; // bool
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5862,11 +6999,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flControlPointOrientationAmount = 0x248; // float32
                 constexpr std::ptrdiff_t m_nControlPointForLinearDirection = 0x24C; // int32
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_OP_WorldCollideConstraint {
             }
+            // Parent: None
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5878,6 +7019,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nOutputField = 0x630; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_nSetMethod = 0x634; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5893,6 +7036,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCPFieldMax = 0x1F4; // int32
                 constexpr std::ptrdiff_t m_nSetMethod = 0x1F8; // ParticleSetMethod_t
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5906,6 +7051,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flAlpha = 0xA78; // CPerParticleFloatInput
                 constexpr std::ptrdiff_t m_nColorBlendType = 0xBE8; // ParticleColorBlendType_t
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5913,6 +7060,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_strVariable = 0x0; // CUtlString
                 constexpr std::ptrdiff_t m_flInput = 0x8; // CParticleCollectionFloatInput
             }
+            // Parent: None
+            // Field count: 8
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5926,6 +7075,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nField = 0x210; // ParticleAttributeIndex_t
                 constexpr std::ptrdiff_t m_bProportionalOp = 0x214; // bool
             }
+            // Parent: None
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5938,6 +7089,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bNormalize = 0x1FC; // bool
                 constexpr std::ptrdiff_t m_flScale = 0x200; // CPerParticleFloatInput
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5945,11 +7098,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_InputValue = 0x1E0; // CParticleCollectionVecInput
                 constexpr std::ptrdiff_t m_nOutputField = 0x898; // ParticleAttributeIndex_t
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace C_INIT_RemapParticleCountToNamedModelMeshGroupScalar {
             }
+            // Parent: None
+            // Field count: 4
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5959,6 +7116,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nCP = 0x1E4; // int32
                 constexpr std::ptrdiff_t m_vecOffset = 0x1E8; // Vector
             }
+            // Parent: None
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5975,6 +7134,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bScaleOffset = 0x1F9; // bool
                 constexpr std::ptrdiff_t m_vecOffset = 0x1FC; // Vector
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults

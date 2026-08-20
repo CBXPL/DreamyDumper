@@ -1,19 +1,26 @@
-// Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-13
+// Generated using https://github.com/a2x/cs2-dumper
+// 2026-08-20 05:57:42.790931500 UTC
 
 #pragma once
 
 #include <cstddef>
 #include <cstdint>
 
-namespace dreamydumper {
+namespace cs2_dumper {
     namespace schemas {
+        // Module: scenesystem.dll
+        // Class count: 9
+        // Enum count: 6
         namespace scenesystem_dll {
+            // Alignment: 4
+            // Member count: 3
             enum class ESceneObjectMeshletVisualization : uint32_t {
                 SCENEOBJECT_MESHLET_VIS_NONE = 0x0,
                 SCENEOBJECT_MESHLET_VIS_MESHLET = 0x1,
                 SCENEOBJECT_MESHLET_VIS_CULLED = 0x2
             };
+            // Alignment: 4
+            // Member count: 7
             enum class ESceneViewDebugOverlaysListenerDataType_t : uint32_t {
                 k_ESceneViewDebugOverlaysListenerDataType_Unknown = 0x0,
                 k_ESceneViewDebugOverlaysListenerDataType_Sphere = 0x1,
@@ -23,12 +30,16 @@ namespace dreamydumper {
                 k_ESceneViewDebugOverlaysListenerDataType_SolidBoxAngles = 0x5,
                 k_ESceneViewDebugOverlaysListenerDataType_Text3D = 0x6
             };
+            // Alignment: 4
+            // Member count: 4
             enum class ESilhouetteType_t : uint32_t {
                 SILHOUETTE_NONE = 0x0,
                 SILHOUETTE_LIGHT = 0x1,
                 SILHOUETTE_ENVMAP = 0x2,
                 SILHOUETTE_LPV = 0x4
             };
+            // Alignment: 1
+            // Member count: 5
             enum class DisableShadows_t : uint8_t {
                 kDisableShadows_None = 0x0,
                 kDisableShadows_All = 0x1,
@@ -36,6 +47,8 @@ namespace dreamydumper {
                 kDisableShadows_Realtime = 0x3,
                 kDisableShadows_ReallyNone = 0x4
             };
+            // Alignment: 1
+            // Member count: 6
             enum class DecalRtEncoding_t : uint8_t {
                 kDecalInvalid = 0xFF,
                 kDecalMin = 0x0,
@@ -44,6 +57,8 @@ namespace dreamydumper {
                 kDecalMax = 0x2,
                 kDecalDefault = 0x0
             };
+            // Alignment: 4
+            // Member count: 6
             enum class ESceneObjectVisualization : uint32_t {
                 SCENEOBJECT_VIS_NONE = 0x0,
                 SCENEOBJECT_VIS_OBJECT = 0x1,
@@ -52,6 +67,8 @@ namespace dreamydumper {
                 SCENEOBJECT_VIS_LOD = 0x4,
                 SCENEOBJECT_VIS_INSTANCING = 0x5
             };
+            // Parent: None
+            // Field count: 10
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -67,6 +84,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nMultisampleNumSamples = 0x28; // int32
                 constexpr std::ptrdiff_t m_nFormat = 0x2C; // int32
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -74,6 +93,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nViewId = 0x0; // uint64
                 constexpr std::ptrdiff_t m_nFrameCount = 0x8; // uint64
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -81,11 +102,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nViewId = 0x0; // uint64
                 constexpr std::ptrdiff_t m_ViewName = 0x8; // CUtlString
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CSSDSMsg_PostLayer {
             }
+            // Parent: None
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -96,11 +121,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_LayerName = 0x20; // CUtlString
                 constexpr std::ptrdiff_t m_displayText = 0x28; // CUtlString
             }
+            // Parent: None
+            // Field count: 0
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CSSDSMsg_PreLayer {
             }
+            // Parent: None
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -109,6 +138,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_ViewName = 0x10; // CUtlString
                 constexpr std::ptrdiff_t m_Targets = 0x18; // CUtlVector<CSSDSMsg_ViewTarget>
             }
+            // Parent: None
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -116,6 +147,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_viewId = 0x0; // SceneViewId_t
                 constexpr std::ptrdiff_t m_ViewName = 0x10; // CUtlString
             }
+            // Parent: None
+            // Field count: 1
             //
             // Metadata:
             // MGetKV3ClassDefaults
