@@ -1,13 +1,12 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-20 05:57:42.790931500 UTC
+// Dumped using DreamyDumper 1.5
+// Dumped at: 2026-08-20
 
 #pragma once
 
 #include <cstddef>
 #include <cstdint>
 
-namespace cs2_dumper {
-    // Module: client.dll
+namespace dreamydumper {
     namespace buttons {
         constexpr std::ptrdiff_t attack = 0x209A000;
         constexpr std::ptrdiff_t attack2 = 0x209A090;

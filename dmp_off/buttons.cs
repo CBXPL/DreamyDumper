@@ -1,8 +1,7 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2026-08-20 05:57:42.790931500 UTC
+// Dumped using DreamyDumper 1.5
+// Dumped at: 2026-08-20
 
 namespace CS2Dumper {
-    // Module: client.dll
     public static class Buttons {
         public const nint attack = 0x209A000;
         public const nint attack2 = 0x209A090;
