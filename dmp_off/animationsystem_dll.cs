@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-20
+// Dumped at: 2026-08-25
 
 namespace CS2Dumper.Schemas {
     public static class AnimationsystemDll {

@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-20
+// Dumped at: 2026-08-25
 
 #pragma once
 
@@ -1840,6 +1840,14 @@ namespace dreamydumper {
             }
             namespace C_Item_Healthshot {
             }
+            namespace CCSCustomHudLayout {
+                constexpr std::ptrdiff_t m_strLayout = 0x608; // CUtlSymbolLarge
+                constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x610; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+                constexpr std::ptrdiff_t m_globalLayoutState = 0x678; // CCSCustomHudLayoutState
+                constexpr std::ptrdiff_t m_vecPanelIds = 0x788; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecClassNames = 0x7A0; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x7B8; // C_NetworkUtlVectorBase<CUtlString>
+            }
             namespace CEntityInstance {
                 constexpr std::ptrdiff_t m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_pEntity = 0x10; // CEntityIdentity*
@@ -2299,6 +2307,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flThrowVelocity = 0x860; // float32
                 constexpr std::ptrdiff_t m_vSmokeColor = 0x864; // Vector
                 constexpr std::ptrdiff_t m_szAnimClass = 0x870; // CGlobalSymbol
+            }
+            namespace CCSCustomHudLayout_API {
             }
             namespace CAttributeManager {
                 constexpr std::ptrdiff_t m_Providers = 0x8; // CUtlVector<CHandle<C_BaseEntity>>
@@ -3978,6 +3988,12 @@ namespace dreamydumper {
             }
             namespace C_CSGO_MapPreviewCameraPath_API {
             }
+            namespace CCSCustomHudLayoutState {
+                constexpr std::ptrdiff_t m_bInputCaptureEnabled = 0x30; // bool
+                constexpr std::ptrdiff_t m_vecHasClasses = 0x38; // C_NetworkUtlVectorBase<HUDPanelHasClass_t>
+                constexpr std::ptrdiff_t m_vecDialogVariableStrings = 0x50; // C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t>
+                constexpr std::ptrdiff_t m_playerSlot = 0x108; // CPlayerSlot
+            }
             namespace CCSGO_WingmanIntroCharacterPosition {
             }
             namespace CFilterName {
@@ -4100,6 +4116,11 @@ namespace dreamydumper {
             namespace C_WeaponSawedoff {
             }
             namespace C_TriggerVolume {
+            }
+            namespace CCSPlayerCamera {
+                constexpr std::ptrdiff_t m_hPawn = 0x600; // CHandle<C_CSPlayerPawnBase>
+                constexpr std::ptrdiff_t m_bEnabled = 0x604; // bool
+                constexpr std::ptrdiff_t m_bIsControllingAngles = 0x605; // bool
             }
             //
             // Metadata:

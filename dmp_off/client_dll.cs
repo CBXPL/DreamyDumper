@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-20
+// Dumped at: 2026-08-25
 
 namespace CS2Dumper.Schemas {
     public static class ClientDll {
@@ -1834,6 +1834,14 @@ namespace CS2Dumper.Schemas {
         }
         public static class C_Item_Healthshot {
         }
+        public static class CCSCustomHudLayout {
+            public const nint m_strLayout = 0x608; // CUtlSymbolLarge
+            public const nint m_vecPlayerLayoutStates = 0x610; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+            public const nint m_globalLayoutState = 0x678; // CCSCustomHudLayoutState
+            public const nint m_vecPanelIds = 0x788; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecClassNames = 0x7A0; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecDialogVariableNames = 0x7B8; // C_NetworkUtlVectorBase<CUtlString>
+        }
         public static class CEntityInstance {
             public const nint m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
             public const nint m_pEntity = 0x10; // CEntityIdentity*
@@ -2293,6 +2301,8 @@ namespace CS2Dumper.Schemas {
             public const nint m_flThrowVelocity = 0x860; // float32
             public const nint m_vSmokeColor = 0x864; // Vector
             public const nint m_szAnimClass = 0x870; // CGlobalSymbol
+        }
+        public static class CCSCustomHudLayout_API {
         }
         public static class CAttributeManager {
             public const nint m_Providers = 0x8; // CUtlVector<CHandle<C_BaseEntity>>
@@ -3972,6 +3982,12 @@ namespace CS2Dumper.Schemas {
         }
         public static class C_CSGO_MapPreviewCameraPath_API {
         }
+        public static class CCSCustomHudLayoutState {
+            public const nint m_bInputCaptureEnabled = 0x30; // bool
+            public const nint m_vecHasClasses = 0x38; // C_NetworkUtlVectorBase<HUDPanelHasClass_t>
+            public const nint m_vecDialogVariableStrings = 0x50; // C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t>
+            public const nint m_playerSlot = 0x108; // CPlayerSlot
+        }
         public static class CCSGO_WingmanIntroCharacterPosition {
         }
         public static class CFilterName {
@@ -4094,6 +4110,11 @@ namespace CS2Dumper.Schemas {
         public static class C_WeaponSawedoff {
         }
         public static class C_TriggerVolume {
+        }
+        public static class CCSPlayerCamera {
+            public const nint m_hPawn = 0x600; // CHandle<C_CSPlayerPawnBase>
+            public const nint m_bEnabled = 0x604; // bool
+            public const nint m_bIsControllingAngles = 0x605; // bool
         }
         //
         // Metadata:

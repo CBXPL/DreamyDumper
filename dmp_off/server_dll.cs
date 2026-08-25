@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-20
+// Dumped at: 2026-08-25
 
 namespace CS2Dumper.Schemas {
     public static class ServerDll {
@@ -1913,7 +1913,8 @@ namespace CS2Dumper.Schemas {
             CS_UM_DamagePrediction = 0x182,
             CS_UM_RecurringMissionSchema = 0x183,
             CS_UM_SendPlayerLoadout = 0x184,
-            CS_UM_WeaponMagDrop = 0x185
+            CS_UM_WeaponMagDrop = 0x185,
+            CS_UM_CustomHudClicked = 0x186
         }
         public enum HierarchyType_t : uint {
             HIERARCHY_NONE = 0x0,
@@ -2014,6 +2015,11 @@ namespace CS2Dumper.Schemas {
             MOVE_MOUNT_LOW = 0x1,
             MOVE_MOUNT_HIGH = 0x2,
             MOVE_MOUNT_MAXCOUNT = 0x3
+        }
+        public enum EHudPanelClassStatus_t : uint {
+            k_eHudPanelClassStatus_Undefined = unchecked((uint)-1),
+            k_eHudPanelClassStatus_DoesNotHaveClass = 0x0,
+            k_eHudPanelClassStatus_HasClass = 0x1
         }
         public enum GCClientLauncherType : uint {
             GCClientLauncherType_DEFAULT = 0x0,
@@ -5297,6 +5303,14 @@ namespace CS2Dumper.Schemas {
             public const nint m_flNextSuckTime = 0x9C4; // GameTime_t
             public const nint m_iMaxObjectsAttached = 0x9C8; // int32
         }
+        public static class CCSCustomHudLayout {
+            public const nint m_strLayout = 0x4A8; // CUtlSymbolLarge
+            public const nint m_vecPlayerLayoutStates = 0x4B0; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+            public const nint m_globalLayoutState = 0x518; // CCSCustomHudLayoutState
+            public const nint m_vecPanelIds = 0x6B8; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_vecClassNames = 0x6D0; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_vecDialogVariableNames = 0x6E8; // CNetworkUtlVectorBase<CUtlString>
+        }
         public static class CEntityInstance {
             public const nint m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
             public const nint m_pEntity = 0x10; // CEntityIdentity*
@@ -5785,6 +5799,8 @@ namespace CS2Dumper.Schemas {
             public const nint m_attachedObject = 0x4C0; // CHandle<CBaseEntity>
             public const nint m_wasRestored = 0x4C4; // bool
             public const nint m_integrator = 0x4C8; // CConstantForceController
+        }
+        public static class CCSCustomHudLayout_API {
         }
         public static class CAttributeManager {
             public const nint m_Providers = 0x8; // CUtlVector<CHandle<CBaseEntity>>
@@ -8789,6 +8805,12 @@ namespace CS2Dumper.Schemas {
         public static class CScriptTriggerHurt {
             public const nint m_vExtent = 0x970; // Vector
         }
+        public static class CCSCustomHudLayoutState {
+            public const nint m_bInputCaptureEnabled = 0x30; // bool
+            public const nint m_vecHasClasses = 0x38; // CNetworkUtlVectorBase<HUDPanelHasClass_t>
+            public const nint m_vecDialogVariableStrings = 0x98; // CNetworkUtlVectorBase<HUDPanelDialogVariableString_t>
+            public const nint m_playerSlot = 0x198; // CPlayerSlot
+        }
         public static class CCSGO_WingmanIntroCharacterPosition {
         }
         public static class SpawnPoint_API {
@@ -9094,6 +9116,11 @@ namespace CS2Dumper.Schemas {
             public const nint m_operatorNameChar = 0xB31; // char[256]
             public const nint m_VecNormPos = 0xC34; // Vector
             public const nint m_flNormCenterSize = 0xC40; // float32
+        }
+        public static class CCSPlayerCamera {
+            public const nint m_hPawn = 0x4A8; // CHandle<CCSPlayerPawnBase>
+            public const nint m_bEnabled = 0x4AC; // bool
+            public const nint m_bIsControllingAngles = 0x4AD; // bool
         }
         //
         // Metadata:
@@ -10460,6 +10487,14 @@ namespace CS2Dumper.Schemas {
         //
         // Metadata:
         // MGetKV3ClassDefaults
+        public static class HUDPanelHasClass_t {
+            public const nint m_nPanelIdIndex = 0x0; // uint16
+            public const nint m_nClassNameIndex = 0x2; // uint16
+            public const nint m_eClassStatus = 0x4; // EHudPanelClassStatus_t
+        }
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
         // MPropertyFriendlyName
         public static class DebugDrawBoneTransforms_t {
             public const nint vecBones = 0x10; // CUtlVectorFixedGrowable<CTransform,128>
@@ -10471,6 +10506,12 @@ namespace CS2Dumper.Schemas {
             public const nint m_navHull = 0x8; // NavHull_t
         }
         public static class CVectorMovingAverage {
+        }
+        public static class HUDPanelDialogVariableString_t {
+            public const nint m_nPanelIdIndex = 0x8; // uint16
+            public const nint m_nDialogVariableIndex = 0xA; // uint16
+            public const nint m_sValue = 0x10; // CUtlString
+            public const nint m_bIsSet = 0x18; // bool
         }
         //
         // Metadata:

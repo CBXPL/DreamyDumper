@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-20
+// Dumped at: 2026-08-25
 
 #pragma once
 
@@ -1919,7 +1919,8 @@ namespace dreamydumper {
                 CS_UM_DamagePrediction = 0x182,
                 CS_UM_RecurringMissionSchema = 0x183,
                 CS_UM_SendPlayerLoadout = 0x184,
-                CS_UM_WeaponMagDrop = 0x185
+                CS_UM_WeaponMagDrop = 0x185,
+                CS_UM_CustomHudClicked = 0x186
             };
             enum class HierarchyType_t : uint32_t {
                 HIERARCHY_NONE = 0x0,
@@ -2020,6 +2021,11 @@ namespace dreamydumper {
                 MOVE_MOUNT_LOW = 0x1,
                 MOVE_MOUNT_HIGH = 0x2,
                 MOVE_MOUNT_MAXCOUNT = 0x3
+            };
+            enum class EHudPanelClassStatus_t : uint32_t {
+                k_eHudPanelClassStatus_Undefined = 0xFFFFFFFF,
+                k_eHudPanelClassStatus_DoesNotHaveClass = 0x0,
+                k_eHudPanelClassStatus_HasClass = 0x1
             };
             enum class GCClientLauncherType : uint32_t {
                 GCClientLauncherType_DEFAULT = 0x0,
@@ -5303,6 +5309,14 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flNextSuckTime = 0x9C4; // GameTime_t
                 constexpr std::ptrdiff_t m_iMaxObjectsAttached = 0x9C8; // int32
             }
+            namespace CCSCustomHudLayout {
+                constexpr std::ptrdiff_t m_strLayout = 0x4A8; // CUtlSymbolLarge
+                constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x4B0; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+                constexpr std::ptrdiff_t m_globalLayoutState = 0x518; // CCSCustomHudLayoutState
+                constexpr std::ptrdiff_t m_vecPanelIds = 0x6B8; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecClassNames = 0x6D0; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x6E8; // CNetworkUtlVectorBase<CUtlString>
+            }
             namespace CEntityInstance {
                 constexpr std::ptrdiff_t m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_pEntity = 0x10; // CEntityIdentity*
@@ -5791,6 +5805,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_attachedObject = 0x4C0; // CHandle<CBaseEntity>
                 constexpr std::ptrdiff_t m_wasRestored = 0x4C4; // bool
                 constexpr std::ptrdiff_t m_integrator = 0x4C8; // CConstantForceController
+            }
+            namespace CCSCustomHudLayout_API {
             }
             namespace CAttributeManager {
                 constexpr std::ptrdiff_t m_Providers = 0x8; // CUtlVector<CHandle<CBaseEntity>>
@@ -8795,6 +8811,12 @@ namespace dreamydumper {
             namespace CScriptTriggerHurt {
                 constexpr std::ptrdiff_t m_vExtent = 0x970; // Vector
             }
+            namespace CCSCustomHudLayoutState {
+                constexpr std::ptrdiff_t m_bInputCaptureEnabled = 0x30; // bool
+                constexpr std::ptrdiff_t m_vecHasClasses = 0x38; // CNetworkUtlVectorBase<HUDPanelHasClass_t>
+                constexpr std::ptrdiff_t m_vecDialogVariableStrings = 0x98; // CNetworkUtlVectorBase<HUDPanelDialogVariableString_t>
+                constexpr std::ptrdiff_t m_playerSlot = 0x198; // CPlayerSlot
+            }
             namespace CCSGO_WingmanIntroCharacterPosition {
             }
             namespace SpawnPoint_API {
@@ -9100,6 +9122,11 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_operatorNameChar = 0xB31; // char[256]
                 constexpr std::ptrdiff_t m_VecNormPos = 0xC34; // Vector
                 constexpr std::ptrdiff_t m_flNormCenterSize = 0xC40; // float32
+            }
+            namespace CCSPlayerCamera {
+                constexpr std::ptrdiff_t m_hPawn = 0x4A8; // CHandle<CCSPlayerPawnBase>
+                constexpr std::ptrdiff_t m_bEnabled = 0x4AC; // bool
+                constexpr std::ptrdiff_t m_bIsControllingAngles = 0x4AD; // bool
             }
             //
             // Metadata:
@@ -10466,6 +10493,14 @@ namespace dreamydumper {
             //
             // Metadata:
             // MGetKV3ClassDefaults
+            namespace HUDPanelHasClass_t {
+                constexpr std::ptrdiff_t m_nPanelIdIndex = 0x0; // uint16
+                constexpr std::ptrdiff_t m_nClassNameIndex = 0x2; // uint16
+                constexpr std::ptrdiff_t m_eClassStatus = 0x4; // EHudPanelClassStatus_t
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             // MPropertyFriendlyName
             namespace DebugDrawBoneTransforms_t {
                 constexpr std::ptrdiff_t vecBones = 0x10; // CUtlVectorFixedGrowable<CTransform,128>
@@ -10477,6 +10512,12 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_navHull = 0x8; // NavHull_t
             }
             namespace CVectorMovingAverage {
+            }
+            namespace HUDPanelDialogVariableString_t {
+                constexpr std::ptrdiff_t m_nPanelIdIndex = 0x8; // uint16
+                constexpr std::ptrdiff_t m_nDialogVariableIndex = 0xA; // uint16
+                constexpr std::ptrdiff_t m_sValue = 0x10; // CUtlString
+                constexpr std::ptrdiff_t m_bIsSet = 0x18; // bool
             }
             //
             // Metadata:
