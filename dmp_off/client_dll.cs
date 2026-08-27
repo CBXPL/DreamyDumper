@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-25
+// Dumped at: 2026-08-27
 
 namespace CS2Dumper.Schemas {
     public static class ClientDll {
@@ -1838,9 +1838,9 @@ namespace CS2Dumper.Schemas {
             public const nint m_strLayout = 0x608; // CUtlSymbolLarge
             public const nint m_vecPlayerLayoutStates = 0x610; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
             public const nint m_globalLayoutState = 0x678; // CCSCustomHudLayoutState
-            public const nint m_vecPanelIds = 0x788; // C_NetworkUtlVectorBase<CUtlString>
-            public const nint m_vecClassNames = 0x7A0; // C_NetworkUtlVectorBase<CUtlString>
-            public const nint m_vecDialogVariableNames = 0x7B8; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecPanelIds = 0x780; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecClassNames = 0x798; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecDialogVariableNames = 0x7B0; // C_NetworkUtlVectorBase<CUtlString>
         }
         public static class CEntityInstance {
             public const nint m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
@@ -3983,10 +3983,10 @@ namespace CS2Dumper.Schemas {
         public static class C_CSGO_MapPreviewCameraPath_API {
         }
         public static class CCSCustomHudLayoutState {
-            public const nint m_bInputCaptureEnabled = 0x30; // bool
+            public const nint m_playerSlot = 0x30; // CPlayerSlot
+            public const nint m_bInputCaptureEnabled = 0x34; // bool
             public const nint m_vecHasClasses = 0x38; // C_NetworkUtlVectorBase<HUDPanelHasClass_t>
             public const nint m_vecDialogVariableStrings = 0x50; // C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t>
-            public const nint m_playerSlot = 0x108; // CPlayerSlot
         }
         public static class CCSGO_WingmanIntroCharacterPosition {
         }

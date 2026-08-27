@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-25
+// Dumped at: 2026-08-27
 
 namespace CS2Dumper.Interfaces {
     public static class AnimationsystemDll {
@@ -7,15 +7,15 @@ namespace CS2Dumper.Interfaces {
         public const nint AnimationSystem_001 = 0x82FE30;
     }
     public static class ClientDll {
-        public const nint ClientBugBugServic001_Client = 0x20B4100;
-        public const nint ClientToolsInfo_001 = 0x20B40D0;
-        public const nint EmptyWorldService001_Client = 0x2090740;
-        public const nint GameClientExports001 = 0x20B0D70;
-        public const nint LegacyGameUI001 = 0x20C4670;
-        public const nint Source2Client002 = 0x23C1A20;
-        public const nint Source2ClientConfig001 = 0x2332700;
-        public const nint Source2ClientPrediction001 = 0x23C7170;
-        public const nint Source2ClientUI001 = 0x20C2B90;
+        public const nint ClientBugBugServic001_Client = 0x20B3100;
+        public const nint ClientToolsInfo_001 = 0x20B30D0;
+        public const nint EmptyWorldService001_Client = 0x208F730;
+        public const nint GameClientExports001 = 0x20AFD70;
+        public const nint LegacyGameUI001 = 0x20C3670;
+        public const nint Source2Client002 = 0x23C0A20;
+        public const nint Source2ClientConfig001 = 0x2331700;
+        public const nint Source2ClientPrediction001 = 0x23C6170;
+        public const nint Source2ClientUI001 = 0x20C1B90;
     }
     public static class Engine2Dll {
         public const nint BenchmarkService001 = 0x615320;
@@ -136,8 +136,8 @@ namespace CS2Dumper.Interfaces {
         public const nint SchemaSystem_001 = 0x75730;
     }
     public static class ServerDll {
-        public const nint EmptyWorldService001_Server = 0x1C67220;
-        public const nint EntitySubclassUtilsV001 = 0x1C15AF0;
+        public const nint EmptyWorldService001_Server = 0x1C67210;
+        public const nint EntitySubclassUtilsV001 = 0x1C15AE0;
         public const nint NavGameTest001 = 0x1CD9A00;
         public const nint ServerToolsInfo_001 = 0x1CA02B8;
         public const nint Source2GameClients001 = 0x1C9F4A0;
@@ -145,7 +145,7 @@ namespace CS2Dumper.Interfaces {
         public const nint Source2GameEntities001 = 0x1C9FA60;
         public const nint Source2Server001 = 0x1C9F8B0;
         public const nint Source2ServerConfig001 = 0x1F90258;
-        public const nint customnavsystem001 = 0x1BF9F38;
+        public const nint customnavsystem001 = 0x1BF9F28;
     }
     public static class SoundsystemDll {
         public const nint SoundBugBugService001_Client = 0x54BD80;

@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-25
+// Dumped at: 2026-08-27
 
 #pragma once
 
@@ -5313,9 +5313,9 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_strLayout = 0x4A8; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x4B0; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
                 constexpr std::ptrdiff_t m_globalLayoutState = 0x518; // CCSCustomHudLayoutState
-                constexpr std::ptrdiff_t m_vecPanelIds = 0x6B8; // CNetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecClassNames = 0x6D0; // CNetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x6E8; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecPanelIds = 0x6B0; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecClassNames = 0x6C8; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x6E0; // CNetworkUtlVectorBase<CUtlString>
             }
             namespace CEntityInstance {
                 constexpr std::ptrdiff_t m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
@@ -8812,10 +8812,10 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vExtent = 0x970; // Vector
             }
             namespace CCSCustomHudLayoutState {
-                constexpr std::ptrdiff_t m_bInputCaptureEnabled = 0x30; // bool
+                constexpr std::ptrdiff_t m_playerSlot = 0x30; // CPlayerSlot
+                constexpr std::ptrdiff_t m_bInputCaptureEnabled = 0x34; // bool
                 constexpr std::ptrdiff_t m_vecHasClasses = 0x38; // CNetworkUtlVectorBase<HUDPanelHasClass_t>
                 constexpr std::ptrdiff_t m_vecDialogVariableStrings = 0x98; // CNetworkUtlVectorBase<HUDPanelDialogVariableString_t>
-                constexpr std::ptrdiff_t m_playerSlot = 0x198; // CPlayerSlot
             }
             namespace CCSGO_WingmanIntroCharacterPosition {
             }

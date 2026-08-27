@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-25
+// Dumped at: 2026-08-27
 
 namespace CS2Dumper.Schemas {
     public static class ServerDll {
@@ -5307,9 +5307,9 @@ namespace CS2Dumper.Schemas {
             public const nint m_strLayout = 0x4A8; // CUtlSymbolLarge
             public const nint m_vecPlayerLayoutStates = 0x4B0; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
             public const nint m_globalLayoutState = 0x518; // CCSCustomHudLayoutState
-            public const nint m_vecPanelIds = 0x6B8; // CNetworkUtlVectorBase<CUtlString>
-            public const nint m_vecClassNames = 0x6D0; // CNetworkUtlVectorBase<CUtlString>
-            public const nint m_vecDialogVariableNames = 0x6E8; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_vecPanelIds = 0x6B0; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_vecClassNames = 0x6C8; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_vecDialogVariableNames = 0x6E0; // CNetworkUtlVectorBase<CUtlString>
         }
         public static class CEntityInstance {
             public const nint m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
@@ -8806,10 +8806,10 @@ namespace CS2Dumper.Schemas {
             public const nint m_vExtent = 0x970; // Vector
         }
         public static class CCSCustomHudLayoutState {
-            public const nint m_bInputCaptureEnabled = 0x30; // bool
+            public const nint m_playerSlot = 0x30; // CPlayerSlot
+            public const nint m_bInputCaptureEnabled = 0x34; // bool
             public const nint m_vecHasClasses = 0x38; // CNetworkUtlVectorBase<HUDPanelHasClass_t>
             public const nint m_vecDialogVariableStrings = 0x98; // CNetworkUtlVectorBase<HUDPanelDialogVariableString_t>
-            public const nint m_playerSlot = 0x198; // CPlayerSlot
         }
         public static class CCSGO_WingmanIntroCharacterPosition {
         }

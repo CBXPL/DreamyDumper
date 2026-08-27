@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-25
+// Dumped at: 2026-08-27
 
 #pragma once
 
@@ -1844,9 +1844,9 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_strLayout = 0x608; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x610; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
                 constexpr std::ptrdiff_t m_globalLayoutState = 0x678; // CCSCustomHudLayoutState
-                constexpr std::ptrdiff_t m_vecPanelIds = 0x788; // C_NetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecClassNames = 0x7A0; // C_NetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x7B8; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecPanelIds = 0x780; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecClassNames = 0x798; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x7B0; // C_NetworkUtlVectorBase<CUtlString>
             }
             namespace CEntityInstance {
                 constexpr std::ptrdiff_t m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
@@ -3989,10 +3989,10 @@ namespace dreamydumper {
             namespace C_CSGO_MapPreviewCameraPath_API {
             }
             namespace CCSCustomHudLayoutState {
-                constexpr std::ptrdiff_t m_bInputCaptureEnabled = 0x30; // bool
+                constexpr std::ptrdiff_t m_playerSlot = 0x30; // CPlayerSlot
+                constexpr std::ptrdiff_t m_bInputCaptureEnabled = 0x34; // bool
                 constexpr std::ptrdiff_t m_vecHasClasses = 0x38; // C_NetworkUtlVectorBase<HUDPanelHasClass_t>
                 constexpr std::ptrdiff_t m_vecDialogVariableStrings = 0x50; // C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t>
-                constexpr std::ptrdiff_t m_playerSlot = 0x108; // CPlayerSlot
             }
             namespace CCSGO_WingmanIntroCharacterPosition {
             }
