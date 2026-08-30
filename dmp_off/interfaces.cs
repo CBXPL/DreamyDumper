@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-27
+// Dumped at: 2026-08-30
 
 namespace CS2Dumper.Interfaces {
     public static class AnimationsystemDll {
@@ -13,9 +13,9 @@ namespace CS2Dumper.Interfaces {
         public const nint GameClientExports001 = 0x20AFD70;
         public const nint LegacyGameUI001 = 0x20C3670;
         public const nint Source2Client002 = 0x23C0A20;
-        public const nint Source2ClientConfig001 = 0x2331700;
+        public const nint Source2ClientConfig001 = 0x2331550;
         public const nint Source2ClientPrediction001 = 0x23C6170;
-        public const nint Source2ClientUI001 = 0x20C1B90;
+        public const nint Source2ClientUI001 = 0x20C1B80;
     }
     public static class Engine2Dll {
         public const nint BenchmarkService001 = 0x615320;

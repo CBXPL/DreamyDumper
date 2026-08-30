@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-27
+// Dumped at: 2026-08-30
 
 #pragma once
 
@@ -19,9 +19,9 @@ namespace dreamydumper {
             constexpr std::ptrdiff_t GameClientExports001 = 0x20AFD70;
             constexpr std::ptrdiff_t LegacyGameUI001 = 0x20C3670;
             constexpr std::ptrdiff_t Source2Client002 = 0x23C0A20;
-            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x2331700;
+            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x2331550;
             constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x23C6170;
-            constexpr std::ptrdiff_t Source2ClientUI001 = 0x20C1B90;
+            constexpr std::ptrdiff_t Source2ClientUI001 = 0x20C1B80;
         }
         namespace engine2_dll {
             constexpr std::ptrdiff_t BenchmarkService001 = 0x615320;

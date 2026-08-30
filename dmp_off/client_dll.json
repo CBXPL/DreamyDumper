@@ -7447,17 +7447,17 @@
         },
         "type": "uint32"
       },
-      "_U____": {
+      "_Ux___": {
         "alignment": 0,
         "members": {},
         "type": "unknown"
       },
-      "_m____": {
+      "_mx___": {
         "alignment": 0,
         "members": {},
         "type": "unknown"
       },
-      "_z____": {
+      "_zx___": {
         "alignment": 0,
         "members": {},
         "type": "unknown"
