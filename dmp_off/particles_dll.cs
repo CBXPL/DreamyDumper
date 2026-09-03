@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-08-30
+// Dumped at: 2026-09-03
 
 namespace CS2Dumper.Schemas {
     public static class ParticlesDll {
