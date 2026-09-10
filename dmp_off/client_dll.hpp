@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-03
+// Dumped at: 2026-09-10
 
 #pragma once
 
@@ -1841,12 +1841,13 @@ namespace dreamydumper {
             namespace C_Item_Healthshot {
             }
             namespace CCSCustomHudLayout {
-                constexpr std::ptrdiff_t m_strLayout = 0x608; // CUtlSymbolLarge
-                constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x610; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
-                constexpr std::ptrdiff_t m_globalLayoutState = 0x678; // CCSCustomHudLayoutState
-                constexpr std::ptrdiff_t m_vecPanelIds = 0x780; // C_NetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecClassNames = 0x798; // C_NetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x7B0; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_strLayout = 0x618; // CUtlSymbolLarge
+                constexpr std::ptrdiff_t m_bObservable = 0x620; // bool
+                constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x628; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+                constexpr std::ptrdiff_t m_globalLayoutState = 0x690; // CCSCustomHudLayoutState
+                constexpr std::ptrdiff_t m_vecPanelIds = 0x798; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecClassNames = 0x7B0; // C_NetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x7C8; // C_NetworkUtlVectorBase<CUtlString>
             }
             namespace CEntityInstance {
                 constexpr std::ptrdiff_t m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
@@ -2910,6 +2911,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bLinkedToServerEnt = 0xFED; // bool
             }
             namespace C_SoundOpvarSetOBBEntity {
+            }
+            namespace CCSCustomPlayerCamera {
+                constexpr std::ptrdiff_t m_hPawn = 0x600; // CHandle<C_CSPlayerPawnBase>
+                constexpr std::ptrdiff_t m_nCameraMode = 0x604; // CustomCameraMode_t
+                constexpr std::ptrdiff_t m_hFollowEntity = 0x608; // CHandle<C_BaseEntity>
+                constexpr std::ptrdiff_t m_bFollowEyes = 0x60C; // bool
+                constexpr std::ptrdiff_t m_vecFollowOffset = 0x610; // Vector
+                constexpr std::ptrdiff_t m_vecCameraOffset = 0x61C; // Vector
+                constexpr std::ptrdiff_t m_bClipCameraOffset = 0x628; // bool
+                constexpr std::ptrdiff_t m_flCameraOffsetReturnStrength = 0x62C; // float32
             }
             namespace CCSGameModeRules_ArmsRace {
                 constexpr std::ptrdiff_t m_WeaponSequence = 0x30; // C_NetworkUtlVectorBase<CUtlString>
@@ -4118,9 +4129,6 @@ namespace dreamydumper {
             namespace C_TriggerVolume {
             }
             namespace CCSPlayerCamera {
-                constexpr std::ptrdiff_t m_hPawn = 0x600; // CHandle<C_CSPlayerPawnBase>
-                constexpr std::ptrdiff_t m_bEnabled = 0x604; // bool
-                constexpr std::ptrdiff_t m_bIsControllingAngles = 0x605; // bool
             }
             //
             // Metadata:

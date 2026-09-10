@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-03
+// Dumped at: 2026-09-10
 
 namespace CS2Dumper.Schemas {
     public static class ServerDll {
@@ -107,6 +107,12 @@ namespace CS2Dumper.Schemas {
             TIMELINE_COMPRESSION_AVERAGE = 0x2,
             TIMELINE_COMPRESSION_AVERAGE_BLEND = 0x3,
             TIMELINE_COMPRESSION_TOTAL = 0x4
+        }
+        public enum CustomCameraMode_t : byte {
+            CUSTOM_CAMERA_MODE_DISABLED = 0x0,
+            CUSTOM_CAMERA_MODE_CONTROLLED = 0x1,
+            CUSTOM_CAMERA_MODE_CONTROLLED_POSITION = 0x2,
+            CUSTOM_CAMERA_MODE_FOLLOW_POSITION = 0x3
         }
         public enum SubclassVDataChangeType_t : uint {
             SUBCLASS_VDATA_CREATED = 0x0,
@@ -507,7 +513,8 @@ namespace CS2Dumper.Schemas {
             svc_Broadcast_Command = 0x4A,
             svc_HltvFixupOperatorStatus = 0x4B,
             svc_UserCmds = 0x4C,
-            svc_NextMsgPredicted = 0x4D
+            svc_NextMsgPredicted = 0x4D,
+            svc_EncryptedData = 0x4E
         }
         public enum QuestType : uint {
             k_EQuestType_Operation = 0x1,
@@ -1840,9 +1847,9 @@ namespace CS2Dumper.Schemas {
             CS_UM_Geiger = 0x12E,
             CS_UM_Train = 0x12F,
             CS_UM_HudText = 0x130,
-            CS_UM_SayText = 0x131,
-            CS_UM_SayText2 = 0x132,
-            CS_UM_TextMsg = 0x133,
+            CS_UM_SayText_CSGOLegacy = 0x131,
+            CS_UM_SayText2_CSGOLegacy = 0x132,
+            CS_UM_TextMsg_CSGOLegacy = 0x133,
             CS_UM_HudMsg = 0x134,
             CS_UM_ResetHud = 0x135,
             CS_UM_GameTitle = 0x136,
@@ -1862,7 +1869,7 @@ namespace CS2Dumper.Schemas {
             CS_UM_ProcessSpottedEntityUpdate = 0x145,
             CS_UM_ReloadEffect = 0x146,
             CS_UM_AdjustMoney = 0x147,
-            CS_UM_UpdateTeamMoney = 0x148,
+            CS_UM_UpdateTeamMoney_CSGOLegacy = 0x148,
             CS_UM_StopSpectatorMode = 0x149,
             CS_UM_KillCam = 0x14A,
             CS_UM_DesiredTimescale = 0x14B,
@@ -5305,11 +5312,12 @@ namespace CS2Dumper.Schemas {
         }
         public static class CCSCustomHudLayout {
             public const nint m_strLayout = 0x4A8; // CUtlSymbolLarge
-            public const nint m_vecPlayerLayoutStates = 0x4B0; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
-            public const nint m_globalLayoutState = 0x518; // CCSCustomHudLayoutState
-            public const nint m_vecPanelIds = 0x6B0; // CNetworkUtlVectorBase<CUtlString>
-            public const nint m_vecClassNames = 0x6C8; // CNetworkUtlVectorBase<CUtlString>
-            public const nint m_vecDialogVariableNames = 0x6E0; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_bObservable = 0x4B0; // bool
+            public const nint m_vecPlayerLayoutStates = 0x4B8; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+            public const nint m_globalLayoutState = 0x520; // CCSCustomHudLayoutState
+            public const nint m_vecPanelIds = 0x6B8; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_vecClassNames = 0x6D0; // CNetworkUtlVectorBase<CUtlString>
+            public const nint m_vecDialogVariableNames = 0x6E8; // CNetworkUtlVectorBase<CUtlString>
         }
         public static class CEntityInstance {
             public const nint m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
@@ -6942,6 +6950,16 @@ namespace CS2Dumper.Schemas {
             public const nint m_OnHitMax = 0x510; // CEntityIOOutput
             public const nint m_OnChangedFromMin = 0x528; // CEntityIOOutput
             public const nint m_OnChangedFromMax = 0x540; // CEntityIOOutput
+        }
+        public static class CCSCustomPlayerCamera {
+            public const nint m_hPawn = 0x4A8; // CHandle<CCSPlayerPawnBase>
+            public const nint m_nCameraMode = 0x4AC; // CustomCameraMode_t
+            public const nint m_hFollowEntity = 0x4B0; // CHandle<CBaseEntity>
+            public const nint m_bFollowEyes = 0x4B4; // bool
+            public const nint m_vecFollowOffset = 0x4B8; // Vector
+            public const nint m_vecCameraOffset = 0x4C4; // Vector
+            public const nint m_bClipCameraOffset = 0x4D0; // bool
+            public const nint m_flCameraOffsetReturnStrength = 0x4D4; // float32
         }
         public static class CCSGameModeRules_ArmsRace {
             public const nint m_WeaponSequence = 0x30; // CNetworkUtlVectorBase<CUtlString>
@@ -9118,9 +9136,6 @@ namespace CS2Dumper.Schemas {
             public const nint m_flNormCenterSize = 0xC40; // float32
         }
         public static class CCSPlayerCamera {
-            public const nint m_hPawn = 0x4A8; // CHandle<CCSPlayerPawnBase>
-            public const nint m_bEnabled = 0x4AC; // bool
-            public const nint m_bIsControllingAngles = 0x4AD; // bool
         }
         //
         // Metadata:

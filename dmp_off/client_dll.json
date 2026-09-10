@@ -454,12 +454,13 @@
       },
       "CCSCustomHudLayout": {
         "fields": {
-          "m_globalLayoutState": 1656,
-          "m_strLayout": 1544,
-          "m_vecClassNames": 1944,
-          "m_vecDialogVariableNames": 1968,
-          "m_vecPanelIds": 1920,
-          "m_vecPlayerLayoutStates": 1552
+          "m_bObservable": 1568,
+          "m_globalLayoutState": 1680,
+          "m_strLayout": 1560,
+          "m_vecClassNames": 1968,
+          "m_vecDialogVariableNames": 1992,
+          "m_vecPanelIds": 1944,
+          "m_vecPlayerLayoutStates": 1576
         },
         "metadata": [],
         "parent": "C_BaseEntity"
@@ -476,6 +477,20 @@
       },
       "CCSCustomHudLayout_API": {
         "fields": {},
+        "metadata": [],
+        "parent": null
+      },
+      "CCSCustomPlayerCamera": {
+        "fields": {
+          "m_bClipCameraOffset": 1576,
+          "m_bFollowEyes": 1548,
+          "m_flCameraOffsetReturnStrength": 1580,
+          "m_hFollowEntity": 1544,
+          "m_hPawn": 1536,
+          "m_nCameraMode": 1540,
+          "m_vecCameraOffset": 1564,
+          "m_vecFollowOffset": 1552
+        },
         "metadata": [],
         "parent": null
       },
@@ -569,11 +584,7 @@
         "parent": "CPlayer_CameraServices"
       },
       "CCSPlayerCamera": {
-        "fields": {
-          "m_bEnabled": 1540,
-          "m_bIsControllingAngles": 1541,
-          "m_hPawn": 1536
-        },
+        "fields": {},
         "metadata": [],
         "parent": null
       },

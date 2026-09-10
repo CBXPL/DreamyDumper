@@ -1,23 +1,23 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-03
+// Dumped at: 2026-09-10
 
 namespace CS2Dumper {
     public static class Buttons {
-        public const nint attack = 0x20B38F0;
-        public const nint attack2 = 0x20B3980;
-        public const nint back = 0x20B3BC0;
-        public const nint duck = 0x20B3E90;
-        public const nint forward = 0x20B3B30;
-        public const nint jump = 0x20B3E00;
-        public const nint left = 0x20B3C50;
-        public const nint lookatweapon = 0x23DBB90;
-        public const nint reload = 0x20B3860;
-        public const nint right = 0x20B3CE0;
-        public const nint showscores = 0x23DBA70;
-        public const nint sprint = 0x20B37D0;
-        public const nint turnleft = 0x20B3A10;
-        public const nint turnright = 0x20B3AA0;
-        public const nint use = 0x20B3D70;
-        public const nint zoom = 0x23DBB00;
+        public const nint attack = 0x20B9B00;
+        public const nint attack2 = 0x20B9B90;
+        public const nint back = 0x20B9DD0;
+        public const nint duck = 0x20BA0A0;
+        public const nint forward = 0x20B9D40;
+        public const nint jump = 0x20BA010;
+        public const nint left = 0x20B9E60;
+        public const nint lookatweapon = 0x23E2530;
+        public const nint reload = 0x20B9A70;
+        public const nint right = 0x20B9EF0;
+        public const nint showscores = 0x23E2410;
+        public const nint sprint = 0x20B99E0;
+        public const nint turnleft = 0x20B9C20;
+        public const nint turnright = 0x20B9CB0;
+        public const nint use = 0x20B9F80;
+        public const nint zoom = 0x23E24A0;
     }
 }

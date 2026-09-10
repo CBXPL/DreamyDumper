@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-03
+// Dumped at: 2026-09-10
 
 namespace CS2Dumper.Schemas {
     public static class ClientDll {
@@ -1835,12 +1835,13 @@ namespace CS2Dumper.Schemas {
         public static class C_Item_Healthshot {
         }
         public static class CCSCustomHudLayout {
-            public const nint m_strLayout = 0x608; // CUtlSymbolLarge
-            public const nint m_vecPlayerLayoutStates = 0x610; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
-            public const nint m_globalLayoutState = 0x678; // CCSCustomHudLayoutState
-            public const nint m_vecPanelIds = 0x780; // C_NetworkUtlVectorBase<CUtlString>
-            public const nint m_vecClassNames = 0x798; // C_NetworkUtlVectorBase<CUtlString>
-            public const nint m_vecDialogVariableNames = 0x7B0; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_strLayout = 0x618; // CUtlSymbolLarge
+            public const nint m_bObservable = 0x620; // bool
+            public const nint m_vecPlayerLayoutStates = 0x628; // C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+            public const nint m_globalLayoutState = 0x690; // CCSCustomHudLayoutState
+            public const nint m_vecPanelIds = 0x798; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecClassNames = 0x7B0; // C_NetworkUtlVectorBase<CUtlString>
+            public const nint m_vecDialogVariableNames = 0x7C8; // C_NetworkUtlVectorBase<CUtlString>
         }
         public static class CEntityInstance {
             public const nint m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
@@ -2904,6 +2905,16 @@ namespace CS2Dumper.Schemas {
             public const nint m_bLinkedToServerEnt = 0xFED; // bool
         }
         public static class C_SoundOpvarSetOBBEntity {
+        }
+        public static class CCSCustomPlayerCamera {
+            public const nint m_hPawn = 0x600; // CHandle<C_CSPlayerPawnBase>
+            public const nint m_nCameraMode = 0x604; // CustomCameraMode_t
+            public const nint m_hFollowEntity = 0x608; // CHandle<C_BaseEntity>
+            public const nint m_bFollowEyes = 0x60C; // bool
+            public const nint m_vecFollowOffset = 0x610; // Vector
+            public const nint m_vecCameraOffset = 0x61C; // Vector
+            public const nint m_bClipCameraOffset = 0x628; // bool
+            public const nint m_flCameraOffsetReturnStrength = 0x62C; // float32
         }
         public static class CCSGameModeRules_ArmsRace {
             public const nint m_WeaponSequence = 0x30; // C_NetworkUtlVectorBase<CUtlString>
@@ -4112,9 +4123,6 @@ namespace CS2Dumper.Schemas {
         public static class C_TriggerVolume {
         }
         public static class CCSPlayerCamera {
-            public const nint m_hPawn = 0x600; // CHandle<C_CSPlayerPawnBase>
-            public const nint m_bEnabled = 0x604; // bool
-            public const nint m_bIsControllingAngles = 0x605; // bool
         }
         //
         // Metadata:

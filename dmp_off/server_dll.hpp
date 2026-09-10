@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-03
+// Dumped at: 2026-09-10
 
 #pragma once
 
@@ -113,6 +113,12 @@ namespace dreamydumper {
                 TIMELINE_COMPRESSION_AVERAGE = 0x2,
                 TIMELINE_COMPRESSION_AVERAGE_BLEND = 0x3,
                 TIMELINE_COMPRESSION_TOTAL = 0x4
+            };
+            enum class CustomCameraMode_t : uint8_t {
+                CUSTOM_CAMERA_MODE_DISABLED = 0x0,
+                CUSTOM_CAMERA_MODE_CONTROLLED = 0x1,
+                CUSTOM_CAMERA_MODE_CONTROLLED_POSITION = 0x2,
+                CUSTOM_CAMERA_MODE_FOLLOW_POSITION = 0x3
             };
             enum class SubclassVDataChangeType_t : uint32_t {
                 SUBCLASS_VDATA_CREATED = 0x0,
@@ -513,7 +519,8 @@ namespace dreamydumper {
                 svc_Broadcast_Command = 0x4A,
                 svc_HltvFixupOperatorStatus = 0x4B,
                 svc_UserCmds = 0x4C,
-                svc_NextMsgPredicted = 0x4D
+                svc_NextMsgPredicted = 0x4D,
+                svc_EncryptedData = 0x4E
             };
             enum class QuestType : uint32_t {
                 k_EQuestType_Operation = 0x1,
@@ -1846,9 +1853,9 @@ namespace dreamydumper {
                 CS_UM_Geiger = 0x12E,
                 CS_UM_Train = 0x12F,
                 CS_UM_HudText = 0x130,
-                CS_UM_SayText = 0x131,
-                CS_UM_SayText2 = 0x132,
-                CS_UM_TextMsg = 0x133,
+                CS_UM_SayText_CSGOLegacy = 0x131,
+                CS_UM_SayText2_CSGOLegacy = 0x132,
+                CS_UM_TextMsg_CSGOLegacy = 0x133,
                 CS_UM_HudMsg = 0x134,
                 CS_UM_ResetHud = 0x135,
                 CS_UM_GameTitle = 0x136,
@@ -1868,7 +1875,7 @@ namespace dreamydumper {
                 CS_UM_ProcessSpottedEntityUpdate = 0x145,
                 CS_UM_ReloadEffect = 0x146,
                 CS_UM_AdjustMoney = 0x147,
-                CS_UM_UpdateTeamMoney = 0x148,
+                CS_UM_UpdateTeamMoney_CSGOLegacy = 0x148,
                 CS_UM_StopSpectatorMode = 0x149,
                 CS_UM_KillCam = 0x14A,
                 CS_UM_DesiredTimescale = 0x14B,
@@ -5311,11 +5318,12 @@ namespace dreamydumper {
             }
             namespace CCSCustomHudLayout {
                 constexpr std::ptrdiff_t m_strLayout = 0x4A8; // CUtlSymbolLarge
-                constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x4B0; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
-                constexpr std::ptrdiff_t m_globalLayoutState = 0x518; // CCSCustomHudLayoutState
-                constexpr std::ptrdiff_t m_vecPanelIds = 0x6B0; // CNetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecClassNames = 0x6C8; // CNetworkUtlVectorBase<CUtlString>
-                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x6E0; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_bObservable = 0x4B0; // bool
+                constexpr std::ptrdiff_t m_vecPlayerLayoutStates = 0x4B8; // CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>
+                constexpr std::ptrdiff_t m_globalLayoutState = 0x520; // CCSCustomHudLayoutState
+                constexpr std::ptrdiff_t m_vecPanelIds = 0x6B8; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecClassNames = 0x6D0; // CNetworkUtlVectorBase<CUtlString>
+                constexpr std::ptrdiff_t m_vecDialogVariableNames = 0x6E8; // CNetworkUtlVectorBase<CUtlString>
             }
             namespace CEntityInstance {
                 constexpr std::ptrdiff_t m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
@@ -6948,6 +6956,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_OnHitMax = 0x510; // CEntityIOOutput
                 constexpr std::ptrdiff_t m_OnChangedFromMin = 0x528; // CEntityIOOutput
                 constexpr std::ptrdiff_t m_OnChangedFromMax = 0x540; // CEntityIOOutput
+            }
+            namespace CCSCustomPlayerCamera {
+                constexpr std::ptrdiff_t m_hPawn = 0x4A8; // CHandle<CCSPlayerPawnBase>
+                constexpr std::ptrdiff_t m_nCameraMode = 0x4AC; // CustomCameraMode_t
+                constexpr std::ptrdiff_t m_hFollowEntity = 0x4B0; // CHandle<CBaseEntity>
+                constexpr std::ptrdiff_t m_bFollowEyes = 0x4B4; // bool
+                constexpr std::ptrdiff_t m_vecFollowOffset = 0x4B8; // Vector
+                constexpr std::ptrdiff_t m_vecCameraOffset = 0x4C4; // Vector
+                constexpr std::ptrdiff_t m_bClipCameraOffset = 0x4D0; // bool
+                constexpr std::ptrdiff_t m_flCameraOffsetReturnStrength = 0x4D4; // float32
             }
             namespace CCSGameModeRules_ArmsRace {
                 constexpr std::ptrdiff_t m_WeaponSequence = 0x30; // CNetworkUtlVectorBase<CUtlString>
@@ -9124,9 +9142,6 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flNormCenterSize = 0xC40; // float32
             }
             namespace CCSPlayerCamera {
-                constexpr std::ptrdiff_t m_hPawn = 0x4A8; // CHandle<CCSPlayerPawnBase>
-                constexpr std::ptrdiff_t m_bEnabled = 0x4AC; // bool
-                constexpr std::ptrdiff_t m_bIsControllingAngles = 0x4AD; // bool
             }
             //
             // Metadata:
