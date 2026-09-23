@@ -1,8 +1,29 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-10
+// Dumped at: 2026-09-23
 
 namespace CS2Dumper.Schemas {
     public static class ResourcesystemDll {
+        public enum NoiseStreamModifier_t : uint {
+            NOISE_STREAM_MODIFIER_NONE = 0x0,
+            NOISE_STREAM_MODIFIER_LINES = 0x1,
+            NOISE_STREAM_MODIFIER_CLUMPS = 0x2,
+            NOISE_STREAM_MODIFIER_RINGS = 0x3
+        }
+        public enum NoiseStreamTurbulence_t : uint {
+            NOISE_STREAM_TURB_NONE = 0x0,
+            NOISE_STREAM_TURB_HIGHLIGHT = 0x1,
+            NOISE_STREAM_TURB_FEEDBACK = 0x2,
+            NOISE_STREAM_TURB_LOOPY = 0x3,
+            NOISE_STREAM_TURB_CONTRAST = 0x4,
+            NOISE_STREAM_TURB_ALTERNATE = 0x5
+        }
+        public enum NoiseStreamType_t : uint {
+            NOISE_STREAM_TYPE_PERLIN = 0x0,
+            NOISE_STREAM_TYPE_SIMPLEX = 0x1,
+            NOISE_STREAM_TYPE_WORLEY = 0x2,
+            NOISE_STREAM_TYPE_CURL = 0x3,
+            NOISE_STREAM_TYPE_NONE = 0x4
+        }
         public enum FuseVariableType_t : byte {
             INVALID = 0x0,
             BOOL = 0x1,
@@ -102,6 +123,11 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MResourceTypeForInfoType
         public static class InfoForResourceTypeCVoxelVisibility {
+        }
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
+        public static class InfoForResourceTypeISmartProp {
         }
         //
         // Metadata:
@@ -221,11 +247,6 @@ namespace CS2Dumper.Schemas {
         }
         //
         // Metadata:
-        // MResourceTypeForInfoType
-        public static class InfoForResourceTypeCSmartProp {
-        }
-        //
-        // Metadata:
         // MGetKV3ClassDefaults
         public static class CFuseProgram {
             public const nint m_programBuffer = 0x0; // CUtlVector<uint8>
@@ -252,6 +273,11 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MResourceTypeForInfoType
         public static class InfoForResourceTypeIMaterial2 {
+        }
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
+        public static class InfoForResourceTypeCVDSPResource {
         }
         //
         // Metadata:
@@ -290,6 +316,14 @@ namespace CS2Dumper.Schemas {
         }
         //
         // Metadata:
+        // MGetKV3ClassDefaults
+        public static class NoiseOscillatorDef_t {
+            public const nint m_flPhase = 0x0; // float32
+            public const nint m_flFrequency = 0x4; // float32
+            public const nint m_flAmplitude = 0x8; // float32
+        }
+        //
+        // Metadata:
         // MResourceTypeForInfoType
         public static class InfoForResourceTypeCModel {
         }
@@ -297,6 +331,23 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MResourceTypeForInfoType
         public static class InfoForResourceTypeCDOTANovelsList {
+        }
+        //
+        // Metadata:
+        // MGetKV3ClassDefaults
+        public static class NoiseStreamDef_t {
+            public const nint m_nType = 0x0; // NoiseStreamType_t
+            public const nint m_nModifier = 0x4; // NoiseStreamModifier_t
+            public const nint m_nTurbulence = 0x8; // NoiseStreamTurbulence_t
+            public const nint m_flOutputMin = 0xC; // float32
+            public const nint m_flOutputMax = 0x10; // float32
+            public const nint m_flScale = 0x14; // float32
+            public const nint m_vOffsetRate = 0x18; // Vector
+            public const nint m_flOffset = 0x24; // float32
+            public const nint m_nOctaves = 0x28; // int32
+            public const nint m_flTurbulenceScale = 0x2C; // float32
+            public const nint m_flTurbulenceMix = 0x30; // float32
+            public const nint m_Oscillators = 0x38; // CUtlVector<NoiseOscillatorDef_t>
         }
         //
         // Metadata:

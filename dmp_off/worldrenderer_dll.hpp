@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-10
+// Dumped at: 2026-09-23
 
 #pragma once
 
@@ -29,7 +29,8 @@ namespace dreamydumper {
                 OBJECT_TYPE_DISABLE_VIS_CULLING = 0x10000,
                 OBJECT_TYPE_BAKED_GEOMETRY = 0x20000,
                 OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS = 0x40000,
-                OBJECT_TYPE_HAS_AGGREGATE_RTPROXY = 0x80000
+                OBJECT_TYPE_HAS_AGGREGATE_RTPROXY = 0x80000,
+                OBJECT_TYPE_HAS_EMISSIVE_GI = 0x100000
             };
             enum class AggregateInstanceStream_t : uint8_t {
                 AGGREGATE_INSTANCE_STREAM_NONE = 0x0,
@@ -80,6 +81,7 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nVertexEmissiveByteOffset = 0x10; // uint32
                 constexpr std::ptrdiff_t m_fEmissiveFactor = 0x14; // float32
                 constexpr std::ptrdiff_t m_mWorldFromLocal = 0x18; // matrix3x4_t
+                constexpr std::ptrdiff_t m_vTintColorSRGB = 0x48; // Color
             }
             //
             // Metadata:
@@ -103,8 +105,9 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nLODOverride = 0x6A; // int16
                 constexpr std::ptrdiff_t m_nCubeMapPrecomputedHandshake = 0x6C; // int32
                 constexpr std::ptrdiff_t m_nLightProbeVolumePrecomputedHandshake = 0x70; // int32
-                constexpr std::ptrdiff_t m_renderableModel = 0x78; // CStrongHandle<InfoForResourceTypeCModel>
-                constexpr std::ptrdiff_t m_renderable = 0x80; // CStrongHandle<InfoForResourceTypeCRenderMesh>
+                constexpr std::ptrdiff_t m_flEmissiveLightingBoost = 0x74; // float32
+                constexpr std::ptrdiff_t m_renderableModel = 0x80; // CStrongHandle<InfoForResourceTypeCModel>
+                constexpr std::ptrdiff_t m_renderable = 0x88; // CStrongHandle<InfoForResourceTypeCRenderMesh>
             }
             //
             // Metadata:
@@ -151,13 +154,10 @@ namespace dreamydumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace NodeData_t {
-                constexpr std::ptrdiff_t m_nParent = 0x0; // int32
-                constexpr std::ptrdiff_t m_vOrigin = 0x4; // Vector
-                constexpr std::ptrdiff_t m_vMinBounds = 0x10; // Vector
-                constexpr std::ptrdiff_t m_vMaxBounds = 0x1C; // Vector
-                constexpr std::ptrdiff_t m_flMinimumDistance = 0x28; // float32
-                constexpr std::ptrdiff_t m_ChildNodeIndices = 0x30; // CUtlVector<int32>
-                constexpr std::ptrdiff_t m_worldNodePrefix = 0x48; // CUtlString
+                constexpr std::ptrdiff_t m_vOrigin = 0x0; // Vector
+                constexpr std::ptrdiff_t m_vMinBounds = 0xC; // Vector
+                constexpr std::ptrdiff_t m_vMaxBounds = 0x18; // Vector
+                constexpr std::ptrdiff_t m_worldNodePrefix = 0x28; // CUtlString
             }
             namespace VMapResourceData_t {
             }
@@ -273,9 +273,10 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bHasLightmaps = 0x10; // bool
                 constexpr std::ptrdiff_t m_bBakedShadowsGamma20 = 0x11; // bool
                 constexpr std::ptrdiff_t m_bCompressionEnabled = 0x12; // bool
-                constexpr std::ptrdiff_t m_bSHLightmaps = 0x13; // bool
-                constexpr std::ptrdiff_t m_nChartPackIterations = 0x14; // uint8
-                constexpr std::ptrdiff_t m_nVradQuality = 0x15; // uint8
+                constexpr std::ptrdiff_t m_nLPVEncoding = 0x13; // int8
+                constexpr std::ptrdiff_t m_nLightmapEncoding = 0x14; // int8
+                constexpr std::ptrdiff_t m_nChartPackIterations = 0x15; // uint8
+                constexpr std::ptrdiff_t m_nVradQuality = 0x16; // uint8
                 constexpr std::ptrdiff_t m_lightMaps = 0x18; // CUtlVector<CStrongHandle<InfoForResourceTypeCTextureBase>>
                 constexpr std::ptrdiff_t m_bakedShadows = 0x30; // CUtlVector<BakedLightingInfo_t::BakedShadowAssignment_t>
             }

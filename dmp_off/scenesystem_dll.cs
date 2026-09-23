@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-10
+// Dumped at: 2026-09-23
 
 namespace CS2Dumper.Schemas {
     public static class ScenesystemDll {
@@ -7,6 +7,19 @@ namespace CS2Dumper.Schemas {
             SCENEOBJECT_MESHLET_VIS_NONE = 0x0,
             SCENEOBJECT_MESHLET_VIS_MESHLET = 0x1,
             SCENEOBJECT_MESHLET_VIS_CULLED = 0x2
+        }
+        public enum SceneStatsSections_t : uint {
+            SCENE_STATS_NONE = 0x0,
+            SCENE_STATS_FRAME = 0x1,
+            SCENE_STATS_GEOMETRY = 0x2,
+            SCENE_STATS_CULLING = 0x4,
+            SCENE_STATS_MATERIALS = 0x8,
+            SCENE_STATS_LIGHTING = 0x10,
+            SCENE_STATS_RAYTRACING = 0x20,
+            SCENE_STATS_INTERNALS = 0x40,
+            SCENE_STATS_RENDERDEVICE = 0x80,
+            SCENE_STATS_ALL = 0xFF,
+            SCENE_STATS_DEFAULT = 0x7F
         }
         public enum ESceneViewDebugOverlaysListenerDataType_t : uint {
             k_ESceneViewDebugOverlaysListenerDataType_Unknown = 0x0,

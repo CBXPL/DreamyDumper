@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-10
+// Dumped at: 2026-09-23
 
 #pragma once
 
@@ -68,6 +68,13 @@ namespace dreamydumper {
             //
             // Metadata:
             // MGetKV3ClassDefaults
+            namespace CPulseCell_RaceCursors {
+                constexpr std::ptrdiff_t m_Outflows = 0xD8; // CUtlVector<CPulse_OutflowConnection>
+                constexpr std::ptrdiff_t m_OnFinished = 0xF0; // CPulse_ResumePoint
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             namespace CPulseCell_Test_NoInflow {
             }
             namespace CPulseGraphInstance_TestDomain_FakeEntityOwner {
@@ -97,18 +104,13 @@ namespace dreamydumper {
             }
             //
             // Metadata:
-            // MPropertyDescription
-            namespace CPulseTestFuncs_LibraryA {
-            }
-            //
-            // Metadata:
             // MGetKV3ClassDefaults
             // MPulseEditorHeaderIcon
             // MPropertyFriendlyName
             // MPropertyDescription
             namespace CPulseCell_WaitForObservable {
                 constexpr std::ptrdiff_t m_Condition = 0xD8; // CPulseObservableExpression<bool>
-                constexpr std::ptrdiff_t m_OnTrue = 0x150; // CPulse_ResumePoint
+                constexpr std::ptrdiff_t m_OnTrue = 0x168; // CPulse_ResumePoint
             }
             namespace CPulse_OutflowConnection {
                 constexpr std::ptrdiff_t m_SourceOutflowName = 0x0; // PulseSymbol_t
@@ -127,13 +129,14 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_Chunks = 0x50; // CUtlVector<CPulse_Chunk*>
                 constexpr std::ptrdiff_t m_Cells = 0x68; // CUtlVector<CPulseCell_Base*>
                 constexpr std::ptrdiff_t m_Vars = 0x80; // CUtlVector<CPulse_Variable>
-                constexpr std::ptrdiff_t m_PublicOutputs = 0x98; // CUtlVector<CPulse_PublicOutput>
-                constexpr std::ptrdiff_t m_InvokeBindings = 0xB0; // CUtlVector<CPulse_InvokeBinding*>
-                constexpr std::ptrdiff_t m_CallInfos = 0xC8; // CUtlVector<CPulse_CallInfo*>
-                constexpr std::ptrdiff_t m_Constants = 0xE0; // CUtlVector<CPulse_Constant>
-                constexpr std::ptrdiff_t m_DomainValues = 0xF8; // CUtlVector<CPulse_DomainValue>
-                constexpr std::ptrdiff_t m_BlackboardReferences = 0x110; // CUtlVector<CPulse_BlackboardReference>
-                constexpr std::ptrdiff_t m_OutputConnections = 0x128; // CUtlVector<CPulse_OutputConnection*>
+                constexpr std::ptrdiff_t m_TempVarBanks = 0x98; // CUtlVector<CPulse_TempVarBankDefinition*>
+                constexpr std::ptrdiff_t m_PublicOutputs = 0xB0; // CUtlVector<CPulse_PublicOutput>
+                constexpr std::ptrdiff_t m_InvokeBindings = 0xC8; // CUtlVector<CPulse_InvokeBinding*>
+                constexpr std::ptrdiff_t m_CallInfos = 0xE0; // CUtlVector<CPulse_CallInfo*>
+                constexpr std::ptrdiff_t m_Constants = 0xF8; // CUtlVector<CPulse_Constant>
+                constexpr std::ptrdiff_t m_DomainValues = 0x110; // CUtlVector<CPulse_DomainValue>
+                constexpr std::ptrdiff_t m_BlackboardReferences = 0x128; // CUtlVector<CPulse_BlackboardReference>
+                constexpr std::ptrdiff_t m_OutputConnections = 0x140; // CUtlVector<CPulse_OutputConnection*>
             }
             //
             // Metadata:
@@ -212,11 +215,6 @@ namespace dreamydumper {
             namespace CPulseCell_TestWaitWithAutoTracepoints {
                 constexpr std::ptrdiff_t m_TracePrefix = 0xD8; // CUtlString
                 constexpr std::ptrdiff_t m_WakeResume = 0xE0; // CPulse_ResumePoint
-            }
-            //
-            // Metadata:
-            // MPropertyDescription
-            namespace CPulseCursorFuncs {
             }
             //
             // Metadata:
@@ -307,11 +305,6 @@ namespace dreamydumper {
             }
             //
             // Metadata:
-            // MPropertyDescription
-            namespace CPulseTestScriptLib {
-            }
-            //
-            // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_BaseLerp {
                 constexpr std::ptrdiff_t m_WakeResume = 0xD8; // CPulse_ResumePoint
@@ -332,8 +325,6 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_AsyncChild2 = 0x168; // SignatureOutflow_Continue
                 constexpr std::ptrdiff_t m_YieldResume1 = 0x1B0; // SignatureOutflow_Resume
                 constexpr std::ptrdiff_t m_YieldResume2 = 0x1F8; // SignatureOutflow_Resume
-            }
-            namespace TestComponent_tAPI {
             }
             //
             // Metadata:
@@ -374,23 +365,18 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_EndTime = 0x4; // GameTime_t
             }
             namespace CPulseGraphInstance_TestDomain_Derived {
-                constexpr std::ptrdiff_t m_nInstanceValueX = 0x158; // int32
-            }
-            //
-            // Metadata:
-            // MPropertyDescription
-            namespace CPulseArraylib {
+                constexpr std::ptrdiff_t m_nInstanceValueX = 0xD0; // int32
             }
             namespace CPulseGraphInstance_TestDomain {
-                constexpr std::ptrdiff_t m_bIsRunningUnitTests = 0x128; // bool
-                constexpr std::ptrdiff_t m_bExplicitTimeStepping = 0x129; // bool
-                constexpr std::ptrdiff_t m_bExpectingToDestroyWithYieldedCursors = 0x12A; // bool
-                constexpr std::ptrdiff_t m_bQuietTracepoints = 0x12B; // bool
-                constexpr std::ptrdiff_t m_bExpectingCursorTerminatedDueToMaxInstructions = 0x12C; // bool
-                constexpr std::ptrdiff_t m_nCursorsTerminatedDueToMaxInstructions = 0x130; // int32
-                constexpr std::ptrdiff_t m_nNextValidateIndex = 0x134; // int32
-                constexpr std::ptrdiff_t m_Tracepoints = 0x138; // CUtlVector<CUtlString>
-                constexpr std::ptrdiff_t m_bTestYesOrNoPath = 0x150; // bool
+                constexpr std::ptrdiff_t m_bIsRunningUnitTests = 0xA0; // bool
+                constexpr std::ptrdiff_t m_bExplicitTimeStepping = 0xA1; // bool
+                constexpr std::ptrdiff_t m_bExpectingToDestroyWithYieldedCursors = 0xA2; // bool
+                constexpr std::ptrdiff_t m_bQuietTracepoints = 0xA3; // bool
+                constexpr std::ptrdiff_t m_bExpectingCursorTerminatedDueToMaxInstructions = 0xA4; // bool
+                constexpr std::ptrdiff_t m_nCursorsTerminatedDueToMaxInstructions = 0xA8; // int32
+                constexpr std::ptrdiff_t m_nNextValidateIndex = 0xAC; // int32
+                constexpr std::ptrdiff_t m_Tracepoints = 0xB0; // CUtlVector<CUtlString>
+                constexpr std::ptrdiff_t m_bTestYesOrNoPath = 0xC8; // bool
             }
             namespace SignatureOutflow_Continue {
             }
@@ -439,8 +425,6 @@ namespace dreamydumper {
             // MGetKV3ClassDefaults
             namespace CPulseCell_LimitCount__InstanceState_t {
                 constexpr std::ptrdiff_t m_nCurrentCount = 0x0; // int32
-            }
-            namespace FakeEntity_tAPI {
             }
             //
             // Metadata:
@@ -526,8 +510,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_MethodName = 0x80; // PulseSymbol_t
                 constexpr std::ptrdiff_t m_Description = 0x90; // CUtlString
                 constexpr std::ptrdiff_t m_bIsPublic = 0x98; // bool
-                constexpr std::ptrdiff_t m_ReturnType = 0xA0; // CPulseValueFullType
-                constexpr std::ptrdiff_t m_Args = 0xB8; // CUtlLeanVector<CPulseRuntimeMethodArg>
+                constexpr std::ptrdiff_t m_Args = 0xA0; // CUtlLeanVector<CPulseRuntimeMethodArg>
+                constexpr std::ptrdiff_t m_ReturnValues = 0xB0; // CUtlLeanVector<CPulseRuntimeMethodArg>
             }
             //
             // Metadata:
@@ -542,10 +526,8 @@ namespace dreamydumper {
             // MPulseEditorCanvasItemSpecKV3
             namespace CPulseCell_BooleanSwitchState {
                 constexpr std::ptrdiff_t m_Condition = 0xD8; // CPulseObservableExpression<bool>
-                constexpr std::ptrdiff_t m_WhenTrue = 0x150; // CPulse_OutflowConnection
-                constexpr std::ptrdiff_t m_WhenFalse = 0x198; // CPulse_OutflowConnection
-            }
-            namespace FakeEntityDerivedB_tAPI {
+                constexpr std::ptrdiff_t m_WhenTrue = 0x168; // CPulse_OutflowConnection
+                constexpr std::ptrdiff_t m_WhenFalse = 0x1B0; // CPulse_OutflowConnection
             }
             //
             // Metadata:
@@ -553,18 +535,8 @@ namespace dreamydumper {
             namespace CPulseCell_Inflow_Yield {
                 constexpr std::ptrdiff_t m_UnyieldResume = 0xD8; // CPulse_ResumePoint
             }
-            //
-            // Metadata:
-            // MPropertyDescription
-            namespace CPulseMathlib {
-            }
             namespace CPulseCell_Unknown {
                 constexpr std::ptrdiff_t m_UnknownKeys = 0x48; // KeyValues3
-            }
-            //
-            // Metadata:
-            // MPropertyDescription
-            namespace CPulseStringlib {
             }
             //
             // Metadata:
@@ -596,6 +568,11 @@ namespace dreamydumper {
             //
             // Metadata:
             // MGetKV3ClassDefaults
+            namespace CPulseCell_ReturnValues {
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             // MPropertyFriendlyName
             // MPropertyDescription
             // MPulseEditorHeaderIcon
@@ -619,13 +596,6 @@ namespace dreamydumper {
             }
             //
             // Metadata:
-            // MPropertyDescription
-            namespace CPulseEnumlib {
-            }
-            namespace FakeEntityDerivedA_tAPI {
-            }
-            //
-            // Metadata:
             // MGetKV3ClassDefaults
             // MPropertyFriendlyName
             // MPropertyDescription
@@ -644,6 +614,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_CallMethodID = 0x48; // PulseDocNodeID_t
                 constexpr std::ptrdiff_t m_nSrcChunk = 0x4C; // PulseRuntimeChunkIndex_t
                 constexpr std::ptrdiff_t m_nSrcInstruction = 0x50; // int32
+                constexpr std::ptrdiff_t m_nBreakDestChunk = 0x54; // PulseRuntimeChunkIndex_t
+                constexpr std::ptrdiff_t m_nBreakDestInstruction = 0x58; // int32
             }
             //
             // Metadata:
@@ -699,9 +671,9 @@ namespace dreamydumper {
             namespace CPulseCell_TestYieldWithObservables {
                 constexpr std::ptrdiff_t m_flWatchForFloatValue = 0xD8; // float32
                 constexpr std::ptrdiff_t m_LiveFloatValue = 0xE0; // CPulseObservableExpression<float32>
-                constexpr std::ptrdiff_t m_WatchForStringValue = 0x158; // CUtlString
-                constexpr std::ptrdiff_t m_LiveStringValue = 0x160; // CPulseObservableExpression<CUtlString>
-                constexpr std::ptrdiff_t m_WakeResume = 0x1D8; // CPulse_ResumePoint
+                constexpr std::ptrdiff_t m_WatchForStringValue = 0x170; // CUtlString
+                constexpr std::ptrdiff_t m_LiveStringValue = 0x178; // CPulseObservableExpression<CUtlString>
+                constexpr std::ptrdiff_t m_WakeResume = 0x208; // CPulse_ResumePoint
             }
             //
             // Metadata:

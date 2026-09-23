@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-10
+// Dumped at: 2026-09-23
 
 namespace CS2Dumper.Schemas {
     public static class Rendersystemdx11Dll {

@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-10
+// Dumped at: 2026-09-23
 
 namespace CS2Dumper.Schemas {
     public static class Engine2Dll {
@@ -95,12 +95,12 @@ namespace CS2Dumper.Schemas {
             public const nint m_hCaller = 0x24; // CEntityHandle
             public const nint m_hEntTarget = 0x28; // CEntityHandle
             public const nint m_variantValue = 0x30; // CVariantBase<CVariantDefaultAllocator>
+            public const nint m_PulseArguments = 0x40; // CPulseArgumentPack
+            public const nint m_paramMap = 0xD0; // CPulseInputParamMap
         }
         public static class EventServerEndAsyncPostTickWork_t {
         }
         public static class EventClientAdvanceTick_t {
-        }
-        public static class EntInput_t {
         }
         public static class CNetworkVarChainer {
             public const nint m_PathIndex = 0x20; // ChangeAccessorFieldPathIndex_t
@@ -222,7 +222,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_pNetworkDataReferencedPtrPropDescription = 0x18; // char*
             public const nint m_nRuntimeIndex = 0x20; // int32
             public const nint m_nFlags = 0x24; // uint32
-            public const nint m_pBaseClassComponentHelper = 0x60; // CEntityComponentHelper*
+            public const nint m_pBaseClassComponentHelper = 0x58; // CEntityComponentHelper*
         }
         public static class EngineLoopState_t {
             public const nint m_nPlatWindowWidth = 0x18; // int32

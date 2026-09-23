@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-10
+// Dumped at: 2026-09-23
 
 #pragma once
 
@@ -101,12 +101,12 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_hCaller = 0x24; // CEntityHandle
                 constexpr std::ptrdiff_t m_hEntTarget = 0x28; // CEntityHandle
                 constexpr std::ptrdiff_t m_variantValue = 0x30; // CVariantBase<CVariantDefaultAllocator>
+                constexpr std::ptrdiff_t m_PulseArguments = 0x40; // CPulseArgumentPack
+                constexpr std::ptrdiff_t m_paramMap = 0xD0; // CPulseInputParamMap
             }
             namespace EventServerEndAsyncPostTickWork_t {
             }
             namespace EventClientAdvanceTick_t {
-            }
-            namespace EntInput_t {
             }
             namespace CNetworkVarChainer {
                 constexpr std::ptrdiff_t m_PathIndex = 0x20; // ChangeAccessorFieldPathIndex_t
@@ -228,7 +228,7 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_pNetworkDataReferencedPtrPropDescription = 0x18; // char*
                 constexpr std::ptrdiff_t m_nRuntimeIndex = 0x20; // int32
                 constexpr std::ptrdiff_t m_nFlags = 0x24; // uint32
-                constexpr std::ptrdiff_t m_pBaseClassComponentHelper = 0x60; // CEntityComponentHelper*
+                constexpr std::ptrdiff_t m_pBaseClassComponentHelper = 0x58; // CEntityComponentHelper*
             }
             namespace EngineLoopState_t {
                 constexpr std::ptrdiff_t m_nPlatWindowWidth = 0x18; // int32

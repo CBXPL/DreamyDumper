@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-10
+// Dumped at: 2026-09-23
 
 #pragma once
 
@@ -151,29 +151,30 @@ namespace dreamydumper {
                 PF_TYPE_CONTROL_POINT_COMPONENT = 0x6,
                 PF_TYPE_CONTROL_POINT_CHANGE_AGE = 0x7,
                 PF_TYPE_CONTROL_POINT_SPEED = 0x8,
-                PF_TYPE_PARTICLE_DETAIL_LEVEL = 0x9,
-                PF_TYPE_CONCURRENT_DEF_COUNT = 0xA,
-                PF_TYPE_CLOSEST_CAMERA_DISTANCE = 0xB,
-                PF_TYPE_SNAPSHOT_COUNT = 0xC,
-                PF_TYPE_SNAPSHOT_CHANGED = 0xD,
-                PF_TYPE_CONTROL_POINT_IS_SET = 0xE,
-                PF_TYPE_RENDERER_CAMERA_DISTANCE = 0xF,
-                PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT = 0x10,
-                PF_TYPE_PARTICLE_NOISE = 0x11,
-                PF_TYPE_PARTICLE_AGE = 0x12,
-                PF_TYPE_PARTICLE_AGE_NORMALIZED = 0x13,
-                PF_TYPE_PARTICLE_FLOAT = 0x14,
-                PF_TYPE_PARTICLE_INITIAL_FLOAT = 0x15,
-                PF_TYPE_PARTICLE_VECTOR_COMPONENT = 0x16,
-                PF_TYPE_PARTICLE_INITIAL_VECTOR_COMPONENT = 0x17,
-                PF_TYPE_PARTICLE_SPEED = 0x18,
-                PF_TYPE_PARTICLE_NUMBER = 0x19,
-                PF_TYPE_PARTICLE_NUMBER_NORMALIZED = 0x1A,
-                PF_TYPE_PARTICLE_ROPE_SEGMENT = 0x1B,
-                PF_TYPE_PARTICLE_ROPE_SEGMENT_NORMALIZED = 0x1C,
-                PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DISTANCE = 0x1D,
-                PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DOT_PRODUCT = 0x1E,
-                PF_TYPE_COUNT = 0x1F
+                PF_TYPE_CONTROL_POINT_DISTANCE = 0x9,
+                PF_TYPE_PARTICLE_DETAIL_LEVEL = 0xA,
+                PF_TYPE_CONCURRENT_DEF_COUNT = 0xB,
+                PF_TYPE_CLOSEST_CAMERA_DISTANCE = 0xC,
+                PF_TYPE_SNAPSHOT_COUNT = 0xD,
+                PF_TYPE_SNAPSHOT_CHANGED = 0xE,
+                PF_TYPE_CONTROL_POINT_IS_SET = 0xF,
+                PF_TYPE_RENDERER_CAMERA_DISTANCE = 0x10,
+                PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT = 0x11,
+                PF_TYPE_PARTICLE_NOISE = 0x12,
+                PF_TYPE_PARTICLE_AGE = 0x13,
+                PF_TYPE_PARTICLE_AGE_NORMALIZED = 0x14,
+                PF_TYPE_PARTICLE_FLOAT = 0x15,
+                PF_TYPE_PARTICLE_INITIAL_FLOAT = 0x16,
+                PF_TYPE_PARTICLE_VECTOR_COMPONENT = 0x17,
+                PF_TYPE_PARTICLE_INITIAL_VECTOR_COMPONENT = 0x18,
+                PF_TYPE_PARTICLE_SPEED = 0x19,
+                PF_TYPE_PARTICLE_NUMBER = 0x1A,
+                PF_TYPE_PARTICLE_NUMBER_NORMALIZED = 0x1B,
+                PF_TYPE_PARTICLE_ROPE_SEGMENT = 0x1C,
+                PF_TYPE_PARTICLE_ROPE_SEGMENT_NORMALIZED = 0x1D,
+                PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DISTANCE = 0x1E,
+                PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DOT_PRODUCT = 0x1F,
+                PF_TYPE_COUNT = 0x20
             };
             enum class CNmFloatAngleMathNode__Operation_t : uint8_t {
                 ClampTo180 = 0x0,
@@ -271,7 +272,7 @@ namespace dreamydumper {
                 ConditionallyAllowed = 0x2,
                 Blocked = 0x3
             };
-            enum class ModelMeshBufferUsage_t : uint8_t {
+            enum class ModelMeshBufferUsage_t : uint16_t {
                 MESH_BUFFER_USAGE_NONE = 0x0,
                 MESH_BUFFER_USAGE_VB = 0x1,
                 MESH_BUFFER_USAGE_IB = 0x2,
@@ -279,7 +280,9 @@ namespace dreamydumper {
                 MESH_BUFFER_USAGE_MESHLET_TRIS = 0x8,
                 MESH_BUFFER_USAGE_RT_PROXY = 0x10,
                 MESH_BUFFER_USAGE_VERTEX_ALBEDO = 0x20,
-                MESH_BUFFER_USAGE_VERTEX_EMISSIVE = 0x40
+                MESH_BUFFER_USAGE_VERTEX_EMISSIVE = 0x40,
+                MESH_BUFFER_USAGE_MESHLETS = 0x80,
+                MESH_BUFFER_USAGE_ALIAS_TABLE = 0x100
             };
             enum class NmGraphDebugMode_t : uint32_t {
                 Off = 0x0,
@@ -309,8 +312,11 @@ namespace dreamydumper {
                 CURSOR_ADD_TAG = 0x1,
                 CURSOR_REMOVE_TAG = 0x2,
                 CURSOR_RETIRED = 0x4,
-                REQUIREMENT_PASS = 0x8,
-                REQUIREMENT_FAIL = 0x10
+                CURSOR_CREATE_CHILD = 0x8,
+                REQUIREMENT_PASS = 0x10,
+                REQUIREMENT_FAIL = 0x20,
+                CALL_TO_PULSE = 0x40,
+                RETURN = 0x80
             };
             enum class StepPhase : uint32_t {
                 StepPhase_OnGround = 0x0,
@@ -491,6 +497,10 @@ namespace dreamydumper {
                 POSETYPE_DYNAMIC = 0x1,
                 POSETYPE_INVALID = 0xFF
             };
+            enum class CNmClothEvent__Type_t : uint32_t {
+                Stiffen = 0x0,
+                Effect = 0x1
+            };
             enum class CNmRootMotionData__SamplingMode_t : uint8_t {
                 Delta = 0x0,
                 WorldSpace = 0x1
@@ -613,7 +623,10 @@ namespace dreamydumper {
                 PF_MAP_TYPE_CURVE = 0x4,
                 PF_MAP_TYPE_NOTCHED = 0x5,
                 PF_MAP_TYPE_ROUND = 0x6,
-                PF_MAP_TYPE_COUNT = 0x7
+                PF_MAP_TYPE_MIN = 0x7,
+                PF_MAP_TYPE_MAX = 0x8,
+                PF_MAP_TYPE_MOD = 0x9,
+                PF_MAP_TYPE_COUNT = 0xA
             };
             enum class AnimParamVectorType_t : uint32_t {
                 ANIMPARAM_VECTOR_TYPE_NONE = 0x0,
@@ -678,6 +691,10 @@ namespace dreamydumper {
                 BLEND_PREALIGNED = 0x100000,
                 FLAG_RIGIDLENGTH = 0x200000,
                 FLAG_PROCEDURAL = 0x400000
+            };
+            enum class CNmOrientationWarpNode__AlignmentMode_t : uint8_t {
+                MovementDirection = 0x0,
+                AnimationEndFacing = 0x1
             };
             enum class GPUParticleCollisionMode_t : uint32_t {
                 PARTICLE_GPU_COLLISION_MODE_RT = 0x0,
@@ -955,128 +972,132 @@ namespace dreamydumper {
                 IMMEDIATE_HALT = 0x1,
                 RETURN_VOID = 0x2,
                 RETURN_VALUE = 0x3,
-                NOP = 0x4,
-                JUMP = 0x5,
-                JUMP_COND = 0x6,
-                CHUNK_LEAP = 0x7,
-                CHUNK_LEAP_COND = 0x8,
-                PULSE_CALL_SYNC = 0x9,
-                PULSE_CALL_ASYNC_FIRE = 0xA,
-                CREATE_CHILD_CURSOR_OUTFLOW = 0xB,
-                CELL_INVOKE = 0xC,
-                LIBRARY_INVOKE = 0xD,
-                SET_VAR = 0xE,
-                GET_VAR = 0xF,
-                GET_VAR_DETACH = 0x10,
-                DETACH_REGISTER = 0x11,
-                SET_VAR_ARRAY_ELEMENT_1D = 0x12,
-                SET_VAR_OBSERVABLE = 0x13,
-                GET_CONST = 0x14,
-                GET_ARRAY_ELEMENT = 0x15,
-                GET_DOMAIN_VALUE = 0x16,
-                COPY = 0x17,
-                NOT = 0x18,
-                NEGATE = 0x19,
-                ADD = 0x1A,
-                SUB = 0x1B,
-                MUL = 0x1C,
-                DIV = 0x1D,
-                MOD = 0x1E,
-                LT = 0x1F,
-                LTE = 0x20,
-                EQ = 0x21,
-                NE = 0x22,
-                AND = 0x23,
-                OR = 0x24,
-                SCALE = 0x25,
-                SCALE_INV = 0x26,
-                ELEMENT_ACCESS = 0x27,
-                CONVERT_VALUE = 0x28,
-                REINTERPRET_INSTANCE = 0x29,
-                GET_BLACKBOARD_REFERENCE = 0x2A,
-                SET_BLACKBOARD_REFERENCE = 0x2B,
-                LAST_SERIALIZED_CODE = 0x2C,
-                NEGATE_INT = 0x2D,
-                NEGATE_FLOAT = 0x2E,
-                NEGATE_VEC2 = 0x2F,
-                NEGATE_VEC3 = 0x30,
-                NEGATE_VEC4 = 0x31,
-                ADD_INT = 0x32,
-                ADD_FLOAT = 0x33,
-                ADD_STRING = 0x34,
-                ADD_VEC2 = 0x35,
-                ADD_VEC3 = 0x36,
-                ADD_VEC3WS_VEC3 = 0x37,
-                ADD_VEC3_VEC3WS = 0x38,
-                ADD_VEC4 = 0x39,
-                ADD_GAMETIME_FLOAT = 0x3A,
-                ADD_FLOAT_GAMETIME = 0x3B,
-                SUB_INT = 0x3C,
-                SUB_FLOAT = 0x3D,
-                SUB_VEC2 = 0x3E,
-                SUB_VEC3 = 0x3F,
-                SUB_VEC3WS_VEC3 = 0x40,
-                SUB_VEC3WS_VEC3WS = 0x41,
-                SUB_VEC4 = 0x42,
-                SUB_GAMETIME_FLOAT = 0x43,
-                SUB_GAMETIME = 0x44,
-                MUL_INT = 0x45,
-                MUL_FLOAT = 0x46,
-                DIV_FLOAT = 0x47,
-                MOD_INT = 0x48,
-                MOD_FLOAT = 0x49,
-                LT_INT = 0x4A,
-                LT_FLOAT = 0x4B,
-                LT_GAMETIME = 0x4C,
-                LTE_INT = 0x4D,
-                LTE_FLOAT = 0x4E,
-                LTE_GAMETIME = 0x4F,
-                EQ_BOOL = 0x50,
-                EQ_INT = 0x51,
-                EQ_FLOAT = 0x52,
-                EQ_VEC2 = 0x53,
-                EQ_VEC3 = 0x54,
-                EQ_VEC3WS = 0x55,
-                EQ_VEC4 = 0x56,
-                EQ_STRING = 0x57,
-                EQ_ENTITY_NAME = 0x58,
-                EQ_SCHEMA_ENUM = 0x59,
-                EQ_EHANDLE = 0x5A,
-                EQ_PANEL_HANDLE = 0x5B,
-                EQ_OPAQUE_HANDLE = 0x5C,
-                EQ_TEST_HANDLE = 0x5D,
-                EQ_COLOR_RGB = 0x5E,
-                EQ_ARRAY = 0x5F,
-                EQ_GAMETIME = 0x60,
-                NE_BOOL = 0x61,
-                NE_INT = 0x62,
-                NE_FLOAT = 0x63,
-                NE_VEC2 = 0x64,
-                NE_VEC3 = 0x65,
-                NE_VEC3WS = 0x66,
-                NE_VEC4 = 0x67,
-                NE_STRING = 0x68,
-                NE_ENTITY_NAME = 0x69,
-                NE_SCHEMA_ENUM = 0x6A,
-                NE_EHANDLE = 0x6B,
-                NE_PANEL_HANDLE = 0x6C,
-                NE_OPAQUE_HANDLE = 0x6D,
-                NE_TEST_HANDLE = 0x6E,
-                NE_COLOR_RGB = 0x6F,
-                NE_ARRAY = 0x70,
-                NE_GAMETIME = 0x71,
-                SCALE_VEC3 = 0x72,
-                SCALE_VEC2 = 0x73,
-                SCALE_VEC4 = 0x74,
-                SCALE_INV_VEC3 = 0x75,
-                SCALE_INV_VEC2 = 0x76,
-                SCALE_INV_VEC4 = 0x77,
-                ELEMENT_ACCESS_VEC2 = 0x78,
-                ELEMENT_ACCESS_VEC3 = 0x79,
-                ELEMENT_ACCESS_VEC3WS = 0x7A,
-                ELEMENT_ACCESS_VEC4 = 0x7B,
-                ELEMENT_ACCESS_COLOR_RGB = 0x7C,
-                GET_CONST_INLINE_STORAGE = 0x7D
+                LOOP_BREAK = 0x4,
+                NOP = 0x5,
+                JUMP = 0x6,
+                JUMP_COND = 0x7,
+                CHUNK_LEAP = 0x8,
+                CHUNK_LEAP_COND = 0x9,
+                PULSE_CALL_SYNC = 0xA,
+                PULSE_CALL_ASYNC_FIRE = 0xB,
+                CREATE_CHILD_CURSOR_OUTFLOW = 0xC,
+                CELL_INVOKE = 0xD,
+                LIBRARY_INVOKE = 0xE,
+                SET_VAR = 0xF,
+                GET_VAR = 0x10,
+                GET_VAR_DETACH = 0x11,
+                DETACH_REGISTER = 0x12,
+                SET_VAR_ARRAY_ELEMENT_1D = 0x13,
+                SET_VAR_OBSERVABLE = 0x14,
+                GET_CONST = 0x15,
+                GET_ARRAY_ELEMENT = 0x16,
+                GET_DOMAIN_VALUE = 0x17,
+                COPY = 0x18,
+                NOT = 0x19,
+                NEGATE = 0x1A,
+                ADD = 0x1B,
+                SUB = 0x1C,
+                MUL = 0x1D,
+                DIV = 0x1E,
+                MOD = 0x1F,
+                LT = 0x20,
+                LTE = 0x21,
+                EQ = 0x22,
+                NE = 0x23,
+                AND = 0x24,
+                OR = 0x25,
+                SCALE = 0x26,
+                SCALE_INV = 0x27,
+                ELEMENT_ACCESS = 0x28,
+                CONVERT_VALUE = 0x29,
+                REINTERPRET_INSTANCE = 0x2A,
+                GET_BLACKBOARD_REFERENCE = 0x2B,
+                SET_BLACKBOARD_REFERENCE = 0x2C,
+                GET_TEMPVAR = 0x2D,
+                SET_TEMPVAR = 0x2E,
+                SET_TEMPVAR_OBSERVABLE = 0x2F,
+                LAST_SERIALIZED_CODE = 0x30,
+                NEGATE_INT = 0x31,
+                NEGATE_FLOAT = 0x32,
+                NEGATE_VEC2 = 0x33,
+                NEGATE_VEC3 = 0x34,
+                NEGATE_VEC4 = 0x35,
+                ADD_INT = 0x36,
+                ADD_FLOAT = 0x37,
+                ADD_STRING = 0x38,
+                ADD_VEC2 = 0x39,
+                ADD_VEC3 = 0x3A,
+                ADD_VEC3WS_VEC3 = 0x3B,
+                ADD_VEC3_VEC3WS = 0x3C,
+                ADD_VEC4 = 0x3D,
+                ADD_GAMETIME_FLOAT = 0x3E,
+                ADD_FLOAT_GAMETIME = 0x3F,
+                SUB_INT = 0x40,
+                SUB_FLOAT = 0x41,
+                SUB_VEC2 = 0x42,
+                SUB_VEC3 = 0x43,
+                SUB_VEC3WS_VEC3 = 0x44,
+                SUB_VEC3WS_VEC3WS = 0x45,
+                SUB_VEC4 = 0x46,
+                SUB_GAMETIME_FLOAT = 0x47,
+                SUB_GAMETIME = 0x48,
+                MUL_INT = 0x49,
+                MUL_FLOAT = 0x4A,
+                DIV_FLOAT = 0x4B,
+                MOD_INT = 0x4C,
+                MOD_FLOAT = 0x4D,
+                LT_INT = 0x4E,
+                LT_FLOAT = 0x4F,
+                LT_GAMETIME = 0x50,
+                LTE_INT = 0x51,
+                LTE_FLOAT = 0x52,
+                LTE_GAMETIME = 0x53,
+                EQ_BOOL = 0x54,
+                EQ_INT = 0x55,
+                EQ_FLOAT = 0x56,
+                EQ_VEC2 = 0x57,
+                EQ_VEC3 = 0x58,
+                EQ_VEC3WS = 0x59,
+                EQ_VEC4 = 0x5A,
+                EQ_STRING = 0x5B,
+                EQ_ENTITY_NAME = 0x5C,
+                EQ_SCHEMA_ENUM = 0x5D,
+                EQ_EHANDLE = 0x5E,
+                EQ_PANEL_HANDLE = 0x5F,
+                EQ_OPAQUE_HANDLE = 0x60,
+                EQ_TEST_HANDLE = 0x61,
+                EQ_COLOR_RGB = 0x62,
+                EQ_ARRAY = 0x63,
+                EQ_GAMETIME = 0x64,
+                NE_BOOL = 0x65,
+                NE_INT = 0x66,
+                NE_FLOAT = 0x67,
+                NE_VEC2 = 0x68,
+                NE_VEC3 = 0x69,
+                NE_VEC3WS = 0x6A,
+                NE_VEC4 = 0x6B,
+                NE_STRING = 0x6C,
+                NE_ENTITY_NAME = 0x6D,
+                NE_SCHEMA_ENUM = 0x6E,
+                NE_EHANDLE = 0x6F,
+                NE_PANEL_HANDLE = 0x70,
+                NE_OPAQUE_HANDLE = 0x71,
+                NE_TEST_HANDLE = 0x72,
+                NE_COLOR_RGB = 0x73,
+                NE_ARRAY = 0x74,
+                NE_GAMETIME = 0x75,
+                SCALE_VEC3 = 0x76,
+                SCALE_VEC2 = 0x77,
+                SCALE_VEC4 = 0x78,
+                SCALE_INV_VEC3 = 0x79,
+                SCALE_INV_VEC2 = 0x7A,
+                SCALE_INV_VEC4 = 0x7B,
+                ELEMENT_ACCESS_VEC2 = 0x7C,
+                ELEMENT_ACCESS_VEC3 = 0x7D,
+                ELEMENT_ACCESS_VEC3WS = 0x7E,
+                ELEMENT_ACCESS_VEC4 = 0x7F,
+                ELEMENT_ACCESS_COLOR_RGB = 0x80,
+                GET_CONST_INLINE_STORAGE = 0x81
             };
             enum class ParticleTransformType_t : uint32_t {
                 PT_TYPE_INVALID = 0x0,
@@ -1252,7 +1273,8 @@ namespace dreamydumper {
                 ePlantedTurn = 0x6,
                 eUseStartAsPlantedTurn = 0x7,
                 eLean = 0x8,
-                eCount = 0x9
+                eForwardStartOnly = 0x9,
+                eCount = 0xA
             };
             enum class ModelConfigAttachmentType_t : uint32_t {
                 MODEL_CONFIG_ATTACHMENT_INVALID = 0xFFFFFFFF,
@@ -1301,6 +1323,13 @@ namespace dreamydumper {
             //
             // Metadata:
             // MGetKV3ClassDefaults
+            namespace CPulseCell_RaceCursors {
+                constexpr std::ptrdiff_t m_Outflows = 0xD8; // CUtlVector<CPulse_OutflowConnection>
+                constexpr std::ptrdiff_t m_OnFinished = 0xF0; // CPulse_ResumePoint
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             namespace CPulseCell_Base {
                 constexpr std::ptrdiff_t m_nEditorNodeID = 0x8; // PulseDocNodeID_t
             }
@@ -1327,7 +1356,7 @@ namespace dreamydumper {
             // MPropertyDescription
             namespace CPulseCell_WaitForObservable {
                 constexpr std::ptrdiff_t m_Condition = 0xD8; // CPulseObservableExpression<bool>
-                constexpr std::ptrdiff_t m_OnTrue = 0x150; // CPulse_ResumePoint
+                constexpr std::ptrdiff_t m_OnTrue = 0x168; // CPulse_ResumePoint
             }
             namespace CPulse_OutflowConnection {
                 constexpr std::ptrdiff_t m_SourceOutflowName = 0x0; // PulseSymbol_t
@@ -1346,13 +1375,14 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_Chunks = 0x50; // CUtlVector<CPulse_Chunk*>
                 constexpr std::ptrdiff_t m_Cells = 0x68; // CUtlVector<CPulseCell_Base*>
                 constexpr std::ptrdiff_t m_Vars = 0x80; // CUtlVector<CPulse_Variable>
-                constexpr std::ptrdiff_t m_PublicOutputs = 0x98; // CUtlVector<CPulse_PublicOutput>
-                constexpr std::ptrdiff_t m_InvokeBindings = 0xB0; // CUtlVector<CPulse_InvokeBinding*>
-                constexpr std::ptrdiff_t m_CallInfos = 0xC8; // CUtlVector<CPulse_CallInfo*>
-                constexpr std::ptrdiff_t m_Constants = 0xE0; // CUtlVector<CPulse_Constant>
-                constexpr std::ptrdiff_t m_DomainValues = 0xF8; // CUtlVector<CPulse_DomainValue>
-                constexpr std::ptrdiff_t m_BlackboardReferences = 0x110; // CUtlVector<CPulse_BlackboardReference>
-                constexpr std::ptrdiff_t m_OutputConnections = 0x128; // CUtlVector<CPulse_OutputConnection*>
+                constexpr std::ptrdiff_t m_TempVarBanks = 0x98; // CUtlVector<CPulse_TempVarBankDefinition*>
+                constexpr std::ptrdiff_t m_PublicOutputs = 0xB0; // CUtlVector<CPulse_PublicOutput>
+                constexpr std::ptrdiff_t m_InvokeBindings = 0xC8; // CUtlVector<CPulse_InvokeBinding*>
+                constexpr std::ptrdiff_t m_CallInfos = 0xE0; // CUtlVector<CPulse_CallInfo*>
+                constexpr std::ptrdiff_t m_Constants = 0xF8; // CUtlVector<CPulse_Constant>
+                constexpr std::ptrdiff_t m_DomainValues = 0x110; // CUtlVector<CPulse_DomainValue>
+                constexpr std::ptrdiff_t m_BlackboardReferences = 0x128; // CUtlVector<CPulse_BlackboardReference>
+                constexpr std::ptrdiff_t m_OutputConnections = 0x140; // CUtlVector<CPulse_OutputConnection*>
             }
             //
             // Metadata:
@@ -1413,11 +1443,6 @@ namespace dreamydumper {
             }
             //
             // Metadata:
-            // MPropertyDescription
-            namespace CPulseCursorFuncs {
-            }
-            //
-            // Metadata:
             // MGetKV3ClassDefaults
             namespace PulseNodeDynamicOutflows_t__DynamicOutflow_t {
                 constexpr std::ptrdiff_t m_OutflowID = 0x0; // CGlobalSymbol
@@ -1471,11 +1496,6 @@ namespace dreamydumper {
             }
             //
             // Metadata:
-            // MPropertyDescription
-            namespace CPulseTestScriptLib {
-            }
-            //
-            // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseCell_BaseLerp {
                 constexpr std::ptrdiff_t m_WakeResume = 0xD8; // CPulse_ResumePoint
@@ -1511,11 +1531,6 @@ namespace dreamydumper {
             namespace CPulseCell_BaseLerp__CursorState_t {
                 constexpr std::ptrdiff_t m_StartTime = 0x0; // GameTime_t
                 constexpr std::ptrdiff_t m_EndTime = 0x4; // GameTime_t
-            }
-            //
-            // Metadata:
-            // MPropertyDescription
-            namespace CPulseArraylib {
             }
             namespace SignatureOutflow_Continue {
             }
@@ -1613,8 +1628,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_MethodName = 0x80; // PulseSymbol_t
                 constexpr std::ptrdiff_t m_Description = 0x90; // CUtlString
                 constexpr std::ptrdiff_t m_bIsPublic = 0x98; // bool
-                constexpr std::ptrdiff_t m_ReturnType = 0xA0; // CPulseValueFullType
-                constexpr std::ptrdiff_t m_Args = 0xB8; // CUtlLeanVector<CPulseRuntimeMethodArg>
+                constexpr std::ptrdiff_t m_Args = 0xA0; // CUtlLeanVector<CPulseRuntimeMethodArg>
+                constexpr std::ptrdiff_t m_ReturnValues = 0xB0; // CUtlLeanVector<CPulseRuntimeMethodArg>
             }
             //
             // Metadata:
@@ -1629,8 +1644,8 @@ namespace dreamydumper {
             // MPulseEditorCanvasItemSpecKV3
             namespace CPulseCell_BooleanSwitchState {
                 constexpr std::ptrdiff_t m_Condition = 0xD8; // CPulseObservableExpression<bool>
-                constexpr std::ptrdiff_t m_WhenTrue = 0x150; // CPulse_OutflowConnection
-                constexpr std::ptrdiff_t m_WhenFalse = 0x198; // CPulse_OutflowConnection
+                constexpr std::ptrdiff_t m_WhenTrue = 0x168; // CPulse_OutflowConnection
+                constexpr std::ptrdiff_t m_WhenFalse = 0x1B0; // CPulse_OutflowConnection
             }
             //
             // Metadata:
@@ -1638,18 +1653,8 @@ namespace dreamydumper {
             namespace CPulseCell_Inflow_Yield {
                 constexpr std::ptrdiff_t m_UnyieldResume = 0xD8; // CPulse_ResumePoint
             }
-            //
-            // Metadata:
-            // MPropertyDescription
-            namespace CPulseMathlib {
-            }
             namespace CPulseCell_Unknown {
                 constexpr std::ptrdiff_t m_UnknownKeys = 0x48; // KeyValues3
-            }
-            //
-            // Metadata:
-            // MPropertyDescription
-            namespace CPulseStringlib {
             }
             //
             // Metadata:
@@ -1671,6 +1676,11 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_BlackboardResource = 0x8; // PulseSymbol_t
                 constexpr std::ptrdiff_t m_nNodeID = 0x18; // PulseDocNodeID_t
                 constexpr std::ptrdiff_t m_NodeName = 0x20; // CGlobalSymbol
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            namespace CPulseCell_ReturnValues {
             }
             //
             // Metadata:
@@ -1698,11 +1708,6 @@ namespace dreamydumper {
             }
             //
             // Metadata:
-            // MPropertyDescription
-            namespace CPulseEnumlib {
-            }
-            //
-            // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulse_CallInfo {
                 constexpr std::ptrdiff_t m_PortName = 0x0; // PulseSymbol_t
@@ -1711,6 +1716,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_CallMethodID = 0x48; // PulseDocNodeID_t
                 constexpr std::ptrdiff_t m_nSrcChunk = 0x4C; // PulseRuntimeChunkIndex_t
                 constexpr std::ptrdiff_t m_nSrcInstruction = 0x50; // int32
+                constexpr std::ptrdiff_t m_nBreakDestChunk = 0x54; // PulseRuntimeChunkIndex_t
+                constexpr std::ptrdiff_t m_nBreakDestInstruction = 0x58; // int32
             }
             //
             // Metadata:
@@ -2171,6 +2178,7 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_Instructions = 0x0; // CUtlLeanVector<PGDInstruction_t>
                 constexpr std::ptrdiff_t m_Registers = 0x10; // CUtlLeanVector<CPulse_RegisterInfo>
                 constexpr std::ptrdiff_t m_InstructionDebugInfos = 0x20; // CUtlLeanVector<CPulse_InstructionDebug>
+                constexpr std::ptrdiff_t m_nTempVarBank = 0x30; // PulseRuntimeTempVarBankIndex_t
             }
             //
             // Metadata:
@@ -2185,6 +2193,7 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_NodeID = 0x0; // PulseDocNodeID_t
                 constexpr std::ptrdiff_t m_SequencePoint = 0x8; // PulseSymbol_t
                 constexpr std::ptrdiff_t m_PortName = 0x18; // PulseSymbol_t
+                constexpr std::ptrdiff_t m_bDeferBreak = 0x28; // bool
             }
             namespace PulseRuntimeInvokeIndex_t {
                 constexpr std::ptrdiff_t m_Value = 0x0; // int32
@@ -2783,6 +2792,9 @@ namespace dreamydumper {
             // MGetKV3ClassDefaults
             namespace CParticleInput {
             }
+            namespace PulseRuntimeTempVarIndex_t {
+                constexpr std::ptrdiff_t m_Value = 0x0; // int16
+            }
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -2841,6 +2853,7 @@ namespace dreamydumper {
             namespace VPhysXAggregateData_t {
                 constexpr std::ptrdiff_t m_nFlags = 0x0; // uint16
                 constexpr std::ptrdiff_t m_nRefCounter = 0x2; // uint16
+                constexpr std::ptrdiff_t m_bCompoundsPacked = 0x4; // bool
                 constexpr std::ptrdiff_t m_bonesHash = 0x8; // CUtlVector<uint32>
                 constexpr std::ptrdiff_t m_boneNames = 0x20; // CUtlVector<CUtlString>
                 constexpr std::ptrdiff_t m_indexNames = 0x38; // CUtlVector<uint16>
@@ -3144,21 +3157,22 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flUvDensity = 0x0; // float32
                 constexpr std::ptrdiff_t m_vTintColor = 0x4; // Vector
                 constexpr std::ptrdiff_t m_flAlpha = 0x10; // float32
-                constexpr std::ptrdiff_t m_nNumMeshlets = 0x16; // uint16
-                constexpr std::ptrdiff_t m_nFirstMeshlet = 0x1C; // uint32
-                constexpr std::ptrdiff_t m_nAppliedIndexOffset = 0x20; // uint32
-                constexpr std::ptrdiff_t m_nDepthVertexBufferIndex = 0x24; // uint8
-                constexpr std::ptrdiff_t m_nMeshletPackedIVBIndex = 0x25; // uint8
-                constexpr std::ptrdiff_t m_rigidMeshParts = 0x28; // CUtlLeanVector<CMaterialDrawDescriptor::RigidMeshPart_t>
-                constexpr std::ptrdiff_t m_rootBvhNodes = 0x38; // CUtlLeanVector<uint16>
-                constexpr std::ptrdiff_t m_nPrimitiveType = 0x48; // RenderPrimitiveType_t
-                constexpr std::ptrdiff_t m_nBaseVertex = 0x4C; // int32
-                constexpr std::ptrdiff_t m_nVertexCount = 0x50; // int32
-                constexpr std::ptrdiff_t m_nStartIndex = 0x54; // int32
-                constexpr std::ptrdiff_t m_nIndexCount = 0x58; // int32
-                constexpr std::ptrdiff_t m_indexBuffer = 0xC0; // CRenderBufferBinding
-                constexpr std::ptrdiff_t m_meshletPackedIVB = 0xE0; // CRenderBufferBinding
-                constexpr std::ptrdiff_t m_material = 0x110; // CStrongHandle<InfoForResourceTypeIMaterial2>
+                constexpr std::ptrdiff_t m_nNumMeshlets = 0x18; // uint32
+                constexpr std::ptrdiff_t m_nFirstMeshlet = 0x20; // uint32
+                constexpr std::ptrdiff_t m_nAppliedIndexOffset = 0x24; // uint32
+                constexpr std::ptrdiff_t m_nEmissivePrimitiveCount = 0x28; // int32
+                constexpr std::ptrdiff_t m_nDepthVertexBufferIndex = 0x2C; // uint8
+                constexpr std::ptrdiff_t m_nMeshletPackedIVBIndex = 0x2D; // uint8
+                constexpr std::ptrdiff_t m_rigidMeshParts = 0x30; // CUtlLeanVector<CMaterialDrawDescriptor::RigidMeshPart_t>
+                constexpr std::ptrdiff_t m_rootBvhNodes = 0x40; // CUtlLeanVector<uint16>
+                constexpr std::ptrdiff_t m_nPrimitiveType = 0x50; // RenderPrimitiveType_t
+                constexpr std::ptrdiff_t m_nBaseVertex = 0x54; // int32
+                constexpr std::ptrdiff_t m_nVertexCount = 0x58; // int32
+                constexpr std::ptrdiff_t m_nStartIndex = 0x5C; // int32
+                constexpr std::ptrdiff_t m_nIndexCount = 0x60; // int32
+                constexpr std::ptrdiff_t m_indexBuffer = 0xC8; // CRenderBufferBinding
+                constexpr std::ptrdiff_t m_meshletPackedIVB = 0xE8; // CRenderBufferBinding
+                constexpr std::ptrdiff_t m_material = 0x118; // CStrongHandle<InfoForResourceTypeIMaterial2>
             }
             //
             // Metadata:
@@ -3170,10 +3184,13 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_parentSpaceReferencePose = 0x30; // CUtlVector<CTransform>
                 constexpr std::ptrdiff_t m_modelSpaceReferencePose = 0x48; // CUtlVector<CTransform>
                 constexpr std::ptrdiff_t m_numBonesToSampleAtLowLOD = 0x60; // int32
+                constexpr std::ptrdiff_t m_bIsPropSkeleton = 0x64; // bool
                 constexpr std::ptrdiff_t m_maskDefinitions = 0x88; // CUtlLeanVector<NmBoneMaskSetDefinition_t>
                 constexpr std::ptrdiff_t m_secondarySkeletons = 0xA8; // CUtlLeanVector<CNmSkeleton::SecondarySkeleton_t>
                 constexpr std::ptrdiff_t m_floatChannelSets = 0xB8; // CUtlLeanVector<CNmFloatChannelSet_t>
-                constexpr std::ptrdiff_t m_bIsPropSkeleton = 0xC8; // bool
+                constexpr std::ptrdiff_t m_contactConfigs = 0xC8; // CUtlVector<CNmSkeleton::ContactConfig_t>
+                constexpr std::ptrdiff_t m_gameplayRelevantBoneIndices = 0xE0; // CUtlVector<int32>
+                constexpr std::ptrdiff_t m_nSpecialDependencyHash = 0xF8; // int64
             }
             //
             // Metadata:
@@ -3188,6 +3205,18 @@ namespace dreamydumper {
             namespace CNmVelocityBlendNode__CDefinition {
             }
             namespace CNmZeroPoseTask {
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            namespace CNmClothEvent {
+                constexpr std::ptrdiff_t m_type = 0x18; // CNmClothEvent::Type_t
+                constexpr std::ptrdiff_t m_flStiffness = 0x1C; // float32
+                constexpr std::ptrdiff_t m_flSpeedIn = 0x20; // float32
+                constexpr std::ptrdiff_t m_flSpeedOut = 0x24; // float32
+                constexpr std::ptrdiff_t m_flLengthSeconds = 0x28; // float32
+                constexpr std::ptrdiff_t m_vertexSetName = 0x30; // CUtlString
+                constexpr std::ptrdiff_t m_effectName = 0x38; // CUtlString
             }
             //
             // Metadata:
@@ -3244,16 +3273,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_vCPRelativePosition = 0x90; // Vector
                 constexpr std::ptrdiff_t m_vCPRelativeDir = 0x9C; // Vector
                 constexpr std::ptrdiff_t m_FloatComponentX = 0xA8; // CParticleFloatInput
-                constexpr std::ptrdiff_t m_FloatComponentY = 0x218; // CParticleFloatInput
-                constexpr std::ptrdiff_t m_FloatComponentZ = 0x388; // CParticleFloatInput
-                constexpr std::ptrdiff_t m_FloatInterp = 0x4F8; // CParticleFloatInput
-                constexpr std::ptrdiff_t m_flInterpInput0 = 0x668; // float32
-                constexpr std::ptrdiff_t m_flInterpInput1 = 0x66C; // float32
-                constexpr std::ptrdiff_t m_vInterpOutput0 = 0x670; // Vector
-                constexpr std::ptrdiff_t m_vInterpOutput1 = 0x67C; // Vector
-                constexpr std::ptrdiff_t m_Gradient = 0x688; // CColorGradient
-                constexpr std::ptrdiff_t m_vRandomMin = 0x6A0; // Vector
-                constexpr std::ptrdiff_t m_vRandomMax = 0x6AC; // Vector
+                constexpr std::ptrdiff_t m_FloatComponentY = 0x220; // CParticleFloatInput
+                constexpr std::ptrdiff_t m_FloatComponentZ = 0x398; // CParticleFloatInput
+                constexpr std::ptrdiff_t m_FloatInterp = 0x510; // CParticleFloatInput
+                constexpr std::ptrdiff_t m_flInterpInput0 = 0x688; // float32
+                constexpr std::ptrdiff_t m_flInterpInput1 = 0x68C; // float32
+                constexpr std::ptrdiff_t m_vInterpOutput0 = 0x690; // Vector
+                constexpr std::ptrdiff_t m_vInterpOutput1 = 0x69C; // Vector
+                constexpr std::ptrdiff_t m_Gradient = 0x6A8; // CColorGradient
+                constexpr std::ptrdiff_t m_vRandomMin = 0x6C0; // Vector
+                constexpr std::ptrdiff_t m_vRandomMax = 0x6CC; // Vector
             }
             //
             // Metadata:
@@ -3395,6 +3424,9 @@ namespace dreamydumper {
             namespace CMotionDataSet {
                 constexpr std::ptrdiff_t m_groups = 0x0; // CUtlVector<CMotionGraphGroup>
                 constexpr std::ptrdiff_t m_nDimensionCount = 0x18; // int32
+            }
+            namespace ParticleAttributeIndex_t {
+                constexpr std::ptrdiff_t m_Value = 0x0; // int32
             }
             //
             // Metadata:
@@ -3554,10 +3586,10 @@ namespace dreamydumper {
             // MGetKV3ClassDefaults
             namespace CNmClipNode__CDefinition {
                 constexpr std::ptrdiff_t m_nPlayInReverseValueNodeIdx = 0x10; // int16
-                constexpr std::ptrdiff_t m_nResetTimeValueNodeIdx = 0x12; // int16
-                constexpr std::ptrdiff_t m_bSampleRootMotion = 0x14; // bool
-                constexpr std::ptrdiff_t m_bAllowLooping = 0x15; // bool
-                constexpr std::ptrdiff_t m_nDataSlotIdx = 0x16; // int16
+                constexpr std::ptrdiff_t m_bSampleRootMotion = 0x12; // bool
+                constexpr std::ptrdiff_t m_bAllowLooping = 0x13; // bool
+                constexpr std::ptrdiff_t m_nDataSlotIdx = 0x14; // int16
+                constexpr std::ptrdiff_t m_nResetTimeValueNodeIdx = 0x16; // int16
                 constexpr std::ptrdiff_t m_graphEvents = 0x18; // CUtlVectorFixedGrowable<CGlobalSymbol,2>
                 constexpr std::ptrdiff_t m_flSpeedMultiplier = 0x40; // float32
                 constexpr std::ptrdiff_t m_nStartSyncEventOffset = 0x44; // int32
@@ -3673,6 +3705,12 @@ namespace dreamydumper {
             //
             // Metadata:
             // MGetKV3ClassDefaults
+            namespace CPulse_TempVarBankDefinition {
+                constexpr std::ptrdiff_t m_TempVars = 0x0; // CUtlVector<CPulse_TempVarInfo>
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             namespace CRagdollComponentUpdater {
                 constexpr std::ptrdiff_t m_ragdollNodePaths = 0x30; // CUtlVector<CAnimNodePath>
                 constexpr std::ptrdiff_t m_followAttachmentNodePaths = 0x48; // CUtlVector<CAnimNodePath>
@@ -3771,6 +3809,7 @@ namespace dreamydumper {
             // MGetKV3ClassDefaults
             // MFgdHelper
             // MFgdHelper
+            // MCustomFGDMetadata
             namespace CNPCPhysicsHull {
                 constexpr std::ptrdiff_t m_sName = 0x0; // CGlobalSymbol
                 constexpr std::ptrdiff_t m_eType = 0x8; // NPCPhysicsHullType_t
@@ -3931,6 +3970,12 @@ namespace dreamydumper {
             //
             // Metadata:
             // MGetKV3ClassDefaults
+            namespace CNmCameraFOVEvent {
+                constexpr std::ptrdiff_t m_curve = 0x18; // CPiecewiseCurve
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             namespace CNmTargetWarpEvent {
                 constexpr std::ptrdiff_t m_rule = 0x18; // NmTargetWarpRule_t
                 constexpr std::ptrdiff_t m_algorithm = 0x19; // NmTargetWarpAlgorithm_t
@@ -4011,6 +4056,19 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_previousChoice = 0x1C; // int32
                 constexpr std::ptrdiff_t m_flClipStartTime = 0x20; // CAnimNetVar<float32>
                 constexpr std::ptrdiff_t m_choicePreviousCycle = 0x2C; // float32
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MVDataOverlayType
+            // MVDataAssociatedFile
+            namespace CNmContactAudioTypeVData {
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            namespace CNmCameraDOFEvent {
+                constexpr std::ptrdiff_t m_curve = 0x18; // CPiecewiseCurve
             }
             //
             // Metadata:
@@ -4545,9 +4603,11 @@ namespace dreamydumper {
             namespace PulseGraphExecutionHistoryEntry_t {
                 constexpr std::ptrdiff_t nCursorID = 0x0; // PulseCursorID_t
                 constexpr std::ptrdiff_t nEditorID = 0x4; // PulseDocNodeID_t
-                constexpr std::ptrdiff_t flExecTime = 0x8; // float32
-                constexpr std::ptrdiff_t unFlags = 0xC; // uint32
-                constexpr std::ptrdiff_t tagName = 0x10; // PulseSymbol_t
+                constexpr std::ptrdiff_t seqPoint = 0x8; // PulseSymbol_t
+                constexpr std::ptrdiff_t flExecTime = 0x18; // float32
+                constexpr std::ptrdiff_t unFlags = 0x1C; // uint32
+                constexpr std::ptrdiff_t tagName = 0x20; // PulseSymbol_t
+                constexpr std::ptrdiff_t childID = 0x30; // PulseCursorID_t
             }
             //
             // Metadata:
@@ -4622,7 +4682,7 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bCreateBufferUAV = 0x11; // bool
                 constexpr std::ptrdiff_t m_bCreateRawBuffer = 0x12; // bool
                 constexpr std::ptrdiff_t m_bCreatePooledBuffer = 0x13; // bool
-                constexpr std::ptrdiff_t m_nBufferUsage = 0x14; // uint8
+                constexpr std::ptrdiff_t m_nBufferUsage = 0x14; // uint16
                 constexpr std::ptrdiff_t m_inputLayoutFields = 0x18; // CUtlVector<RenderInputLayoutField_t>
             }
             //
@@ -4924,6 +4984,7 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nConstIdx = 0x20; // PulseRuntimeConstantIndex_t
                 constexpr std::ptrdiff_t m_nDomainValueIdx = 0x22; // PulseRuntimeDomainValueIndex_t
                 constexpr std::ptrdiff_t m_nBlackboardReferenceIdx = 0x24; // PulseRuntimeBlackboardReferenceIndex_t
+                constexpr std::ptrdiff_t m_nTempVarIdx = 0x26; // PulseRuntimeTempVarIndex_t
             }
             //
             // Metadata:
@@ -5108,16 +5169,16 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_materialGroupToken = 0x0; // uint32
                 constexpr std::ptrdiff_t m_nSrcDrawIndex = 0x4; // int32
                 constexpr std::ptrdiff_t m_drawDesc = 0x8; // CMaterialDrawDescriptor
-                constexpr std::ptrdiff_t m_mWorldFromLocal = 0x120; // matrix3x4_t
-                constexpr std::ptrdiff_t m_nVertexAlbedoFormat = 0x150; // VertexAlbedoFormat_t
-                constexpr std::ptrdiff_t m_nVertexAlbedoVB = 0x151; // int8
-                constexpr std::ptrdiff_t m_nVertexAlbedoOffset = 0x152; // uint16
-                constexpr std::ptrdiff_t m_nVertexAlbedoStride = 0x154; // uint16
-                constexpr std::ptrdiff_t m_nVertexEmissiveFormat = 0x156; // VertexAlbedoFormat_t
-                constexpr std::ptrdiff_t m_nVertexEmissiveVB = 0x157; // int8
-                constexpr std::ptrdiff_t m_nVertexEmissiveOffset = 0x158; // uint16
-                constexpr std::ptrdiff_t m_nVertexEmissiveStride = 0x15A; // uint16
-                constexpr std::ptrdiff_t m_fEmissiveFactor = 0x15C; // float32
+                constexpr std::ptrdiff_t m_mWorldFromLocal = 0x128; // matrix3x4_t
+                constexpr std::ptrdiff_t m_nVertexAlbedoFormat = 0x158; // VertexAlbedoFormat_t
+                constexpr std::ptrdiff_t m_nVertexAlbedoVB = 0x159; // int8
+                constexpr std::ptrdiff_t m_nVertexAlbedoOffset = 0x15A; // uint16
+                constexpr std::ptrdiff_t m_nVertexAlbedoStride = 0x15C; // uint16
+                constexpr std::ptrdiff_t m_nVertexEmissiveFormat = 0x15E; // VertexAlbedoFormat_t
+                constexpr std::ptrdiff_t m_nVertexEmissiveVB = 0x15F; // int8
+                constexpr std::ptrdiff_t m_nVertexEmissiveOffset = 0x160; // uint16
+                constexpr std::ptrdiff_t m_nVertexEmissiveStride = 0x162; // uint16
+                constexpr std::ptrdiff_t m_fEmissiveFactor = 0x164; // float32
             }
             //
             // Metadata:
@@ -5374,6 +5435,7 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nTriangleOffset = 0x10; // uint32
                 constexpr std::ptrdiff_t m_nVertexCount = 0x14; // uint8
                 constexpr std::ptrdiff_t m_nTriangleCount = 0x15; // uint8
+                constexpr std::ptrdiff_t m_nBoneIndex = 0x16; // uint16
             }
             //
             // Metadata:
@@ -5455,6 +5517,16 @@ namespace dreamydumper {
             //
             // Metadata:
             // MGetKV3ClassDefaults
+            namespace CNmSkeleton__ContactConfig_t {
+                constexpr std::ptrdiff_t m_ID = 0x0; // CGlobalSymbol
+                constexpr std::ptrdiff_t m_nBoneIdx = 0x8; // int32
+                constexpr std::ptrdiff_t m_vBoneLocalProbeDir = 0xC; // Vector
+                constexpr std::ptrdiff_t m_flProbeMaxDist = 0x18; // float32
+                constexpr std::ptrdiff_t m_audioInfo = 0x20; // NmContactAudioInfo_t
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             namespace CNmGraphNode__CDefinition {
                 constexpr std::ptrdiff_t m_nNodeIdx = 0x8; // int16
             }
@@ -5497,6 +5569,16 @@ namespace dreamydumper {
             }
             namespace PulseRuntimeBlackboardReferenceIndex_t {
                 constexpr std::ptrdiff_t m_Value = 0x0; // int16
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            namespace CNmContactEvent {
+                constexpr std::ptrdiff_t m_configID = 0x18; // CGlobalSymbol
+                constexpr std::ptrdiff_t m_probeBoneID = 0x20; // CGlobalSymbol
+                constexpr std::ptrdiff_t m_vBoneLocalProbeDir = 0x28; // Vector
+                constexpr std::ptrdiff_t m_flProbeMaxDist = 0x34; // float32
+                constexpr std::ptrdiff_t m_audioInfo = 0x38; // NmContactAudioInfo_t
             }
             //
             // Metadata:
@@ -5584,6 +5666,23 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_decodeKey = 0x98; // CAnimKeyData
                 constexpr std::ptrdiff_t m_szScripts = 0x110; // CUtlVector<CBufferString>
                 constexpr std::ptrdiff_t m_AdditionalExtRefs = 0x128; // CUtlVector<CStrongHandleVoid>
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            namespace CPulse_TempVarInfo {
+                constexpr std::ptrdiff_t m_Name = 0x0; // PulseSymbol_t
+                constexpr std::ptrdiff_t m_Type = 0x10; // CPulseValueFullType
+                constexpr std::ptrdiff_t m_nEditorNodeID = 0x28; // PulseDocNodeID_t
+                constexpr std::ptrdiff_t m_bIsObservable = 0x2C; // bool
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            namespace NmContactAudioInfo_t {
+                constexpr std::ptrdiff_t m_audioActionID = 0x0; // CGlobalSymbol
+                constexpr std::ptrdiff_t m_audioTypeID = 0x8; // CGlobalSymbol
+                constexpr std::ptrdiff_t m_soundeventOverrideID = 0x10; // CGlobalSymbol
             }
             //
             // Metadata:
@@ -5773,10 +5872,10 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_sceneObjects = 0x10; // CUtlLeanVectorFixedGrowable<CSceneObjectData,1>
                 constexpr std::ptrdiff_t m_constraints = 0xD0; // CUtlLeanVector<CBaseConstraint*>
                 constexpr std::ptrdiff_t m_skeleton = 0xE0; // CRenderSkeleton
-                constexpr std::ptrdiff_t m_bUseUV2ForCharting = 0x1EC; // bool
-                constexpr std::ptrdiff_t m_bEmbeddedMapMesh = 0x1ED; // bool
-                constexpr std::ptrdiff_t m_meshDeformParams = 0x210; // DynamicMeshDeformParams_t
-                constexpr std::ptrdiff_t m_pGroomData = 0x220; // CRenderGroom*
+                constexpr std::ptrdiff_t m_bUseUV2ForCharting = 0x1F8; // bool
+                constexpr std::ptrdiff_t m_bEmbeddedMapMesh = 0x1F9; // bool
+                constexpr std::ptrdiff_t m_meshDeformParams = 0x220; // DynamicMeshDeformParams_t
+                constexpr std::ptrdiff_t m_pGroomData = 0x230; // CRenderGroom*
             }
             //
             // Metadata:
@@ -5805,12 +5904,30 @@ namespace dreamydumper {
             //
             // Metadata:
             // MGetKV3ClassDefaults
+            namespace CNmBodyGroupNode__CDefinition {
+                constexpr std::ptrdiff_t m_nEnabledNodeIdx = 0x18; // int16
+                constexpr std::ptrdiff_t m_event = 0x20; // CNmBodyGroupEvent
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            namespace CNmTimeControlledClipNode__CDefinition {
+                constexpr std::ptrdiff_t m_nPlayInReverseValueNodeIdx = 0x10; // int16
+                constexpr std::ptrdiff_t m_bSampleRootMotion = 0x12; // bool
+                constexpr std::ptrdiff_t m_nDataSlotIdx = 0x14; // int16
+                constexpr std::ptrdiff_t m_nTimeValueNodeIdx = 0x16; // int16
+                constexpr std::ptrdiff_t m_graphEvents = 0x18; // CUtlVectorFixedGrowable<CGlobalSymbol,2>
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             namespace VPhysics2ShapeDef_t {
-                constexpr std::ptrdiff_t m_spheres = 0x0; // CUtlVector<RnSphereDesc_t>
-                constexpr std::ptrdiff_t m_capsules = 0x18; // CUtlVector<RnCapsuleDesc_t>
-                constexpr std::ptrdiff_t m_hulls = 0x30; // CUtlVector<RnHullDesc_t>
-                constexpr std::ptrdiff_t m_meshes = 0x48; // CUtlVector<RnMeshDesc_t>
-                constexpr std::ptrdiff_t m_CollisionAttributeIndices = 0x60; // CUtlVector<uint16>
+                constexpr std::ptrdiff_t m_spheres = 0x0; // CUtlLeanVector<RnSphereDesc_t>
+                constexpr std::ptrdiff_t m_capsules = 0x10; // CUtlLeanVector<RnCapsuleDesc_t>
+                constexpr std::ptrdiff_t m_hulls = 0x20; // CUtlLeanVector<RnHullDesc_t>
+                constexpr std::ptrdiff_t m_meshes = 0x30; // CUtlLeanVector<RnMeshDesc_t>
+                constexpr std::ptrdiff_t m_compounds = 0x40; // CUtlLeanVector<RnCompoundDesc_t>
+                constexpr std::ptrdiff_t m_CollisionAttributeIndices = 0x50; // CUtlVector<uint16>
             }
             //
             // Metadata:
@@ -6059,6 +6176,7 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_parameterNodeIdx = 0x30; // int16
                 constexpr std::ptrdiff_t m_bIgnoreInvalidOptions = 0x32; // bool
                 constexpr std::ptrdiff_t m_bIsWorldSpaceTarget = 0x33; // bool
+                constexpr std::ptrdiff_t m_alignmentBoneID = 0x38; // CGlobalSymbol
             }
             //
             // Metadata:
@@ -6137,13 +6255,6 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nEffectorBoneIdx = 0x70; // int32
                 constexpr std::ptrdiff_t m_nEffectorTargetBoneIdx = 0x74; // int32
                 constexpr std::ptrdiff_t m_targetTransform = 0x80; // CTransform
-                constexpr std::ptrdiff_t m_effectorTarget = 0xA0; // CNmTarget
-                constexpr std::ptrdiff_t m_blendMode = 0xD0; // NmIKBlendMode_t
-                constexpr std::ptrdiff_t m_flBlendWeight = 0xD4; // float32
-                constexpr std::ptrdiff_t m_bIsTargetInWorldSpace = 0xD8; // bool
-                constexpr std::ptrdiff_t m_bIsRunningFromDeserializedData = 0xD9; // bool
-                constexpr std::ptrdiff_t m_flChainRotationWeight = 0xDC; // float32
-                constexpr std::ptrdiff_t m_debugEffectorBoneID = 0xE0; // CGlobalSymbol
             }
             //
             // Metadata:
@@ -6171,6 +6282,13 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_fMinValue = 0x84; // float32
                 constexpr std::ptrdiff_t m_fMaxValue = 0x88; // float32
                 constexpr std::ptrdiff_t m_bInterpolate = 0x8C; // bool
+            }
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            // MVDataOverlayType
+            // MVDataAssociatedFile
+            namespace CNmContactAudioActionVData {
             }
             //
             // Metadata:
@@ -6438,6 +6556,9 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_flCycle = 0x0; // CAnimNetVar<float32>
                 constexpr std::ptrdiff_t m_flPrevCycle = 0xC; // CAnimNetVar<float32>
             }
+            namespace PulseRuntimeTempVarBankIndex_t {
+                constexpr std::ptrdiff_t m_Value = 0x0; // int16
+            }
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -6631,6 +6752,7 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nBiasType = 0x124; // ParticleFloatBiasType_t
                 constexpr std::ptrdiff_t m_flBiasParameter = 0x128; // float32
                 constexpr std::ptrdiff_t m_Curve = 0x130; // CPiecewiseCurve
+                constexpr std::ptrdiff_t m_flCompareValue = 0x170; // float32
             }
             //
             // Metadata:
@@ -6790,7 +6912,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bIsOffsetNode = 0x14; // bool
                 constexpr std::ptrdiff_t m_bIsOffsetRelativeToCharacter = 0x15; // bool
                 constexpr std::ptrdiff_t m_bWarpTranslation = 0x16; // bool
-                constexpr std::ptrdiff_t m_samplingMode = 0x17; // CNmRootMotionData::SamplingMode_t
+                constexpr std::ptrdiff_t m_alignmentMode = 0x17; // CNmOrientationWarpNode::AlignmentMode_t
+                constexpr std::ptrdiff_t m_samplingMode = 0x18; // CNmRootMotionData::SamplingMode_t
             }
             //
             // Metadata:
@@ -6946,15 +7069,15 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_nFlags = 0x0; // uint32
                 constexpr std::ptrdiff_t m_flMass = 0x4; // float32
                 constexpr std::ptrdiff_t m_rnShape = 0x8; // VPhysics2ShapeDef_t
-                constexpr std::ptrdiff_t m_nCollisionAttributeIndex = 0x80; // uint16
-                constexpr std::ptrdiff_t m_nReserved = 0x82; // uint16
-                constexpr std::ptrdiff_t m_flInertiaScale = 0x84; // float32
-                constexpr std::ptrdiff_t m_flLinearDamping = 0x88; // float32
-                constexpr std::ptrdiff_t m_flAngularDamping = 0x8C; // float32
-                constexpr std::ptrdiff_t m_flLinearDrag = 0x90; // float32
-                constexpr std::ptrdiff_t m_flAngularDrag = 0x94; // float32
-                constexpr std::ptrdiff_t m_bOverrideMassCenter = 0x98; // bool
-                constexpr std::ptrdiff_t m_vMassCenterOverride = 0x9C; // Vector
+                constexpr std::ptrdiff_t m_nCollisionAttributeIndex = 0x70; // uint16
+                constexpr std::ptrdiff_t m_nReserved = 0x72; // uint16
+                constexpr std::ptrdiff_t m_flInertiaScale = 0x74; // float32
+                constexpr std::ptrdiff_t m_flLinearDamping = 0x78; // float32
+                constexpr std::ptrdiff_t m_flAngularDamping = 0x7C; // float32
+                constexpr std::ptrdiff_t m_flLinearDrag = 0x80; // float32
+                constexpr std::ptrdiff_t m_flAngularDrag = 0x84; // float32
+                constexpr std::ptrdiff_t m_bOverrideMassCenter = 0x88; // bool
+                constexpr std::ptrdiff_t m_vMassCenterOverride = 0x8C; // Vector
             }
             namespace PulseRuntimeChunkIndex_t {
                 constexpr std::ptrdiff_t m_Value = 0x0; // int32
@@ -7310,7 +7433,7 @@ namespace dreamydumper {
             namespace CNmBodyGroupEvent {
                 constexpr std::ptrdiff_t m_target = 0x18; // CNmEventTargetEntity_t
                 constexpr std::ptrdiff_t m_groupName = 0x20; // CUtlString
-                constexpr std::ptrdiff_t m_nGroupValue = 0x28; // int32
+                constexpr std::ptrdiff_t m_choiceName = 0x28; // CUtlString
             }
             //
             // Metadata:
@@ -7348,6 +7471,8 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bUserSpecifiedMaterialGroup = 0x8E; // bool
                 constexpr std::ptrdiff_t m_BodygroupOnOtherModels = 0x90; // CUtlString
                 constexpr std::ptrdiff_t m_MaterialGroupOnOtherModels = 0x98; // CUtlString
+                constexpr std::ptrdiff_t m_bCollideWithHierarchy = 0xA0; // bool
+                constexpr std::ptrdiff_t m_bCollideOutsideHierarchy = 0xA1; // bool
             }
             //
             // Metadata:
