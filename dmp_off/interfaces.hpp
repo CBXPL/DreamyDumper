@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-23
+// Dumped at: 2026-09-24
 
 #pragma once
 
@@ -13,15 +13,15 @@ namespace dreamydumper {
             constexpr std::ptrdiff_t AnimationSystem_001 = 0x8375F8;
         }
         namespace client_dll {
-            constexpr std::ptrdiff_t ClientBugBugServic001_Client = 0x222A850;
-            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x222A820;
-            constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x220E330;
-            constexpr std::ptrdiff_t GameClientExports001 = 0x22274C8;
-            constexpr std::ptrdiff_t LegacyGameUI001 = 0x2237170;
-            constexpr std::ptrdiff_t Source2Client002 = 0x2554D00;
-            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x24B1A40;
-            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x255B4A0;
-            constexpr std::ptrdiff_t Source2ClientUI001 = 0x22359E0;
+            constexpr std::ptrdiff_t ClientBugBugServic001_Client = 0x222B850;
+            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x222B820;
+            constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x220F320;
+            constexpr std::ptrdiff_t GameClientExports001 = 0x22284C8;
+            constexpr std::ptrdiff_t LegacyGameUI001 = 0x2238170;
+            constexpr std::ptrdiff_t Source2Client002 = 0x2555D10;
+            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x24B2A40;
+            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x255C4B0;
+            constexpr std::ptrdiff_t Source2ClientUI001 = 0x22369E0;
         }
         namespace engine2_dll {
             constexpr std::ptrdiff_t BenchmarkService001 = 0x621E60;
@@ -107,7 +107,7 @@ namespace dreamydumper {
             constexpr std::ptrdiff_t SerializedEntitiesVersion001 = 0x290270;
         }
         namespace panorama_dll {
-            constexpr std::ptrdiff_t PanoramaUIEngine001 = 0x512DA0;
+            constexpr std::ptrdiff_t PanoramaUIEngine001 = 0x587160;
         }
         namespace panorama_text_pango_dll {
             constexpr std::ptrdiff_t PanoramaTextServices001 = 0x2BA9D0;
