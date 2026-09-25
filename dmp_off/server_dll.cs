@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-24
+// Dumped at: 2026-09-25
 
 namespace CS2Dumper.Schemas {
     public static class ServerDll {
@@ -7777,11 +7777,12 @@ namespace CS2Dumper.Schemas {
             public const nint m_bInSilentReloadSection = 0xFC1; // bool
             public const nint m_bSilentReloadStatCounted = 0xFC2; // bool
             public const nint m_flStealthHoldStartTime = 0xFC4; // GameTime_t
-            public const nint m_flWeaponActionPlaybackRate = 0xFC8; // float32
-            public const nint m_iOriginalTeamNumber = 0xFCC; // int32
-            public const nint m_iMostRecentTeamNumber = 0xFD0; // int32
-            public const nint m_bDroppedNearBuyZone = 0xFD4; // bool
-            public const nint m_flNextAttackRenderTimeOffset = 0xFD8; // float32
+            public const nint m_bReloadHeldSinceStart = 0xFC8; // bool
+            public const nint m_flWeaponActionPlaybackRate = 0xFCC; // float32
+            public const nint m_iOriginalTeamNumber = 0xFD0; // int32
+            public const nint m_iMostRecentTeamNumber = 0xFD4; // int32
+            public const nint m_bDroppedNearBuyZone = 0xFD8; // bool
+            public const nint m_flNextAttackRenderTimeOffset = 0xFDC; // float32
             public const nint m_bCanBePickedUp = 0xFF0; // bool
             public const nint m_bUseCanOverrideNextOwnerTouchTime = 0xFF1; // bool
             public const nint m_nextOwnerTouchTime = 0xFF4; // GameTime_t

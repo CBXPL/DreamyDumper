@@ -3281,20 +3281,20 @@
       },
       "C_BaseCSGrenade": {
         "fields": {
-          "m_bClientPredictDelete": 7952,
-          "m_bIsHeldByPlayer": 7954,
-          "m_bJumpThrow": 7956,
-          "m_bJustPulledPin": 8096,
-          "m_bPinPulled": 7955,
-          "m_bRedraw": 7953,
-          "m_bThrowAnimating": 7957,
-          "m_fDropTime": 8088,
-          "m_fPinPullTime": 8092,
-          "m_fThrowTime": 7960,
-          "m_flNextHoldFrac": 8104,
-          "m_flThrowStrength": 7968,
-          "m_hSwitchToWeaponAfterThrow": 8108,
-          "m_nNextHoldTick": 8100
+          "m_bClientPredictDelete": 7968,
+          "m_bIsHeldByPlayer": 7970,
+          "m_bJumpThrow": 7972,
+          "m_bJustPulledPin": 8112,
+          "m_bPinPulled": 7971,
+          "m_bRedraw": 7969,
+          "m_bThrowAnimating": 7973,
+          "m_fDropTime": 8104,
+          "m_fPinPullTime": 8108,
+          "m_fThrowTime": 7976,
+          "m_flNextHoldFrac": 8120,
+          "m_flThrowStrength": 7984,
+          "m_hSwitchToWeaponAfterThrow": 8124,
+          "m_nNextHoldTick": 8116
         },
         "metadata": [],
         "parent": null
@@ -3709,16 +3709,16 @@
       },
       "C_C4": {
         "fields": {
-          "m_activeLightParticleIndex": 7952,
-          "m_bBombPlacedAnimation": 7968,
-          "m_bBombPlanted": 8011,
-          "m_bIsPlantingViaUse": 7969,
-          "m_bPlayedArmingBeeps": 8004,
-          "m_bStartedArming": 7960,
-          "m_eActiveLightEffect": 7956,
-          "m_entitySpottedState": 7976,
-          "m_fArmedTime": 7964,
-          "m_nSpotRules": 8000
+          "m_activeLightParticleIndex": 7968,
+          "m_bBombPlacedAnimation": 7984,
+          "m_bBombPlanted": 8027,
+          "m_bIsPlantingViaUse": 7985,
+          "m_bPlayedArmingBeeps": 8020,
+          "m_bStartedArming": 7976,
+          "m_eActiveLightEffect": 7972,
+          "m_entitySpottedState": 7992,
+          "m_fArmedTime": 7980,
+          "m_nSpotRules": 8016
         },
         "metadata": [],
         "parent": null
@@ -4233,59 +4233,60 @@
       },
       "C_CSWeaponBase": {
         "fields": {
-          "m_IronSightController": 7104,
+          "m_IronSightController": 7120,
           "m_OnPlayerPickup": 6632,
           "m_bBurstMode": 6700,
-          "m_bCanBePickedUp": 6952,
-          "m_bClearWeaponIdentifyingUGC": 6936,
-          "m_bDroppedNearBuyZone": 6760,
+          "m_bCanBePickedUp": 6960,
+          "m_bClearWeaponIdentifyingUGC": 6944,
+          "m_bDroppedNearBuyZone": 6764,
           "m_bFireOnEmpty": 6628,
           "m_bInReload": 6716,
           "m_bInSilentReloadSection": 6741,
           "m_bInspectPending": 6580,
           "m_bInspectShouldLoop": 6581,
           "m_bIsHauledBack": 6732,
+          "m_bReloadHeldSinceStart": 6748,
           "m_bSilencerOn": 6733,
           "m_bStealthy": 6740,
-          "m_bUIWeapon": 6938,
-          "m_bVisualsDataSet": 6937,
-          "m_bWasActiveWeaponWhenDropped": 6968,
-          "m_bWasOwnedByCT": 7012,
-          "m_bWasOwnedByTerrorist": 7013,
-          "m_donated": 7004,
+          "m_bUIWeapon": 6946,
+          "m_bVisualsDataSet": 6945,
+          "m_bWasActiveWeaponWhenDropped": 6976,
+          "m_bWasOwnedByCT": 7020,
+          "m_bWasOwnedByTerrorist": 7021,
+          "m_donated": 7012,
           "m_fAccuracyPenalty": 6680,
           "m_fAccuracySmoothedForZoom": 6688,
-          "m_fLastShotTime": 7008,
+          "m_fLastShotTime": 7016,
           "m_flDroppedAtTime": 6724,
           "m_flInspectCancelCompleteTime": 6576,
           "m_flLastAccuracyUpdateTime": 6684,
           "m_flLastBurstModeChangeTime": 6704,
-          "m_flLastLOSTraceFailureTime": 7400,
-          "m_flLastShakeTime": 7516,
-          "m_flNextAttackRenderTimeOffset": 6764,
-          "m_flNextClientFireBulletTime": 7016,
-          "m_flNextClientFireBulletTime_Repredict": 7020,
+          "m_flLastLOSTraceFailureTime": 7416,
+          "m_flLastShakeTime": 7532,
+          "m_flNextAttackRenderTimeOffset": 6768,
+          "m_flNextClientFireBulletTime": 7024,
+          "m_flNextClientFireBulletTime_Repredict": 7028,
           "m_flPostponeFireReadyFrac": 6712,
           "m_flRecoilIndex": 6696,
           "m_flStealthHoldStartTime": 6744,
           "m_flTimeSilencerSwitchComplete": 6736,
           "m_flTurningInaccuracy": 6676,
           "m_flTurningInaccuracyDelta": 6660,
-          "m_flWatTickOffset": 7496,
-          "m_flWeaponActionPlaybackRate": 6748,
+          "m_flWatTickOffset": 7512,
+          "m_flWeaponActionPlaybackRate": 6752,
           "m_flWeaponGameplayAnimStateTimestamp": 6572,
-          "m_hPrevOwner": 6960,
-          "m_iIronSightMode": 7280,
-          "m_iMostRecentTeamNumber": 6756,
-          "m_iOriginalTeamNumber": 6752,
+          "m_hPrevOwner": 6968,
+          "m_iIronSightMode": 7296,
+          "m_iMostRecentTeamNumber": 6760,
+          "m_iOriginalTeamNumber": 6756,
           "m_iRecoilIndex": 6692,
           "m_iWeaponGameplayAnimState": 6568,
-          "m_nCustomEconReloadEventId": 6940,
+          "m_nCustomEconReloadEventId": 6948,
           "m_nDeployTick": 6720,
-          "m_nDropTick": 6964,
+          "m_nDropTick": 6972,
           "m_nLastEmptySoundCmdNum": 6624,
           "m_nPostponeFireReadyTicks": 6708,
-          "m_nextPrevOwnerUseTime": 6956,
+          "m_nextPrevOwnerUseTime": 6964,
           "m_vecTurningInaccuracyEyeDirLast": 6664,
           "m_weaponMode": 6656
         },
@@ -4294,13 +4295,13 @@
       },
       "C_CSWeaponBaseGun": {
         "fields": {
-          "m_bNeedsBoltAction": 7981,
-          "m_iBurstShotsRemaining": 7956,
-          "m_iSilencerBodygroup": 7960,
-          "m_inPrecache": 7980,
-          "m_nRevolverCylinderIdx": 7984,
-          "m_silencedModelIndex": 7976,
-          "m_zoomLevel": 7952
+          "m_bNeedsBoltAction": 7997,
+          "m_iBurstShotsRemaining": 7972,
+          "m_iSilencerBodygroup": 7976,
+          "m_inPrecache": 7996,
+          "m_nRevolverCylinderIdx": 8000,
+          "m_silencedModelIndex": 7992,
+          "m_zoomLevel": 7968
         },
         "metadata": [],
         "parent": null
@@ -5222,7 +5223,7 @@
       },
       "C_Knife": {
         "fields": {
-          "m_bFirstAttack": 7952
+          "m_bFirstAttack": 7968
         },
         "metadata": [],
         "parent": null
@@ -6311,8 +6312,8 @@
       },
       "C_WeaponBaseItem": {
         "fields": {
-          "m_bRedraw": 7953,
-          "m_bSequenceInProgress": 7952
+          "m_bRedraw": 7969,
+          "m_bSequenceInProgress": 7968
         },
         "metadata": [],
         "parent": null
@@ -6324,7 +6325,7 @@
       },
       "C_WeaponCZ75a": {
         "fields": {
-          "m_bMagazineRemoved": 8000
+          "m_bMagazineRemoved": 8016
         },
         "metadata": [],
         "parent": null
@@ -6451,8 +6452,8 @@
       },
       "C_WeaponTaser": {
         "fields": {
-          "m_fFireTime": 8000,
-          "m_nLastAttackTick": 8004
+          "m_fFireTime": 8016,
+          "m_nLastAttackTick": 8020
         },
         "metadata": [],
         "parent": null
