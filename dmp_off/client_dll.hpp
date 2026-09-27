@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-25
+// Dumped at: 2026-09-27
 
 #pragma once
 
@@ -2995,8 +2995,9 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_VoxelFrameData = 0x1388; // C_NetworkUtlVectorBase<uint8>
                 constexpr std::ptrdiff_t m_nVoxelFrameDataSize = 0x13A0; // int32
                 constexpr std::ptrdiff_t m_nVoxelUpdate = 0x13A4; // int32
-                constexpr std::ptrdiff_t m_bSmokeVolumeDataReceived = 0x13A8; // bool
-                constexpr std::ptrdiff_t m_bSmokeEffectSpawned = 0x13A9; // bool
+                constexpr std::ptrdiff_t m_nSmokeLightProbeRegen = 0x13A8; // uint8
+                constexpr std::ptrdiff_t m_bSmokeVolumeDataReceived = 0x13A9; // bool
+                constexpr std::ptrdiff_t m_bSmokeEffectSpawned = 0x13AA; // bool
             }
             //
             // Metadata:

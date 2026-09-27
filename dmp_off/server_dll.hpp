@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-25
+// Dumped at: 2026-09-27
 
 #pragma once
 
@@ -7782,6 +7782,7 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_bStealthy = 0xFC0; // bool
                 constexpr std::ptrdiff_t m_bInSilentReloadSection = 0xFC1; // bool
                 constexpr std::ptrdiff_t m_bSilentReloadStatCounted = 0xFC2; // bool
+                constexpr std::ptrdiff_t m_bSilentReloadStatPending = 0xFC3; // bool
                 constexpr std::ptrdiff_t m_flStealthHoldStartTime = 0xFC4; // GameTime_t
                 constexpr std::ptrdiff_t m_bReloadHeldSinceStart = 0xFC8; // bool
                 constexpr std::ptrdiff_t m_flWeaponActionPlaybackRate = 0xFCC; // float32
@@ -8941,10 +8942,11 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_VoxelFrameData = 0xB90; // CNetworkUtlVectorBase<uint8>
                 constexpr std::ptrdiff_t m_nVoxelFrameDataSize = 0xBA8; // int32
                 constexpr std::ptrdiff_t m_nVoxelUpdate = 0xBAC; // int32
-                constexpr std::ptrdiff_t m_flLastBounce = 0xBB0; // GameTime_t
-                constexpr std::ptrdiff_t m_fllastSimulationTime = 0xBB4; // GameTime_t
-                constexpr std::ptrdiff_t m_bExplodeFromInferno = 0x2E38; // bool
-                constexpr std::ptrdiff_t m_bDidGroundScorch = 0x2E39; // bool
+                constexpr std::ptrdiff_t m_nSmokeLightProbeRegen = 0xBB0; // uint8
+                constexpr std::ptrdiff_t m_flLastBounce = 0xBB4; // GameTime_t
+                constexpr std::ptrdiff_t m_fllastSimulationTime = 0xBB8; // GameTime_t
+                constexpr std::ptrdiff_t m_bExplodeFromInferno = 0x2E40; // bool
+                constexpr std::ptrdiff_t m_bDidGroundScorch = 0x2E41; // bool
             }
             namespace CBlood {
                 constexpr std::ptrdiff_t m_vecSprayAngles = 0x4A8; // QAngle

@@ -5973,10 +5973,11 @@
         "fields": {
           "m_VoxelFrameData": 5000,
           "m_bDidSmokeEffect": 4964,
-          "m_bSmokeEffectSpawned": 5033,
-          "m_bSmokeVolumeDataReceived": 5032,
+          "m_bSmokeEffectSpawned": 5034,
+          "m_bSmokeVolumeDataReceived": 5033,
           "m_nRandomSeed": 4968,
           "m_nSmokeEffectTickBegin": 4960,
+          "m_nSmokeLightProbeRegen": 5032,
           "m_nVoxelFrameDataSize": 5024,
           "m_nVoxelUpdate": 5028,
           "m_vSmokeColor": 4972,

@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-25
+// Dumped at: 2026-09-27
 
 namespace CS2Dumper.Schemas {
     public static class ServerDll {
@@ -7776,6 +7776,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_bStealthy = 0xFC0; // bool
             public const nint m_bInSilentReloadSection = 0xFC1; // bool
             public const nint m_bSilentReloadStatCounted = 0xFC2; // bool
+            public const nint m_bSilentReloadStatPending = 0xFC3; // bool
             public const nint m_flStealthHoldStartTime = 0xFC4; // GameTime_t
             public const nint m_bReloadHeldSinceStart = 0xFC8; // bool
             public const nint m_flWeaponActionPlaybackRate = 0xFCC; // float32
@@ -8935,10 +8936,11 @@ namespace CS2Dumper.Schemas {
             public const nint m_VoxelFrameData = 0xB90; // CNetworkUtlVectorBase<uint8>
             public const nint m_nVoxelFrameDataSize = 0xBA8; // int32
             public const nint m_nVoxelUpdate = 0xBAC; // int32
-            public const nint m_flLastBounce = 0xBB0; // GameTime_t
-            public const nint m_fllastSimulationTime = 0xBB4; // GameTime_t
-            public const nint m_bExplodeFromInferno = 0x2E38; // bool
-            public const nint m_bDidGroundScorch = 0x2E39; // bool
+            public const nint m_nSmokeLightProbeRegen = 0xBB0; // uint8
+            public const nint m_flLastBounce = 0xBB4; // GameTime_t
+            public const nint m_fllastSimulationTime = 0xBB8; // GameTime_t
+            public const nint m_bExplodeFromInferno = 0x2E40; // bool
+            public const nint m_bDidGroundScorch = 0x2E41; // bool
         }
         public static class CBlood {
             public const nint m_vecSprayAngles = 0x4A8; // QAngle

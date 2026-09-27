@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-25
+// Dumped at: 2026-09-27
 
 namespace CS2Dumper.Schemas {
     public static class ClientDll {
@@ -2989,8 +2989,9 @@ namespace CS2Dumper.Schemas {
             public const nint m_VoxelFrameData = 0x1388; // C_NetworkUtlVectorBase<uint8>
             public const nint m_nVoxelFrameDataSize = 0x13A0; // int32
             public const nint m_nVoxelUpdate = 0x13A4; // int32
-            public const nint m_bSmokeVolumeDataReceived = 0x13A8; // bool
-            public const nint m_bSmokeEffectSpawned = 0x13A9; // bool
+            public const nint m_nSmokeLightProbeRegen = 0x13A8; // uint8
+            public const nint m_bSmokeVolumeDataReceived = 0x13A9; // bool
+            public const nint m_bSmokeEffectSpawned = 0x13AA; // bool
         }
         //
         // Metadata:
