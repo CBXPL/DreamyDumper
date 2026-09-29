@@ -1,11 +1,11 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-09-27
+// Dumped at: 2026-09-29
 
 namespace CS2Dumper.Offsets {
     public static class ClientDll {
         public const nint dwCSGOInput = 0x2575BB0;
-        public const nint dwEntityList = 0x27151A8;
-        public const nint dwGameEntitySystem = 0x27151A8;
+        public const nint dwEntityList = 0x27151E8;
+        public const nint dwGameEntitySystem = 0x27151E8;
         public const nint dwGameEntitySystem_highestEntityIndex = 0x2120;
         public const nint dwGameRules = 0x255C8D8;
         public const nint dwGlobalVars = 0x222BF88;
