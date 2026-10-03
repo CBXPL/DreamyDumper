@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-10-01
+// Dumped at: 2026-10-03
 
 namespace CS2Dumper {
     public static class Buttons {
@@ -10,14 +10,14 @@ namespace CS2Dumper {
         public const nint forward = 0x2230210;
         public const nint jump = 0x22304E0;
         public const nint left = 0x2230330;
-        public const nint lookatweapon = 0x2576080;
+        public const nint lookatweapon = 0x2576070;
         public const nint reload = 0x222FF40;
         public const nint right = 0x22303C0;
-        public const nint showscores = 0x2575F60;
+        public const nint showscores = 0x2575F50;
         public const nint sprint = 0x222FEB0;
         public const nint turnleft = 0x22300F0;
         public const nint turnright = 0x2230180;
         public const nint use = 0x2230450;
-        public const nint zoom = 0x2575FF0;
+        public const nint zoom = 0x2575FE0;
     }
 }
