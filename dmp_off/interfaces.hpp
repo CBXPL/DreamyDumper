@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-10-03
+// Dumped at: 2026-10-06
 
 #pragma once
 
@@ -13,15 +13,15 @@ namespace dreamydumper {
             constexpr std::ptrdiff_t AnimationSystem_001 = 0x8375F8;
         }
         namespace client_dll {
-            constexpr std::ptrdiff_t ClientBugBugServic001_Client = 0x222F7E0;
-            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x222F7B0;
-            constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x2213230;
-            constexpr std::ptrdiff_t GameClientExports001 = 0x222C458;
-            constexpr std::ptrdiff_t LegacyGameUI001 = 0x223C0E0;
-            constexpr std::ptrdiff_t Source2Client002 = 0x255A3A0;
-            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x24B7240;
-            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x25605A0;
-            constexpr std::ptrdiff_t Source2ClientUI001 = 0x223A960;
+            constexpr std::ptrdiff_t ClientBugBugServic001_Client = 0x22317E0;
+            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x22317B0;
+            constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x2215220;
+            constexpr std::ptrdiff_t GameClientExports001 = 0x222E458;
+            constexpr std::ptrdiff_t LegacyGameUI001 = 0x223E0E0;
+            constexpr std::ptrdiff_t Source2Client002 = 0x255C3A0;
+            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x24B92B0;
+            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x2562710;
+            constexpr std::ptrdiff_t Source2ClientUI001 = 0x223C960;
         }
         namespace engine2_dll {
             constexpr std::ptrdiff_t BenchmarkService001 = 0x622C80;
@@ -102,18 +102,18 @@ namespace dreamydumper {
         }
         namespace networksystem_dll {
             constexpr std::ptrdiff_t FlattenedSerializersVersion001 = 0x277A50;
-            constexpr std::ptrdiff_t NetworkMessagesVersion001 = 0x2A3F10;
+            constexpr std::ptrdiff_t NetworkMessagesVersion001 = 0x2A3F30;
             constexpr std::ptrdiff_t NetworkSystemVersion001 = 0x2911A0;
             constexpr std::ptrdiff_t SerializedEntitiesVersion001 = 0x291290;
         }
         namespace panorama_dll {
-            constexpr std::ptrdiff_t PanoramaUIEngine001 = 0x586F60;
+            constexpr std::ptrdiff_t PanoramaUIEngine001 = 0x5895F0;
         }
         namespace panorama_text_pango_dll {
             constexpr std::ptrdiff_t PanoramaTextServices001 = 0x2BA9D0;
         }
         namespace panoramauiclient_dll {
-            constexpr std::ptrdiff_t PanoramaUIClient001 = 0x26F090;
+            constexpr std::ptrdiff_t PanoramaUIClient001 = 0x270710;
         }
         namespace particles_dll {
             constexpr std::ptrdiff_t ParticleSystemMgr003 = 0x65AEB0;
@@ -147,10 +147,10 @@ namespace dreamydumper {
             constexpr std::ptrdiff_t NavGameTest001 = 0x1E50DC8;
             constexpr std::ptrdiff_t ServerToolsInfo_001 = 0x1E2FCB8;
             constexpr std::ptrdiff_t Source2GameClients001 = 0x1E2F1E0;
-            constexpr std::ptrdiff_t Source2GameDirector001 = 0x1F99740;
+            constexpr std::ptrdiff_t Source2GameDirector001 = 0x1F99730;
             constexpr std::ptrdiff_t Source2GameEntities001 = 0x1E2F460;
             constexpr std::ptrdiff_t Source2Server001 = 0x1E2F2A0;
-            constexpr std::ptrdiff_t Source2ServerConfig001 = 0x2114CA8;
+            constexpr std::ptrdiff_t Source2ServerConfig001 = 0x2114C98;
             constexpr std::ptrdiff_t customnavsystem001 = 0x1DA64F0;
         }
         namespace soundsystem_dll {

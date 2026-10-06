@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-10-03
+// Dumped at: 2026-10-06
 
 namespace CS2Dumper.Interfaces {
     public static class AnimationsystemDll {
@@ -7,15 +7,15 @@ namespace CS2Dumper.Interfaces {
         public const nint AnimationSystem_001 = 0x8375F8;
     }
     public static class ClientDll {
-        public const nint ClientBugBugServic001_Client = 0x222F7E0;
-        public const nint ClientToolsInfo_001 = 0x222F7B0;
-        public const nint EmptyWorldService001_Client = 0x2213230;
-        public const nint GameClientExports001 = 0x222C458;
-        public const nint LegacyGameUI001 = 0x223C0E0;
-        public const nint Source2Client002 = 0x255A3A0;
-        public const nint Source2ClientConfig001 = 0x24B7240;
-        public const nint Source2ClientPrediction001 = 0x25605A0;
-        public const nint Source2ClientUI001 = 0x223A960;
+        public const nint ClientBugBugServic001_Client = 0x22317E0;
+        public const nint ClientToolsInfo_001 = 0x22317B0;
+        public const nint EmptyWorldService001_Client = 0x2215220;
+        public const nint GameClientExports001 = 0x222E458;
+        public const nint LegacyGameUI001 = 0x223E0E0;
+        public const nint Source2Client002 = 0x255C3A0;
+        public const nint Source2ClientConfig001 = 0x24B92B0;
+        public const nint Source2ClientPrediction001 = 0x2562710;
+        public const nint Source2ClientUI001 = 0x223C960;
     }
     public static class Engine2Dll {
         public const nint BenchmarkService001 = 0x622C80;
@@ -96,18 +96,18 @@ namespace CS2Dumper.Interfaces {
     }
     public static class NetworksystemDll {
         public const nint FlattenedSerializersVersion001 = 0x277A50;
-        public const nint NetworkMessagesVersion001 = 0x2A3F10;
+        public const nint NetworkMessagesVersion001 = 0x2A3F30;
         public const nint NetworkSystemVersion001 = 0x2911A0;
         public const nint SerializedEntitiesVersion001 = 0x291290;
     }
     public static class PanoramaDll {
-        public const nint PanoramaUIEngine001 = 0x586F60;
+        public const nint PanoramaUIEngine001 = 0x5895F0;
     }
     public static class PanoramaTextPangoDll {
         public const nint PanoramaTextServices001 = 0x2BA9D0;
     }
     public static class PanoramauiclientDll {
-        public const nint PanoramaUIClient001 = 0x26F090;
+        public const nint PanoramaUIClient001 = 0x270710;
     }
     public static class ParticlesDll {
         public const nint ParticleSystemMgr003 = 0x65AEB0;
@@ -141,10 +141,10 @@ namespace CS2Dumper.Interfaces {
         public const nint NavGameTest001 = 0x1E50DC8;
         public const nint ServerToolsInfo_001 = 0x1E2FCB8;
         public const nint Source2GameClients001 = 0x1E2F1E0;
-        public const nint Source2GameDirector001 = 0x1F99740;
+        public const nint Source2GameDirector001 = 0x1F99730;
         public const nint Source2GameEntities001 = 0x1E2F460;
         public const nint Source2Server001 = 0x1E2F2A0;
-        public const nint Source2ServerConfig001 = 0x2114CA8;
+        public const nint Source2ServerConfig001 = 0x2114C98;
         public const nint customnavsystem001 = 0x1DA64F0;
     }
     public static class SoundsystemDll {
