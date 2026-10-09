@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-10-06
+// Dumped at: 2026-10-09
 
 namespace CS2Dumper.Schemas {
     public static class Vphysics2Dll {

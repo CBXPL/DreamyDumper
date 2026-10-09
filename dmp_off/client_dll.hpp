@@ -1,5 +1,5 @@
 // Dumped using DreamyDumper 1.5
-// Dumped at: 2026-10-06
+// Dumped at: 2026-10-09
 
 #pragma once
 
@@ -1477,17 +1477,18 @@ namespace dreamydumper {
                 constexpr std::ptrdiff_t m_fImmuneToGunGameDamageTime = 0x3504; // GameTime_t
                 constexpr std::ptrdiff_t m_bGunGameImmunity = 0x3508; // bool
                 constexpr std::ptrdiff_t m_fImmuneToGunGameDamageTimeLast = 0x350C; // GameTime_t
-                constexpr std::ptrdiff_t m_fMolotovDamageTime = 0x3510; // float32
-                constexpr std::ptrdiff_t m_nPlayerInfernoBodyFx = 0x357C; // ParticleIndex_t
-                constexpr std::ptrdiff_t m_angEyeAngles = 0x35F0; // QAngle
-                constexpr std::ptrdiff_t m_arrOldEyeAnglesTimes = 0x3680; // GameTime_t[4]
-                constexpr std::ptrdiff_t m_arrOldEyeAngles = 0x3690; // QAngle[4]
-                constexpr std::ptrdiff_t m_angEyeAnglesVelocity = 0x36C0; // QAngle
-                constexpr std::ptrdiff_t m_iIDEntIndex = 0x36CC; // CEntityIndex
-                constexpr std::ptrdiff_t m_delayTargetIDTimer = 0x36D0; // CountdownTimer
-                constexpr std::ptrdiff_t m_iTargetItemEntIdx = 0x36E8; // CEntityIndex
-                constexpr std::ptrdiff_t m_iOldIDEntIndex = 0x36EC; // CEntityIndex
-                constexpr std::ptrdiff_t m_holdTargetIDTimer = 0x36F0; // CountdownTimer
+                constexpr std::ptrdiff_t m_flModifier0 = 0x3510; // float32
+                constexpr std::ptrdiff_t m_fMolotovDamageTime = 0x3514; // float32
+                constexpr std::ptrdiff_t m_nPlayerInfernoBodyFx = 0x3580; // ParticleIndex_t
+                constexpr std::ptrdiff_t m_angEyeAngles = 0x3600; // QAngle
+                constexpr std::ptrdiff_t m_arrOldEyeAnglesTimes = 0x3690; // GameTime_t[4]
+                constexpr std::ptrdiff_t m_arrOldEyeAngles = 0x36A0; // QAngle[4]
+                constexpr std::ptrdiff_t m_angEyeAnglesVelocity = 0x36D0; // QAngle
+                constexpr std::ptrdiff_t m_iIDEntIndex = 0x36DC; // CEntityIndex
+                constexpr std::ptrdiff_t m_delayTargetIDTimer = 0x36E0; // CountdownTimer
+                constexpr std::ptrdiff_t m_iTargetItemEntIdx = 0x36F8; // CEntityIndex
+                constexpr std::ptrdiff_t m_iOldIDEntIndex = 0x36FC; // CEntityIndex
+                constexpr std::ptrdiff_t m_holdTargetIDTimer = 0x3700; // CountdownTimer
             }
             namespace C_CSGO_TeamIntroTerroristPosition {
             }
@@ -3814,8 +3815,8 @@ namespace dreamydumper {
             namespace C_ModelPointEntity {
             }
             namespace C_CSGO_PreviewPlayer {
-                constexpr std::ptrdiff_t m_animgraphCharacterModeString = 0x3710; // CGlobalSymbol
-                constexpr std::ptrdiff_t m_flInitialModelScale = 0x3718; // float32
+                constexpr std::ptrdiff_t m_animgraphCharacterModeString = 0x3720; // CGlobalSymbol
+                constexpr std::ptrdiff_t m_flInitialModelScale = 0x3728; // float32
             }
             namespace C_RectLight {
                 constexpr std::ptrdiff_t m_bShowLight = 0x13A8; // bool
